@@ -73,3 +73,44 @@
     width: auto !important;
     object-fit: contain;
 }
+
+/* Alternating row colors */
+.post-content table tr:nth-child(even),
+.entry-content table tr:nth-child(even) {
+    background-color: var(--code-bg, #f8f9fa);
+}
+
+.post-content table tr:nth-child(odd),
+.entry-content table tr:nth-child(odd) {
+    background-color: var(--theme, #ffffff);
+}
+
+.post-content table tr:hover,
+.entry-content table tr:hover {
+    background-color: var(--tertiary, #f1f3f4) !important;
+    transition: background-color 0.2s ease;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    .post-content table tr:nth-child(even),
+    .entry-content table tr:nth-child(even) {
+        background-color: var(--code-bg, #2d3748);
+    }
+
+    .post-content table tr:nth-child(odd),
+    .entry-content table tr:nth-child(odd) {
+        background-color: var(--theme, #1a202c);
+    }
+
+    .post-content table tr:hover,
+    .entry-content table tr:hover {
+        background-color: var(--tertiary, #4a5568) !important;
+    }
+
+    .post-content table td,
+    .entry-content table td {
+        border-bottom-color: var(--border, #4a5568);
+        color: var(--content, #e2e8f0);
+    }
+}
