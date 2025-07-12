@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(brew install:*)",
+      "Bash(hugo new:*)",
+      "Bash(git init:*)",
+      "Bash(git submodule add:*)",
+      "Bash(hugo:*)",
+      "Bash(brew upgrade:*)",
+      "Bash(brew uninstall:*)"
+    ],
+    "deny": []
+  }
+}
