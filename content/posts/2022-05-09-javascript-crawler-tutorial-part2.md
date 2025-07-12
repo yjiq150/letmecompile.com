@@ -59,43 +59,26 @@ HTML 태그들은 DOM 트리 안에서 요소<sup>element</sup>로 표현되어 
 
 <table>
   <tr>
-    <td>
-      함수
-    </td>
-    
-    <td>
-      설명
-    </td>
+    <td>함수</td>
+    <td>설명</td>
   </tr>
-  
   <tr>
     <td>
       <strong>getElementsByTagName()</strong>
     </td>
-    
-    <td>
-      태그 이름으로 찾기
-    </td>
+    <td>태그 이름으로 찾기</td>
   </tr>
-  
   <tr>
     <td>
       <strong>getElementsByClassName()</strong>
     </td>
-    
-    <td>
-      클래스 속성값으로 찾기
-    </td>
+    <td>클래스 속성값으로 찾기</td>
   </tr>
-  
   <tr>
     <td>
       <strong>getElementById()</strong>
     </td>
-    
-    <td>
-      문서 전체에 대하여 유니크한 id값을 가진 요소를 찾기. document 객체에서만 호출이 가능합니다.
-    </td>
+    <td>문서 전체에 대하여 유니크한 id값을 가진 요소를 찾기. document 객체에서만 호출이 가능합니다.</td>
   </tr>
 </table>
 

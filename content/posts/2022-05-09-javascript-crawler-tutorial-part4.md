@@ -51,8 +51,8 @@ categories:
   crawler/domestic-crawler.js
 </p>
 
-<div>
-  <pre><code class="language-none">const _ = require('lodash');        // 다양한 유틸리티 함수 제공
+```javascript
+const _ = require('lodash');        // 다양한 유틸리티 함수 제공
 const axios = require('axios');     // HTTP 클라이언트 모듈
 const cheerio = require('cheerio'); // HTML 파싱 및 DOM 생성
 
@@ -95,8 +95,8 @@ class DomesticCrawler {
   }
 }
 
-module.exports = DomesticCrawler;</code></pre>
-</div>
+module.exports = DomesticCrawler;
+```
 
 먼저 `axios.create()` 함수를 실행해 HTTP 클라이언트를 생성합니다. ❶ `User-Agent` 헤더 정보를 바꿉니다. 실제 맥OS에서 동작하는 크롬 웹 브라우저에서 복사해온 겁니다. (이 값은 크롬 [개발자 도구]의 [Network] 탭을 열고 기록된 HTTP 요청을 클릭하여 요청 헤더 영역을 살펴봐서 확인할 수 있습니다.) 이렇게 실제 웹브라우저의 유저 에이전트를 넣어주는 이유는 웹 서버에 따라서는 일반적인 웹 브라우저가 아니면 접근을 허용하지 않거나 아예 다른 응답을 하는 경우가 종종 있기 때문입니다. 만약 여기서 유저 에이전트를 별도로 넣어주지 않는다면 ‘axios/0.21.1’ 형태가 기본값으로 들어갑니다.
 

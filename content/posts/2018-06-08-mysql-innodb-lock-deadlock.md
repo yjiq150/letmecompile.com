@@ -66,112 +66,56 @@ MySQL InnoDB 엔진은 사용자가 필요에 따라 명시적으로 locking rea
 
 <table>
   <tr>
-    <th width="10%">
+    <th>
     </th>
-    
-    <th width="22.5%">
+    <th>
       <code>X</code>
     </th>
-    
-    <th width="22.5%">
+    <th>
       <code>IX</code>
     </th>
-    
-    <th width="22.5%">
+    <th>
       <code>S</code>
     </th>
-    
-    <th width="22.5%">
+    <th>
       <code>IS</code>
     </th>
   </tr>
-  
   <tr>
     <td>
       <code>X</code>
     </td>
-    
-    <td>
-      Conflict
-    </td>
-    
-    <td>
-      Conflict
-    </td>
-    
-    <td>
-      Conflict
-    </td>
-    
-    <td>
-      Conflict
-    </td>
+    <td>Conflict</td>
+    <td>Conflict</td>
+    <td>Conflict</td>
+    <td>Conflict</td>
   </tr>
-  
   <tr>
     <td>
       <code>IX</code>
     </td>
-    
-    <td>
-      Conflict
-    </td>
-    
-    <td>
-      Compatible
-    </td>
-    
-    <td>
-      Conflict
-    </td>
-    
-    <td>
-      Compatible
-    </td>
+    <td>Conflict</td>
+    <td>Compatible</td>
+    <td>Conflict</td>
+    <td>Compatible</td>
   </tr>
-  
   <tr>
     <td>
       <code>S</code>
     </td>
-    
-    <td>
-      Conflict
-    </td>
-    
-    <td>
-      Conflict
-    </td>
-    
-    <td>
-      Compatible
-    </td>
-    
-    <td>
-      Compatible
-    </td>
+    <td>Conflict</td>
+    <td>Conflict</td>
+    <td>Compatible</td>
+    <td>Compatible</td>
   </tr>
-  
   <tr>
     <td>
       <code>IS</code>
     </td>
-    
-    <td>
-      Conflict
-    </td>
-    
-    <td>
-      Compatible
-    </td>
-    
-    <td>
-      Compatible
-    </td>
-    
-    <td>
-      Compatible
-    </td>
+    <td>Conflict</td>
+    <td>Compatible</td>
+    <td>Compatible</td>
+    <td>Compatible</td>
   </tr>
 </table>
 

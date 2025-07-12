@@ -27,9 +27,7 @@ tags:
 
 ### HTML 코드
 
-<pre><div class="video-container">
-  
-</div>
+<pre><div class="video-container"> </div>
 </pre>
 
 ### CSS 코드
