@@ -10,7 +10,8 @@
       "Bash(brew uninstall:*)",
       "WebFetch(domain:github.com)",
       "Bash(cp:*)",
-      "Bash(find:*)"
+      "Bash(find:*)",
+      "Bash(mkdir:*)"
     ],
     "deny": []
   }
