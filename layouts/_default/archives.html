@@ -1,0 +1,225 @@
+{{- define "main" }}
+
+<header class="page-header">
+  <h1>
+    {{ .Title }}
+    {{- if (.Param "ShowRssButtonInSectionTermList") }}
+    {{- $rss := (.OutputFormats.Get "rss") }}
+    {{- if (eq .Kind `page`) }}
+    {{- $rss = (.Parent.OutputFormats.Get "rss") }}
+    {{- end }}
+    {{- with $rss }}
+    <a href="{{ .RelPermalink }}" title="RSS" aria-label="RSS">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" height="23">
+        <path d="M4 11a9 9 0 0 1 9 9" />
+        <path d="M4 4a16 16 0 0 1 16 16" />
+        <circle cx="5" cy="19" r="1" />
+      </svg>
+    </a>
+    {{- end }}
+    {{- end }}
+  </h1>
+  {{- if .Description }}
+  <div class="post-description">
+    {{ .Description }}
+  </div>
+  {{- end }}
+</header>
+
+{{- $pages := site.RegularPages }}
+
+<div class="archive-list">
+{{- range $pages.GroupByPublishDate "2006" }}
+{{- if ne .Key "0001" }}
+  {{- $year := .Key }}
+  {{- range .Pages.GroupByDate "January" }}
+    {{- $monthEng := .Key }}
+    {{- $monthName := "" }}
+    {{- $monthNum := "" }}
+    {{- if eq $monthEng "January" }}{{ $monthName = "1월" }}{{ $monthNum = "01" }}{{ end }}
+    {{- if eq $monthEng "February" }}{{ $monthName = "2월" }}{{ $monthNum = "02" }}{{ end }}
+    {{- if eq $monthEng "March" }}{{ $monthName = "3월" }}{{ $monthNum = "03" }}{{ end }}
+    {{- if eq $monthEng "April" }}{{ $monthName = "4월" }}{{ $monthNum = "04" }}{{ end }}
+    {{- if eq $monthEng "May" }}{{ $monthName = "5월" }}{{ $monthNum = "05" }}{{ end }}
+    {{- if eq $monthEng "June" }}{{ $monthName = "6월" }}{{ $monthNum = "06" }}{{ end }}
+    {{- if eq $monthEng "July" }}{{ $monthName = "7월" }}{{ $monthNum = "07" }}{{ end }}
+    {{- if eq $monthEng "August" }}{{ $monthName = "8월" }}{{ $monthNum = "08" }}{{ end }}
+    {{- if eq $monthEng "September" }}{{ $monthName = "9월" }}{{ $monthNum = "09" }}{{ end }}
+    {{- if eq $monthEng "October" }}{{ $monthName = "10월" }}{{ $monthNum = "10" }}{{ end }}
+    {{- if eq $monthEng "November" }}{{ $monthName = "11월" }}{{ $monthNum = "11" }}{{ end }}
+    {{- if eq $monthEng "December" }}{{ $monthName = "12월" }}{{ $monthNum = "12" }}{{ end }}
+    <div class="archive-item">
+      <a href="javascript:void(0)" class="archive-link" onclick="showMonthPosts('{{ $year }}', '{{ $monthNum }}')">
+        {{ $year }}년 {{ $monthName }} ({{ len .Pages }})
+      </a>
+    </div>
+  {{- end }}
+{{- end }}
+{{- end }}
+</div>
+
+<div id="month-posts" class="month-posts-container" style="display: none;">
+  <div class="month-posts-header">
+    <h3 id="month-title"></h3>
+    <button onclick="hideMonthPosts()" class="close-btn">← 목록으로 돌아가기</button>
+  </div>
+  <div id="posts-list" class="posts-list"></div>
+</div>
+
+<div id="all-posts-data" style="display: none;">
+{{- range $pages }}
+  <div class="post-data" 
+       data-year="{{ .Date.Format "2006" }}" 
+       data-month="{{ .Date.Format "01" }}"
+       data-title="{{ .Title }}"
+       data-url="{{ .Permalink }}"
+       data-date="{{ .Date.Format "2006-01-02" }}">
+  </div>
+{{- end }}
+</div>
+
+<style>
+.archive-list {
+  margin-top: 2rem;
+}
+
+.archive-item {
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.5rem;
+}
+
+.archive-link {
+  color: var(--primary);
+  text-decoration: none;
+  font-size: 1rem;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.archive-link:hover {
+  color: var(--secondary);
+  text-decoration: underline;
+}
+
+.archive-item:last-child {
+  border-bottom: none;
+}
+
+.month-posts-container {
+  margin-top: 2rem;
+}
+
+.month-posts-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--border);
+}
+
+.close-btn {
+  background: var(--theme);
+  color: var(--primary);
+  border: 1px solid var(--border);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.close-btn:hover {
+  background: var(--secondary);
+  color: var(--theme);
+}
+
+.posts-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.post-item {
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--entry);
+}
+
+.post-item h4 {
+  margin: 0 0 0.5rem 0;
+}
+
+.post-item a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.post-item a:hover {
+  color: var(--secondary);
+  text-decoration: underline;
+}
+
+.post-date {
+  color: var(--secondary);
+  font-size: 0.9rem;
+}
+</style>
+
+<script>
+function showMonthPosts(year, month) {
+  const monthNames = {
+    '01': '1월', '02': '2월', '03': '3월', '04': '4월',
+    '05': '5월', '06': '6월', '07': '7월', '08': '8월', 
+    '09': '9월', '10': '10월', '11': '11월', '12': '12월'
+  };
+  
+  // Hide archive list
+  document.querySelector('.archive-list').style.display = 'none';
+  
+  // Show month posts container
+  const monthPostsContainer = document.getElementById('month-posts');
+  monthPostsContainer.style.display = 'block';
+  
+  // Set title
+  const monthTitle = document.getElementById('month-title');
+  monthTitle.textContent = `${year}년 ${monthNames[month]} 포스트`;
+  
+  // Get posts for this month
+  const allPosts = document.querySelectorAll('.post-data');
+  const monthPosts = Array.from(allPosts).filter(post => 
+    post.dataset.year === year && post.dataset.month === month
+  );
+  
+  // Sort posts by date (newest first)
+  monthPosts.sort((a, b) => new Date(b.dataset.date) - new Date(a.dataset.date));
+  
+  // Generate posts HTML
+  const postsList = document.getElementById('posts-list');
+  postsList.innerHTML = monthPosts.map(post => `
+    <div class="post-item">
+      <h4><a href="${post.dataset.url}">${post.dataset.title}</a></h4>
+      <div class="post-date">${formatDate(post.dataset.date)}</div>
+    </div>
+  `).join('');
+}
+
+function hideMonthPosts() {
+  // Show archive list
+  document.querySelector('.archive-list').style.display = 'block';
+  
+  // Hide month posts container
+  document.getElementById('month-posts').style.display = 'none';
+}
+
+function formatDate(dateString) {
+  const date = new Date(dateString);
+  const year = date.getFullYear();
+  const month = date.getMonth() + 1;
+  const day = date.getDate();
+  return `${year}년 ${month}월 ${day}일`;
+}
+</script>
+
+{{- end }}{{/* end main */}}

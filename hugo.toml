@@ -95,3 +95,7 @@ theme = 'PaperMod'
     name = "Categories"
     url = "/categories/"
     weight = 30
+  [[menu.main]]
+    name = "Archives"
+    url = "/archives/"
+    weight = 40
