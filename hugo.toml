@@ -1,7 +1,32 @@
 baseURL = 'https://www.letmecompile.com/'
-languageCode = 'en-us'
+languageCode = 'ko-kr'
 title = 'Knowledge Logger'
 theme = 'PaperMod'
+
+# URL structure to match WordPress permalinks
+[permalinks]
+  posts = "/:slug/"
+
+# Taxonomy permalinks to match WordPress
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+# Configure taxonomy permalinks
+[params.taxonomies]
+  category = "/category/:slug/"
+  tag = "/tag/:slug/"
+
+# Enable sitemap generation
+[sitemap]
+  changefreq = "monthly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+# URL handling for WordPress compatibility
+[params.urls]
+  category = "/category"
+  tag = "/tag"
 
 [params]
   ShowReadingTime = true
@@ -24,6 +49,20 @@ theme = 'PaperMod'
     Title = "Welcome to Knowledge Logger"
     Content = "A blog about programming, development, and technology"
 
+  # SEO Settings similar to All In One SEO Pack
+  [params.seo]
+    # Enable Open Graph
+    enableOpenGraph = true
+    # Enable Twitter Cards
+    enableTwitterCards = true
+    # Enable JSON-LD structured data
+    enableJSONLD = true
+    # Default meta description for pages without one
+    defaultDescription = "Programming insights, development experiences, and technical knowledge from Knowledge Logger"
+    # Site verification codes (add when available)
+    googleSiteVerification = ""
+    bingSiteVerification = ""
+
 [menu]
   [[menu.main]]
     name = "Home"
@@ -34,6 +73,6 @@ theme = 'PaperMod'
     url = "/posts/"
     weight = 20
   [[menu.main]]
-    name = "Tags"
-    url = "/tags/"
+    name = "Categories"
+    url = "/categories/"
     weight = 30
