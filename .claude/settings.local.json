@@ -7,7 +7,10 @@
       "Bash(git submodule add:*)",
       "Bash(hugo:*)",
       "Bash(brew upgrade:*)",
-      "Bash(brew uninstall:*)"
+      "Bash(brew uninstall:*)",
+      "WebFetch(domain:github.com)",
+      "Bash(cp:*)",
+      "Bash(find:*)"
     ],
     "deny": []
   }
