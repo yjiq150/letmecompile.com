@@ -31,12 +31,12 @@ categories:
 
 [crawler] 디렉터리를 만들어서 크롤러 개발 환경을 설정하겠습니다. 원하는 위치에서 다음 명령어를 수행해주세요.
 
-<div>
-  <pre><code class="language-none">$ mkdir crawler
+```bash
+$ mkdir crawler
 $ cd crawler
 $ npm init -y   ❶ 
-$ npm install axios@0.21.1 cheerio@1.0.0-rc.9 puppeteer@9.1.1 lodash@4.17.20 date-fns@2.21.1 date-fns-tz@1.1.4  ❷ </code></pre>
-</div>
+$ npm install axios@0.21.1 cheerio@1.0.0-rc.9 puppeteer@9.1.1 lodash@4.17.20 date-fns@2.21.1 date-fns-tz@1.1.4  ❷ 
+```
 
 ❶에서 crawler 프로젝트를 초기화합니다. -y 옵션을 지정하면 초기화 시 기본값이 자동으로 입력되어 편리합니다.
 
@@ -56,8 +56,8 @@ $ npm install axios@0.21.1 cheerio@1.0.0-rc.9 puppeteer@9.1.1 lodash@4.17.20 dat
   crawler/examples/dom.js
 </p>
 
-<div>
-  <pre><code class="language-none">const axios = require('axios');
+```javascript
+const axios = require('axios');
 const cheerio = require('cheerio');
 
 async function main() {
@@ -69,14 +69,14 @@ async function main() {
   const $ = cheerio.load(resp.data); // ❷ HTML을 파싱하고 DOM 생성하기
   const elements = $('.slide p');    // ❸ CSS 셀렉터로 원하는 요소 찾기
   // ➍ 찾은 요소를 순회하면서 요소가 가진 텍스트를 출력하기
-  elements.each((idx, el) =&gt; {
+  elements.each((idx, el) => {
     // ❺ text() 메서드를 사용하기 위해 Node 객체인 el을 $로 감싸서 cheerio 객체로 변환
     console.log($(el).text());
   });
 }
 
-main();</code></pre>
-</div>
+main();
+```
 
 [출력 결과]
 
@@ -104,42 +104,42 @@ main();</code></pre>
   * `each()` : 찾은 요소들을 단순히 순회합니다.
   * `map()` : 찾은 요소들을 순회하면서 각 요소에서 얻은 값을 이용하여 데이터를 추출하고 변환하여, 반환값들을 모아둔 배열을 만들 수 있습니다. cheerio 객체 내부에서 사용하는 배열을 자바스크립트 배열로 변환하는 데 `toArray()` 함수를 사용합니다.
 
-<div>
-  <pre><code class="language-none">const textArray = $('.slide p');
-    .map((idx, el) =&gt; {
+```javascript
+const textArray = $('.slide p')
+    .map((idx, el) => {
       return $(el).text();
     })
     .toArray();
-// textArray에 저장된 값:  ['국가별 내용', '대한민국 내용']</code></pre>
-</div>
+// textArray에 저장된 값:  ['국가별 내용', '대한민국 내용']
+```
 
   * `find()` : 찾은 요소를 기준으로 새로운 조건을 적용하여 검색합니다. 어떤식으로 사용하는지 설명하기 위해 ❶ 두 단계에 걸쳐서 검색을 진행했습니다만, `$('.container h1')`처럼 한 번에 검색할 수도 있습니다.
 
-<div>
-  <pre><code class="language-none">$('.container')
+```javascript
+$('.container')
     .find('h1')
-    .each((idx, el) =&gt; {
+    .each((idx, el) => {
       console.log($(el).text());
     });
-// 출력값: '코로나보드'</code></pre>
-</div>
+// 출력값: '코로나보드'
+```
 
   * `next()`, `prev()` : 찾은 요소를 기준으로 인접한 다음 또는 이전 요소를 찾습니다.
 
-<div>
-  <pre><code class="language-none">const nextElement = $('#country-title').next();
+```javascript
+const nextElement = $('#country-title').next();
 // nextElement.text()의 값: '국가별 내용'
 
 const prevElement= $('#country-title').prev();
-// prevElement.text()의 값: ''</code></pre>
-</div>
+// prevElement.text()의 값: ''
+```
 
   * `first()`, `last()` : 찾은 요소 중 첫 번째 요소 또는 마지막 요소를 찾습니다.
 
-<div>
-  <pre><code class="language-none">$('.slide p').first().text(); // 국가별 내용
-$('.slide p').last().text(); // 대한민국 내용</code></pre>
-</div>
+```javascript
+$('.slide p').first().text(); // 국가별 내용
+$('.slide p').last().text(); // 대한민국 내용
+```
 
 이 외에도 다양한 기능을 제공합니다. 궁금하신 분은 `cheerio` 레퍼런스 문서를 참고하세요.<sup id="fnref5"><a href="#fn5" rel="footnote">5</a></sup>
 
@@ -191,8 +191,8 @@ $('.slide p').last().text(); // 대한민국 내용</code></pre>
   crawler/examples/dom-with-script.js
 </p>
 
-<div>
-  <pre><code class="language-none">const axios = require('axios');
+```javascript
+const axios = require('axios');
 const cheerio = require('cheerio');
 // ❶ 추출된 자바스크립트 코드를 별도 실행하는 가상 환경 기능 로드
 const vm = require('vm');
@@ -215,8 +215,8 @@ async function main() {
   console.log(context.dataExample.content);
 }
 
-main();</code></pre>
-</div>
+main();
+```
 
 [출력 결과]
 
@@ -293,8 +293,8 @@ http-api는 예제 웹페이지의 HTML을 불러오는 요청입니다. [Protoc
   crawler/examples/http-api.js
 </p>
 
-<div>
-  <pre><code class="language-none">const axios = require('axios');
+```javascript
+const axios = require('axios');
 
 async function main() {
   const resp = await axios.get(
@@ -304,8 +304,8 @@ async function main() {
   console.log(resp.data.content);
 }
 
-main();</code></pre>
-</div>
+main();
+```
 
 [출력 결과]
 
@@ -349,8 +349,8 @@ API 주소에서 데이터를 바로 가져와서 사용할 수 있어서 HTML�
   crawler/example/headless-browser.js
 </p>
 
-<div>
-  <pre><code class="language-none">const puppeteer = require('puppeteer');
+```javascript
+const puppeteer = require('puppeteer');
 
 async function main() {
   const browser = await puppeteer.launch(); // ❶ 헤드리스 브라우저 실행
@@ -380,8 +380,8 @@ async function main() {
   await browser.close(); // ➐ 작업이 완료되면 브라우저 종료
 }
 
-main();</code></pre>
-</div>
+main();
+```
 
 [출력 결과]
 

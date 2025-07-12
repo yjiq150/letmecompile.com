@@ -42,10 +42,10 @@ categories:
 
 다음 예제코드를 한번 살펴봅시다.
 
-<div>
-  <pre><code class="language-none">const elements = document.getElementsByTagName('h1');
-console.log(elements[0].textContent); // 코로나보드</code></pre>
-</div>
+```javascript
+const elements = document.getElementsByTagName('h1');
+console.log(elements[0].textContent); // 코로나보드
+```
 
 크롬 ❶ [개발자 도구]의 콘솔창에서 ❷ 코드를 실행하면 ❸ ‘코로나보드’가 출력됩니다.
 
@@ -86,8 +86,8 @@ HTML 태그들은 DOM 트리 안에서 요소<sup>element</sup>로 표현되어 
 
 앞에서 소개한 함수들은 간단한 조건만으로 요소를 찾는 데 유용합니다. 하지만 복잡한 조건으로 검색하는 것은 쉽지 않습니다. 예를 들어 위 예제의 HTML에서 ‘slide’라는 클래스 속성값을 가진 요소의 서브에 있는 `p` 태그의 내용만 출력할 때는 다음과 같이 두 단계로 코드를 작성해야 합니다.
 
-<div>
-  <pre><code class="language-none">// 'slide' 클래스 속성값을 가진 요소를 먼저 찾음
+```javascript
+// 'slide' 클래스 속성값을 가진 요소를 먼저 찾음
 const slideElements = document.getElementsByClassName('slide');
 
 for (const slideElement of slideElements) {
@@ -97,8 +97,8 @@ for (const slideElement of slideElements) {
      // 검색한 p 태그의 내용 출력
      console.log(paragraphElement.textContent);
   }
-}</code></pre>
-</div>
+}
+```
 
 [찾아지는 엘리먼트]
 
@@ -111,12 +111,12 @@ for (const slideElement of slideElements) {
 
 위 예제와 같은 조건을 CSS 셀렉터를 이용하여 다시 작성하면 다음과 같습니다.
 
-<div>
-  <pre><code class="language-none">const paragraphElements = document.querySelectorAll('.slide p');
+```javascript
+const paragraphElements = document.querySelectorAll('.slide p');
 for (const paragraphElement of paragraphElements) {
   console.log(paragraphElement.textContent);
-}</code></pre>
-</div>
+}
+```
 
 `querySelectorAll()` 함수와 `.slide p`라는 CSS 셀렉터를 이용하여 한 번에 원하는 요소를 찾아냈습니다. 웹페이지 내에서 원하는 조건에 맞는 요소를 빠르게 찾아내는 이러한 편리함 덕분에 실제 웹페이지 크롤링에서는 대개 CSS 셀렉터 문법을 사용합니다. 자주 사용하는 셀렉터 문법을 알아보겠습니다.
 
@@ -136,15 +136,15 @@ for (const paragraphElement of paragraphElements) {
 
 [예시1]
 
-<div>
-  <pre><code class="language-none">// h1 태그에 해당하는 요소를 검색
+```javascript
+// h1 태그에 해당하는 요소를 검색
 document.querySelectorAll('h1');
 // 결과:
-// &lt;h1&gt;코로나보드&lt;/h1&gt;
+// <h1>코로나보드</h1>
 
 // p 태그에 해당하는 요소를 검색
-document.querySelectorAll('p');</code></pre>
-</div>
+document.querySelectorAll('p');
+```
 
 [찾아지는 엘리먼트]
 
@@ -160,10 +160,10 @@ ID 셀렉터<sup>ID selector</sup>는 찾고자 하는 `id` 속성값 앞에 `#`
 
 [예시1]
 
-<div>
-  <pre><code class="language-none">// id="country-title"인 요소를 검색
-document.querySelectorAll('#country-title');</code></pre>
-</div>
+```javascript
+// id="country-title"인 요소를 검색
+document.querySelectorAll('#country-title');
+```
 
 [찾아지는 엘리먼트]
 
@@ -177,10 +177,10 @@ document.querySelectorAll('#country-title');</code></pre>
 
 [예시1]
 
-<div>
-  <pre><code class="language-none">// class="slide" 인 요소를 검색
-document.querySelectorAll('.slide');</code></pre>
-</div>
+```javascript
+// class="slide" 인 요소를 검색
+document.querySelectorAll('.slide');
+```
 
 [찾아지는 엘리먼트]
 
@@ -196,10 +196,10 @@ document.querySelectorAll('.slide');</code></pre>
 
 [예시1]
 
-<div>
-  <pre><code class="language-none">// "type"이라는 속성을 가진 요소 검색
-document.querySelectorAll('[type]');</code></pre>
-</div>
+```javascript
+// "type"이라는 속성을 가진 요소 검색
+document.querySelectorAll('[type]');
+```
 
 [찾아지는 엘리먼트]
 
@@ -210,10 +210,10 @@ document.querySelectorAll('[type]');</code></pre>
 
 [예시2]
 
-<div>
-  <pre><code class="language-none">// "type"이라는 속성의 값이 "text"인 요소 검색
-document.querySelectorAll('[type="text"]');</code></pre>
-</div>
+```javascript
+// "type"이라는 속성의 값이 "text"인 요소 검색
+document.querySelectorAll('[type="text"]');
+```
 
 [찾아지는 엘리먼트]
 
@@ -231,10 +231,10 @@ document.querySelectorAll('[type="text"]');</code></pre>
 
 [예시1]
 
-<div>
-  <pre><code class="language-none">// h1 태그 또는 'slide' 클래스 속성값을 가진 요소를 검색
-document.querySelectorAll('h1, .slide');</code></pre>
-</div>
+```javascript
+// h1 태그 또는 'slide' 클래스 속성값을 가진 요소를 검색
+document.querySelectorAll('h1, .slide');
+```
 
 [찾아지는 엘리먼트]
 
@@ -251,10 +251,10 @@ document.querySelectorAll('h1, .slide');</code></pre>
 
 [예시1]
 
-<div>
-  <pre><code class="language-none">// div 태그에 'slide' 클래스 속성값이 지정된 요소 검색
-document.querySelectorAll('div.slide');</code></pre>
-</div>
+```javascript
+// div 태그에 'slide' 클래스 속성값이 지정된 요소 검색
+document.querySelectorAll('div.slide');
+```
 
 [찾아지는 엘리먼트]
 
@@ -266,10 +266,10 @@ document.querySelectorAll('div.slide');</code></pre>
 
 [예시2]
 
-<div>
-  <pre><code class="language-none">// input 태그에 type 속성값이 'password'인 요소 검색 
-document.querySelectorAll('input[type="password"]');</code></pre>
-</div>
+```javascript
+// input 태그에 type 속성값이 'password'인 요소 검색 
+document.querySelectorAll('input[type="password"]');
+```
 
 [찾아지는 엘리먼트]
 
@@ -279,11 +279,11 @@ document.querySelectorAll('input[type="password"]');</code></pre>
 
 [예시3]
 
-<div>
-  <pre><code class="language-none">// input 태그에 'form-control' 클래스 속성값이 지정되어 있고
+```javascript
+// input 태그에 'form-control' 클래스 속성값이 지정되어 있고
 // type 속성값이 'text'인 요소 검색 
-document.querySelectorAll('input.form-control[type="text"]');</code></pre>
-</div>
+document.querySelectorAll('input.form-control[type="text"]');
+```
 
 [찾아지는 엘리먼트]
 
@@ -301,10 +301,10 @@ document.querySelectorAll('input.form-control[type="text"]');</code></pre>
 
 [예시1]
 
-<div>
-  <pre><code class="language-none">// div 태그를 상위 요소로 가진 모든 p 태그 요소를 검색
-document.querySelectorAll('div p');</code></pre>
-</div>
+```javascript
+// div 태그를 상위 요소로 가진 모든 p 태그 요소를 검색
+document.querySelectorAll('div p');
+```
 
 [찾아지는 엘리먼트]
 
@@ -316,10 +316,10 @@ document.querySelectorAll('div p');</code></pre>
 
 [예시2]
 
-<div>
-  <pre><code class="language-none">// div 태그를 상위 요소로 두 번 가진 모든 p 태그 요소를 검색
-document.querySelectorAll('div div p');</code></pre>
-</div>
+```javascript
+// div 태그를 상위 요소로 두 번 가진 모든 p 태그 요소를 검색
+document.querySelectorAll('div div p');
+```
 
 [찾아지는 엘리먼트]
 
@@ -334,10 +334,10 @@ document.querySelectorAll('div div p');</code></pre>
 
 [예시1]
 
-<div>
-  <pre><code class="language-none">// 'container' 클래스 속성값을 가진 div 요소의 직접적인 자식 중 p 태그 요소를 검색
-document.querySelectorAll('div.container &gt; p');</code></pre>
-</div>
+```javascript
+// 'container' 클래스 속성값을 가진 div 요소의 직접적인 자식 중 p 태그 요소를 검색
+document.querySelectorAll('div.container > p');
+```
 
 [찾아지는 엘리먼트]
 
@@ -351,10 +351,10 @@ document.querySelectorAll('div.container &gt; p');</code></pre>
 
 [예시1]
 
-<div>
-  <pre><code class="language-none">// id="input-test-title"인 요소와 동일한 부모를 가진 input 태그 요소 검색
-document.querySelectorAll('#input-test-title ~ input');</code></pre>
-</div>
+```javascript
+// id="input-test-title"인 요소와 동일한 부모를 가진 input 태그 요소 검색
+document.querySelectorAll('#input-test-title ~ input');
+```
 
 [찾아지는 엘리먼트]
 
@@ -367,10 +367,10 @@ document.querySelectorAll('#input-test-title ~ input');</code></pre>
 
 여러 기본 셀렉터를 `+` 기호를 사용하여 연결하면 찾은 요소를 기준으로 동일한 부모를 가지면서 해당 요소 바로 다음에 나오는 요소 하나를 검색합니다.
 
-<div>
-  <pre><code class="language-none">// id="input-test-title"인 요소와 동일한 부모를 가진 input 태그 요소를 검색
-document.querySelectorAll('#input-test-title + input');</code></pre>
-</div>
+```javascript
+// id="input-test-title"인 요소와 동일한 부모를 가진 input 태그 요소를 검색
+document.querySelectorAll('#input-test-title + input');
+```
 
 [찾아지는 엘리먼트]
 
