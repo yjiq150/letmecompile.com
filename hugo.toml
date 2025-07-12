@@ -37,6 +37,8 @@ theme = 'PaperMod'
   ShowWordCount = true
   ShowRssButtonInSectionTermList = true
   UseHugoToc = true
+  # Enable syntax highlighting
+  assets.disableHLJS = false
   disableSpecial1stPost = false
   disableScrollToTop = false
   comments = false
@@ -68,6 +70,17 @@ theme = 'PaperMod'
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+  [markup.highlight]
+    style = "github"
+    lineNos = true
+    lineNumbersInTable = true
+    noClasses = false
+    guessSyntax = true
+    hl_Lines = ""
+    hl_inline = false
+    anchorLineNos = false
+    codeFences = true
+    tabWidth = 4
 
 [menu]
   [[menu.main]]

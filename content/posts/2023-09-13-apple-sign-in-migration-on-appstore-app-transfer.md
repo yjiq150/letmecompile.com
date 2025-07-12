@@ -73,8 +73,9 @@ tags:
   <p>
     위 과정은 말로 설명하면 어렵지만 실제 코드로 보면 오히려 더 간단하다.
   </p>
-  
-  <pre><code>async function main() {
+
+```javascript
+async function main() {
     // TODO: Modify the following parameters to your own
     const sendingTeamId = 'S12341234P'
     const sendingTeamKeyId = 'T12341234L'
@@ -95,7 +96,8 @@ tags:
     // Store this mappings in your user database before transfering app.
     console.log(`TransferID for ${appleId} is ${appleTransferId}`)
 }
-</code></pre>
+
+```
 
 <p>
   전체 코드는 <a href="https://github.com/yjiq150/apple-signin-migration-on-app-transfer">apple-signin-migration-on-app-transfer</a> 의 <code>before-app-transfer.js</code> 파일을 참고하면 된다.
@@ -164,7 +166,8 @@ tags:
   위 과정 또한 실제 코드로 보면 오히려 더 간단하다.
 </p>
 
-<pre><code>async function main() {
+```
+async function main() {
     // TODO: Modify the following parameters to your own
     const receivingTeamId = 'R12341234P'
     const receivingTeamKeyId = 'S12341234L'
@@ -185,8 +188,8 @@ tags:
     // When user enables private email for Apple Sign-in, the email is also different after transfer.
     console.log(`The new user information for ${appleTransferId} is ${appleId} / ${email} / ${is_private_email}`)
 }
-</code></pre>
 
+```
 <p>
   전체 코드는 <a href="https://github.com/yjiq150/apple-signin-migration-on-app-transfer">apple-signin-migration-on-app-transfer</a> 의 <code>after-app-transfer.js</code> 파일을 참고하면 된다.
 </p>
