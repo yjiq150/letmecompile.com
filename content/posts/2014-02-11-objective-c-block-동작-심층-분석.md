@@ -30,7 +30,7 @@ tags:
 
 일반적으로 객체들은 힙(heap)에 잡히게 되지만 블락은 특이하게도 스택(stack)에 할당되는 객체이다. 이는 일반적으로 블락이 사용되는 범위가 블락이 선언되어있는 동일 범위에서 벗어나지 않기때문이다. 즉 스택에 할당하게되면 실행속도 측면에서 힙에 비해 유리하기 때문에 실행속도 최적화를위해 기본적으로 스택에 할당을 하게된다.[^1]
 
-[<img loading="lazy" width="351" height="152" src="http://www.letmecompile.com/wp/wp-content/uploads/2014/02/block_struct.png" alt="block_struct" class="alignnone size-full wp-image-272" />][2]
+[<img loading="lazy" width="351" height="152" src="/uploads/2014/02/block_struct.png" alt="block_struct" class="alignnone size-full wp-image-272" />][2]
 
 디버거로 할당된 블락 변수를 조사해보면 위의 그림과같이 구조체로 되어있음을 확인할 수 있다. 구조체 내부 변수들에서 볼 수 있듯이 해당 구조체는 블락 호출시 실행될 함수포인터를 갖고 있으며, 블락 실행시 필요한 해당 범위내(enclosing scope) 변수들도 저장하여 갖고있기때문에 해당 변수들이 저장된 크기만큼 Size가 잡혀있는 것도 볼 수 있다[^2]. 블락이 생성될때 같이 저장되는 범위내 변수들은 어떤 기준에 의해 저장되는지 더 살펴보도록 하자.
 
@@ -40,7 +40,7 @@ tags:
 
 따라서 아래 코드와같은 패턴을 사용할경우, for문의 중괄호 범위를 벗어날 경우 해당 범위 밖에서의 블락은 유효하지 않다. 블락내부에서 사용된 변수들이 블락이 선언된 범위의 스택에 복사되어 저장되는데, 이것이 해당 중괄호 범위를 넘어가는 순간 유효하게되지 않기 때문이다.
 
-[<img loading="lazy" width="497" height="178" src="http://www.letmecompile.com/wp/wp-content/uploads/2014/02/block_scope.png" alt="block_scope"  class="alignnone size-full wp-image-270" />][4]
+[<img loading="lazy" width="497" height="178" src="/uploads/2014/02/block_scope.png" alt="block_scope"  class="alignnone size-full wp-image-270" />][4]
 
 가끔 스택프레임(stack frame)에 저장되어있던 기존 내용이 다른곳에서 사용되지 않아서 덮어쓰기(overwrite)되지 않은 경우에는 블락이 운좋게 잘 실행될 경우도 있지만 일반적으로 유효성을 보장할 수 없다.
 
@@ -63,11 +63,11 @@ tags:
 
 아래 두 예제에서 `__block` 키워드 유무에따른 변수 값 전달 차이를 비교해보자.
 
-[<img loading="lazy" width="264" height="148" src="http://www.letmecompile.com/wp/wp-content/uploads/2014/02/block_value.png" alt="block_value"  class="alignnone size-full wp-image-271" />][5]
+[<img loading="lazy" width="264" height="148" src="/uploads/2014/02/block_value.png" alt="block_value"  class="alignnone size-full wp-image-271" />][5]
 
 위 그림에서 블락내부 `x`는 복사되어 `const` 화된 변수이므로 할당이 불가능하다.
 
-[<img loading="lazy" width="353" height="194" src="http://www.letmecompile.com/wp/wp-content/uploads/2014/02/block_reference.png" alt="block_reference" class="alignnone size-full wp-image-269" />][6]
+[<img loading="lazy" width="353" height="194" src="/uploads/2014/02/block_reference.png" alt="block_reference" class="alignnone size-full wp-image-269" />][6]
 
 위 그림에서 블락내부 `x`는 레퍼런스를 전달받았기때문에 실제로 값을 수정가능하다.
 
@@ -75,7 +75,7 @@ tags:
 
 어떤 클래스의 인스턴스가 블락에대한 참조를 갖고있는 상황에서, 해당 블락안에서 `self`를 참조할 경우 순환참조가 발생하여 메모리 해제가 이루어 지지 않는 문제가 발생한다. 이경우 ARC가 켜져있다면 &#8220;Capturing &#8216;self&#8217; strongly in this block is likely to lead to a retain cycle&#8221; 라는 경고메시지를 출력해준다. 다음 그림을 살펴보면 `self.myBlock`이 블락객체를 참조하고 있으며, 해당 블락이 선언될때 `self`를 참조했기 때문에 블락객체 또한 `self`를 참조하게 되어 자동으로 retain 한다. 이렇게 서로 retain이 발생하기 때문에 블락 내부에서 외부 참조를 사용할 경우 주의하여야 한다.
 
-[<img loading="lazy" width="368" height="249" src="http://www.letmecompile.com/wp/wp-content/uploads/2014/02/retain_cycle.png" alt="retain_cycle" class="alignnone size-full wp-image-275" />][7]
+[<img loading="lazy" width="368" height="249" src="/uploads/2014/02/retain_cycle.png" alt="retain_cycle" class="alignnone size-full wp-image-275" />][7]
 
 [그림] 순환참조 예제 코드및 그림
 
@@ -128,11 +128,11 @@ ARC환경에서 block을 사용할 경우 이미 컴파일러가 block 객체가
 </div>
 
  [1]: http://www.letmecompile.com/objective-c-%EB%9F%B0%ED%83%80%EC%9E%84runtime-%EB%82%B4%EB%B6%80-%EB%8F%99%EC%9E%91-%EB%B6%84%EC%84%9D
- [2]: http://www.letmecompile.com/wp/wp-content/uploads/2014/02/block_struct.png
+ [2]: /uploads/2014/02/block_struct.png
  [3]: http://en.wikipedia.org/wiki/Scope_(computer_science)
- [4]: http://www.letmecompile.com/wp/wp-content/uploads/2014/02/block_scope.png
- [5]: http://www.letmecompile.com/wp/wp-content/uploads/2014/02/block_value.png
- [6]: http://www.letmecompile.com/wp/wp-content/uploads/2014/02/block_reference.png
- [7]: http://www.letmecompile.com/wp/wp-content/uploads/2014/02/retain_cycle.png
+ [4]: /uploads/2014/02/block_scope.png
+ [5]: /uploads/2014/02/block_value.png
+ [6]: /uploads/2014/02/block_reference.png
+ [7]: /uploads/2014/02/retain_cycle.png
  [8]: https://www.mikeash.com/pyblog/key-value-observing-done-right.html
  [9]: http://blog.andymatuschak.org/post/156229939/kvo-blocks-block-callbacks-for-cocoa-observers

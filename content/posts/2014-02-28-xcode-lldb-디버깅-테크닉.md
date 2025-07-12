@@ -95,7 +95,7 @@ Objective-C 객체의 경우 `po [변수명]`을 이용하면 해당 객체에 `
 
 17번라인에 브레이크가 걸려있는 상태에서 위 명령어를 실행시 아래와같은 결과를 볼 수 있다.
 
-[<img loading="lazy" width="701" height="700" src="http://www.letmecompile.com/wp/wp-content/uploads/2014/02/lldb_debug_example.png" alt="lldb_debug_example" class="alignnone size-full wp-image-290" />][2]
+[<img loading="lazy" width="701" height="700" src="/uploads/2014/02/lldb_debug_example.png" alt="lldb_debug_example" class="alignnone size-full wp-image-290" />][2]
 
 ## 커스텀 객체에 대한 값 확인을 위한 형식 지정하기
 
@@ -103,7 +103,7 @@ Xcode에서 STL, Foundation, CoreFoundation 등의 객체는 사용자에게 읽
 
 애플 WWDC 2013 LLDB세션 비디오에 나오는 다음 예시를 살펴보자. `MyAddress`라는 커스텀 클래스를 사용할경우 해당 변수에대한 요약정보(summary)가 나타나지 않아서 불편하다.
 
-[<img loading="lazy" width="380" height="203" src="http://www.letmecompile.com/wp/wp-content/uploads/2014/02/formatter_before.png" alt="formatter_before" class="alignnone size-full wp-image-289" />][3]
+[<img loading="lazy" width="380" height="203" src="/uploads/2014/02/formatter_before.png" alt="formatter_before" class="alignnone size-full wp-image-289" />][3]
 
 이때 이를 원하는 형식으로 나타나게 하려면 먼저 형식을 나타내기위한 파이썬 함수를 다음과같이 정의한다.
 
@@ -122,7 +122,7 @@ Xcode에서 STL, Foundation, CoreFoundation 등의 객체는 사용자에게 읽
     
 
 이 후에 실행하면 다음과같이 해당 변수의 요약정보가 원하는대로 변화되어 있는 것을 확인 할 수 있다.  
-[<img loading="lazy" width="381" height="204" src="http://www.letmecompile.com/wp/wp-content/uploads/2014/02/formatter_after.png" alt="formatter_after"  class="alignnone size-full wp-image-288" />][4]
+[<img loading="lazy" width="381" height="204" src="/uploads/2014/02/formatter_after.png" alt="formatter_after"  class="alignnone size-full wp-image-288" />][4]
 
 LLDB가 등록된 `MyAddress_Summary(value,unused)` 파이썬 함수를 호출할때 value 파라메터는 실제 `SBValue`라는 객체로되어있다. 이 `SBValue`는 정의되어있는 LLDB 객체모델들 중 하나로써, LLDB가 갖고있는 현재 프로그램 디버깅 상태정보들을 파이썬 스크립트와 교환하는데 이용되는 객체이다.
 
@@ -151,6 +151,6 @@ LLDB가 등록된 `MyAddress_Summary(value,unused)` 파이썬 함수를 호출�
 </div>
 
  [1]: http://lldb.llvm.org/lldb-gdb.html
- [2]: http://www.letmecompile.com/wp/wp-content/uploads/2014/02/lldb_debug_example.png
- [3]: http://www.letmecompile.com/wp/wp-content/uploads/2014/02/formatter_before.png
- [4]: http://www.letmecompile.com/wp/wp-content/uploads/2014/02/formatter_after.png
+ [2]: /uploads/2014/02/lldb_debug_example.png
+ [3]: /uploads/2014/02/formatter_before.png
+ [4]: /uploads/2014/02/formatter_after.png

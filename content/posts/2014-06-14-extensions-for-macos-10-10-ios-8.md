@@ -45,7 +45,7 @@ categories:
 한마디로 **익스텐션**은 애플 프레임웍을 통해서 호출되는 기능들의 집합이라고 표현할 수 있다. 익스텐션의 기능들은 애플프레임웍를 사용해서만 실행 가능하며. 호스트앱(host app)이 다이렉트로  익스텐션을 호출하지 못한다. 실행이 애플 프레임웍에의해 된다는 사실을 제외하면, 앱과 거의 동일한 형태를 가진다. 즉, 유저 인터페이스도 가질 수 있고, 이를위한 ViewController, 리소스 등을 모두 사용가능하다.
 
 Pre-release 된 애플의 문서<sup id="fnref-381-pre_release"><a href="#fn-381-pre_release" rel="footnote">1</a></sup>에 나와있는 다음 다이어그램을 보면 좀더 이해가 잘 될것이다.  
-<img loading="lazy" width="720" height="323" src="http://www.letmecompile.com/wp/wp-content/uploads/2014/06/bundle.png" alt="bundle" class="alignnone size-full wp-image-379" /> 
+<img loading="lazy" width="720" height="323" src="/uploads/2014/06/bundle.png" alt="bundle" class="alignnone size-full wp-image-379" /> 
 
 좀더 이해를 돕기위해 사진앨범 앱과 카메라 필터앱의 예를 들어보자. 기존에는 사진앨범 앱에서 카메라 필터앱으로 사진데이터를 넘긴 후, 필터 앱에서 편집된 사진을 다시 사진앨범 앱으로 넘겨야 했다.  
 하지만 카메라 필터앱에서 익스텐션 형태로 추가적인 구현을 할 경우 사진앨범 앱에서 사용자가 사진에대한 custom action 메뉴를 선택한 경우 해당 카메라 필터 익스텐션을 선택할 수 있게 된다. 이때 이 필터 익스텐션을 선택하면 사진앨범 앱에서 같은 앱을 사용하고있는것처럼 바로 필터를 적용하는 UI가 나타날 것이고 (카메라 필터 앱으로 전환이 일어나지 않는다) 여기서 바로 필터 적용 및 저장이 가능해지는 것이다.
@@ -112,13 +112,13 @@ iOS8 이전에는 Xcode에서 직접적으로 framework을 만들 수 있도록 
 앱과 익스텐션간에 데이터를 공유하기 위하여 앱그룹(App Group) 이라는 새로운 컨셉을 도입하였다.  
 앱과 익스텐션은 동일한 앱그룹(App Group)에 속하며 동일 앱그룹 내에서는 저장소와 일반적인 데이터들을  공유할 수 있게 허용된다.
 
-<img loading="lazy" width="204" height="215" src="http://www.letmecompile.com/wp/wp-content/uploads/2014/06/appgroup.png" alt="appgroup" class="alignnone size-full wp-image-376" /> 
+<img loading="lazy" width="204" height="215" src="/uploads/2014/06/appgroup.png" alt="appgroup" class="alignnone size-full wp-image-376" /> 
 
   * 앱과 익스텐션은 독립적인 프로세스로 실행되기때문에  두개 모두 동시에 실행중일 수 있다.  
      ex) 앱에서 백그라운드 작업이 진행되고있는 상황에서 익스텐션 기능을 실행하는 경우  
     따라서 공유되는 데이터를 읽고쓰는 경우 동기화(synchronization) 가 필수적이다.
 
-<img loading="lazy" width="744" height="276" src="http://www.letmecompile.com/wp/wp-content/uploads/2014/06/process.png" alt="process" class="alignnone size-medium wp-image-380" /> 
+<img loading="lazy" width="744" height="276" src="/uploads/2014/06/process.png" alt="process" class="alignnone size-medium wp-image-380" /> 
 
 ### 동기화 방법
 
@@ -148,7 +148,7 @@ iOS8 이전에는 Xcode에서 직접적으로 framework을 만들 수 있도록 
 
 롤 타입에 `NSExtenstionServiceRoleTypeEditor` 값을 설정한경우 경우 사용자가 문서 편집모드에 들어갔을때 활성화 된다.
 
-<img loading="lazy" width="809" height="194" class="alignnone size-full wp-image-375" alt="plist" src="http://www.letmecompile.com/wp/wp-content/uploads/2014/06/plist.png" /> 
+<img loading="lazy" width="809" height="194" class="alignnone size-full wp-image-375" alt="plist" src="/uploads/2014/06/plist.png" /> 
 
 ## 결론
 

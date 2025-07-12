@@ -33,7 +33,7 @@ tags:
 
   3. 이제 패럴럴스에서 1-2번과정을 통해 만들어진 이미지를 불러와서 설치를 시작하자. 아래 스크린샷에 해당하는 화면이 나왔을때 상단 메뉴에서 `Utilities` &#8211; `Terminal`을 실행하여 다음 명령어들을 실행한다.
     
-    [<img loading="lazy" src="http://www.letmecompile.com/wp/wp-content/uploads/2013/10/snowleopard.png" alt="snowleopard" width="1030" height="823" class="alignnone size-full wp-image-209" />][2]
+    [<img loading="lazy" src="/uploads/2013/10/snowleopard.png" alt="snowleopard" width="1030" height="823" class="alignnone size-full wp-image-209" />][2]
     
     > cd /Volumes/Macintosh\ HD/  
     > mkdir -p System/Library/CoreServices/  
@@ -48,4 +48,4 @@ tags:
 참고: 가상머신이 아닌 아닌 일반 PC에 Mac OS 설치를 원한다면 다음 사이트를 방문해 보는 것을 추천한다. http://www.leohazard.com/
 
  [1]: http://www.letmecompile.com/ios-mac-os-%EC%95%B1-%EA%B0%9C%EB%B0%9C%EC%8B%9C-%ED%95%98%EC%9C%84-%ED%98%B8%ED%99%98%EC%84%B1-%EC%9C%A0%EC%A7%80
- [2]: http://www.letmecompile.com/wp/wp-content/uploads/2013/10/snowleopard.png
+ [2]: /uploads/2013/10/snowleopard.png

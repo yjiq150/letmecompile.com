@@ -4,7 +4,7 @@ author: yjiq150
 type: post
 date: 2022-05-09T14:33:02+00:00
 url: /javascript-crawler-tutorial-part2/
-featured_image: http://www.letmecompile.com/wp/wp-content/uploads/2022/05/javascript-crawler-tutorial-og-02-150x79.png
+featured_image: /uploads/2022/05/javascript-crawler-tutorial-og-02-150x79.png
 crp_related_posts_feed:
   - '<div class="crp_related  "><h3>관련 포스트:</h3><ul><li><a href="https://www.letmecompile.com/javascript-crawler-tutorial-part3/"     class="post-1019"><span class="crp_title">자바스크립트로 크롤러 만들기 3편: 다양한 유형의 웹페이지 크롤러 만들어보기</span></a></li><li><a href="https://www.letmecompile.com/javascript-crawler-tutorial-part1/"     class="post-1011"><span class="crp_title">자바스크립트로 크롤러 만들기 1편: 크롤링을 위한 크롬 개발자 도구 사용법 익히기</span></a></li><li><a href="https://www.letmecompile.com/javascript-crawler-tutorial-part4/"     class="post-1024"><span class="crp_title">자바스크립트로 크롤러 만들기 4편: 실제 웹페이지 크롤링해보기</span></a></li><li><a href="https://www.letmecompile.com/javascript-crawler-tutorial-intro/"     class="post-1007"><span class="crp_title">자바스크립트로 크롤러 만들기: 크롤링 개념 및 튜토리얼 소개</span></a></li><li><a href="https://www.letmecompile.com/kubernetes-nlb-nginx-ingress-update/"     class="post-931"><span class="crp_title">nginx ingress controller 무중단 업데이트하기</span></a></li></ul><div class="crp_clear"></div></div>'
 crp_related_posts:

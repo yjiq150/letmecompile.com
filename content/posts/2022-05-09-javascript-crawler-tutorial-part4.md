@@ -4,7 +4,7 @@ author: yjiq150
 type: post
 date: 2022-05-09T14:48:47+00:00
 url: /javascript-crawler-tutorial-part4/
-featured_image: http://www.letmecompile.com/wp/wp-content/uploads/2022/05/javascript-crawler-tutorial-og-04-150x79.png
+featured_image: /uploads/2022/05/javascript-crawler-tutorial-og-04-150x79.png
 crp_related_posts_feed:
   - '<div class="crp_related  "><h3>관련 포스트:</h3><ul><li><a href="https://www.letmecompile.com/javascript-crawler-tutorial-part3/"     class="post-1019"><span class="crp_title">자바스크립트로 크롤러 만들기 3편: 다양한 유형의 웹페이지 크롤러 만들어보기</span></a></li><li><a href="https://www.letmecompile.com/javascript-crawler-tutorial-intro/"     class="post-1007"><span class="crp_title">자바스크립트로 크롤러 만들기: 크롤링 개념 및 튜토리얼 소개</span></a></li><li><a href="https://www.letmecompile.com/javascript-crawler-tutorial-part1/"     class="post-1011"><span class="crp_title">자바스크립트로 크롤러 만들기 1편: 크롤링을 위한 크롬 개발자 도구 사용법 익히기</span></a></li><li><a href="https://www.letmecompile.com/javascript-crawler-tutorial-part2/"     class="post-1014"><span class="crp_title">자바스크립트로 크롤러 만들기 2편: 웹페이지 크롤링을 위한 배경 지식 알아보기</span></a></li><li><a href="https://www.letmecompile.com/kubernetes-nlb-nginx-ingress-update/"     class="post-931"><span class="crp_title">nginx ingress controller 무중단 업데이트하기</span></a></li></ul><div class="crp_clear"></div></div>'
 crp_related_posts:
@@ -39,7 +39,7 @@ categories:
 
 이번에 만들 크롤러 구성은 다음과 같습니다.
 
-<img loading="lazy" width="1024" height="488" src="http://www.letmecompile.com/wp/wp-content/uploads/2022/05/8-1_domestic_crawler-1024x488.png" alt="" class="wp-image-1004" srcset="https://www.letmecompile.com/wp/wp-content/uploads/2022/05/8-1_domestic_crawler-1024x488.png 1024w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/8-1_domestic_crawler-300x143.png 300w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/8-1_domestic_crawler-768x366.png 768w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/8-1_domestic_crawler-150x71.png 150w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/8-1_domestic_crawler.png 1360w" sizes="(max-width: 1024px) 100vw, 1024px" /> 
+<img loading="lazy" width="1024" height="488" src="/uploads/2022/05/8-1_domestic_crawler-1024x488.png" alt="" class="wp-image-1004" srcset="https://www.letmecompile.com/wp/wp-content/uploads/2022/05/8-1_domestic_crawler-1024x488.png 1024w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/8-1_domestic_crawler-300x143.png 300w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/8-1_domestic_crawler-768x366.png 768w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/8-1_domestic_crawler-150x71.png 150w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/8-1_domestic_crawler.png 1360w" sizes="(max-width: 1024px) 100vw, 1024px" /> 
 
 [코로나보드로 배우는 실전 웹 서비스 개발][1] 책에서는 domestic-updater.js 를 통해서 통계 데이터를 크롤링한 후, domestic-update.js를 통해서 변경된 내용만 코로나보드 API 서버로 전달하여 저장하는 내용까지 모두 다루고있습니다. 하지만 여기에서는 &#8216;자바스크립트로 크롤러 만들기&#8217; 주제에 맞게 데이터를 크롤링하는 부분만 살펴보도록하겠습니다.
 
@@ -159,7 +159,7 @@ module.exports = DomesticCrawler;</code></pre>
 
 국내 발생 현황 페이지에서 ‘확진자, 사망자, 격리해제, 검사중, 결과음성, 총 검사자 수’ 데이터는 ‘누적 검사현황’ 제목 바로 아래에 있는 테이블에 들어 있습니다. 안타깝게도 이 페이지의 DOM을 자세히 살펴봐도 이 테이블만 정확히 특정하는 id값이나 class 속성 설정이 되어 있지 않습니다. 이런 경우에는 ‘누적 검사현황’ 제목을 가진 요소를 찾고, 해당 요소 다음에 인접하여 존재하는 테이블 요소를 찾아나가는 식으로 코드를 작성해야 합니다.
 
-<img loading="lazy" width="1024" height="415" src="http://www.letmecompile.com/wp/wp-content/uploads/2022/05/8_table_sample-1024x415.png" alt="" class="wp-image-1002" srcset="https://www.letmecompile.com/wp/wp-content/uploads/2022/05/8_table_sample-1024x415.png 1024w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/8_table_sample-300x122.png 300w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/8_table_sample-768x311.png 768w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/8_table_sample-150x61.png 150w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/8_table_sample.png 1308w" sizes="(max-width: 1024px) 100vw, 1024px" /> 
+<img loading="lazy" width="1024" height="415" src="/uploads/2022/05/8_table_sample-1024x415.png" alt="" class="wp-image-1002" srcset="https://www.letmecompile.com/wp/wp-content/uploads/2022/05/8_table_sample-1024x415.png 1024w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/8_table_sample-300x122.png 300w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/8_table_sample-768x311.png 768w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/8_table_sample-150x61.png 150w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/8_table_sample.png 1308w" sizes="(max-width: 1024px) 100vw, 1024px" /> 
 
 목표로 한 테이블을 찾고 나서 ❷ 해당 테이블 요소를 기준으로 다시 한번 CSS 셀렉터를 이용하여 찾습니다. 크롤링할 모든 데이터가 td 태그 안에 모두 있기 때문에 `tbody tr td` 셀렉터를 사용했습니다. 찾은 모든 셀에서 텍스트를 추출하고 해당 텍스트에 _normalize() 함수를 적용하여 정수 타입으로 변환합니다. 추출된 값들은 결과 객체에 필드별로 할당되어 반환됩니다.
 

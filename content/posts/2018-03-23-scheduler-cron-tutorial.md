@@ -97,4 +97,4 @@ cron job을 등록할 때 아래와 같은 명령어를 사용하면 로그 파�
   * `>`: redirection
   * `2>&1`: stderr를 stdout으로 리디렉션해서 stdout과 동일하게 처리
 
- [1]: http://www.letmecompile.com/wp/wp-content/uploads/2018/03/cron_sample.png
+ [1]: /uploads/2018/03/cron_sample.png

@@ -28,7 +28,7 @@ tags:
 
 코어가 많지 않은 서버에서 웹서버를 돌린다면 아파치보다는 역시 엔진엑스를 사용하는 것이 훨씬 효율적이라는 것이 증명되었다.
 
-[<img loading="lazy" width="1011" height="585" src="http://www.letmecompile.com/wp/wp-content/uploads/2013/11/EC2_Management_Console.png" alt="엔진엑스, 아파치 비교"  class="alignnone size-full wp-image-237" />][1]
+[<img loading="lazy" width="1011" height="585" src="/uploads/2013/11/EC2_Management_Console.png" alt="엔진엑스, 아파치 비교"  class="alignnone size-full wp-image-237" />][1]
 
 사용된 Apache의 주요설정은 다음과 같다.(설치 기본값에서 변경한 값만 명시됨)
 
@@ -59,4 +59,4 @@ tags:
         gzip_types text/plain text/css application/json application/x-javascript text/xml application/xml application/xml+rss text/javascript;
     }
 
- [1]: http://www.letmecompile.com/wp/wp-content/uploads/2013/11/EC2_Management_Console.png
+ [1]: /uploads/2013/11/EC2_Management_Console.png

@@ -86,7 +86,7 @@ who, which, that 등으로 이어지는 관계사절(relative clauses) 의 경�
 다음의 포함관계를 통해서 의미를 좀 더 명확히 할 수 있다.  
 <!-- ![의미 비교](http://blog.sunnysidesoft.com/.jpg) -->
 
-[<img loading="lazy" class="alignnone size-full wp-image-39" alt="restrictive/non-restrictive clause" src="http://www.letmecompile.com/wp/wp-content/uploads/2013/07/restrictive.png" width="610" height="259" />][1]
+[<img loading="lazy" class="alignnone size-full wp-image-39" alt="restrictive/non-restrictive clause" src="/uploads/2013/07/restrictive.png" width="610" height="259" />][1]
 
 ## that, which 사용 구분
 
@@ -102,4 +102,4 @@ which는 restrictive/non-restrictive모두 가능하고(하지만 restrictive한
 <li id="fn-38-3">
   http://en.wikipedia.org/wiki/Non-restrictive_clause&#160;<a href="#fnref-38-3" rev="footnote">&#8617;</a> </fn></footnotes>
 
- [1]: http://www.letmecompile.com/wp/wp-content/uploads/2013/07/restrictive.png
+ [1]: /uploads/2013/07/restrictive.png

@@ -54,4 +54,4 @@ categories:
   * AS, TGS, SS간에 서로 비밀키를 미리 알고있어야 하기때문에 동기화 이슈가 존재한다.
   * 인증이 한번 완료되면 유효기간이 존재하긴 하지만 티켓이 클라이언트에 보관되므로 티켓이 탈취될 가능성이 있다.
 
- [1]: http://www.letmecompile.com/wp/wp-content/uploads/2018/04/kerberos.png
+ [1]: /uploads/2018/04/kerberos.png

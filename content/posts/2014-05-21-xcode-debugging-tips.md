@@ -41,17 +41,17 @@ tags:
 
 `#define` 혹은 `#if` 등의 `#`으로 시작하는 프리프로세서 매크로(preprocessor macro)들은 컴파일 직전에 process 되어서 컴파일을 위한 최종 소스코드를 생성하게 된다. 복잡한 프리프로세서 매크로를 사용하다보면 이렇게 preprocess가 끝난 최종 소스코드를 보고 실제 어떻게 처리되었는지 싶을 경우가 있다.  
 이때는 아래 그림과 같이 Xcode 편집창의 좌상단 메뉴를 클릭해서 Preprocess 메뉴를 선택하면 된다.  
-[<img loading="lazy" width="470" height="434" src="http://www.letmecompile.com/wp/wp-content/uploads/2014/05/menu.png" alt="menu" class="alignnone size-full wp-image-353" />][1]
+[<img loading="lazy" width="470" height="434" src="/uploads/2014/05/menu.png" alt="menu" class="alignnone size-full wp-image-353" />][1]
 
 libobjcext에 포함되어있는 매크로인 `@strongify`와 `@weakify` 의 경우 block 프로그래밍 할때 자주 쓰이는데, 실제로 어떤 코드로 프로세스되는지 한번 살펴보았다.
 
-[<img loading="lazy" width="1893" height="875" src="http://www.letmecompile.com/wp/wp-content/uploads/2014/05/preprocessed.png" alt="preprocessed"  class="alignnone size-full wp-image-352" />][2]
+[<img loading="lazy" width="1893" height="875" src="/uploads/2014/05/preprocessed.png" alt="preprocessed"  class="alignnone size-full wp-image-352" />][2]
 
 ## 프로그램 실행시 파라메터/환경변수 설정하기
 
 Xcode에서 해당프로젝트의 scheme 편집메뉴에 들어가게되면 Run 항목에 대해 **&#8220;Arguments Passed On Launch&#8221;**와 **&#8220;Environment Variables&#8221;** 두개의 항목이 있다.
 
-[<img loading="lazy" width="690" height="453" src="http://www.letmecompile.com/wp/wp-content/uploads/2014/05/argument.png" alt="argument" class="alignnone size-full wp-image-344" />][3]
+[<img loading="lazy" width="690" height="453" src="/uploads/2014/05/argument.png" alt="argument" class="alignnone size-full wp-image-344" />][3]
 
 ### Arguments Passed On Launch
 
@@ -97,8 +97,8 @@ Xcode에서 해당프로젝트의 scheme 편집메뉴에 들어가게되면 Run 
 
 [Technical Note TN2239: iOS Debugging Magic][5]
 
- [1]: http://www.letmecompile.com/wp/wp-content/uploads/2014/05/menu.png
- [2]: http://www.letmecompile.com/wp/wp-content/uploads/2014/05/preprocessed.png
- [3]: http://www.letmecompile.com/wp/wp-content/uploads/2014/05/argument.png
+ [1]: /uploads/2014/05/menu.png
+ [2]: /uploads/2014/05/preprocessed.png
+ [3]: /uploads/2014/05/argument.png
  [4]: https://developer.apple.com/library/mac/technotes/tn2124/_index.html
  [5]: https://developer.apple.com/library/ios/technotes/tn2239/_index.html

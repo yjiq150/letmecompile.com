@@ -50,9 +50,9 @@ categories:
       * 기본적으로 Debug, Release 두개의 Configuration이 생성되어있다.
       * 위의 기본 셋의 경우 configuration 별로 디버깅 옵션이나 최적화 옵션등이 다르게 되어있다.
       * Tip: 추가적으로 DebugBeta, DebugRC, AdhocBeta, AdhocRC, Release 등의 configuration을 생성해 두고, 하나의 앱이 Phase별로 다른 서버에 접속하게 한다던지, code signing 인증서 설정 다르게 하여 배포를 다르게 할 수 있다.
-      * [<img loading="lazy" width="566" height="253" src="http://www.letmecompile.com/wp/wp-content/uploads/2016/11/xcode_configuration.png" alt="xcode_configuration" class="alignnone size-full wp-image-588" srcset="https://www.letmecompile.com/wp/wp-content/uploads/2016/11/xcode_configuration.png 566w, https://www.letmecompile.com/wp/wp-content/uploads/2016/11/xcode_configuration-300x134.png 300w" sizes="(max-width: 566px) 100vw, 566px" />][1]
+      * [<img loading="lazy" width="566" height="253" src="/uploads/2016/11/xcode_configuration.png" alt="xcode_configuration" class="alignnone size-full wp-image-588" srcset="https://www.letmecompile.com/wp/wp-content/uploads/2016/11/xcode_configuration.png 566w, https://www.letmecompile.com/wp/wp-content/uploads/2016/11/xcode_configuration-300x134.png 300w" sizes="(max-width: 566px) 100vw, 566px" />][1]
   * Scheme의 경우 다른 플랫폼에는 없는 독특한 개념으로 Xcode의 빌드 액션들(Build, Run, Test, Archive)에 대해 각각 미리 어떤 configuration을 적용하고 어떤 추가 옵션을 사용할지 preset을 지정할 수 있게해준다. 
-      * [<img loading="lazy" width="877" height="483" src="http://www.letmecompile.com/wp/wp-content/uploads/2016/11/xcode_scheme.png" alt="xcode_scheme"  class="alignnone size-full wp-image-590" srcset="https://www.letmecompile.com/wp/wp-content/uploads/2016/11/xcode_scheme.png 877w, https://www.letmecompile.com/wp/wp-content/uploads/2016/11/xcode_scheme-300x165.png 300w, https://www.letmecompile.com/wp/wp-content/uploads/2016/11/xcode_scheme-624x343.png 624w" sizes="(max-width: 877px) 100vw, 877px" />][2]
+      * [<img loading="lazy" width="877" height="483" src="/uploads/2016/11/xcode_scheme.png" alt="xcode_scheme"  class="alignnone size-full wp-image-590" srcset="https://www.letmecompile.com/wp/wp-content/uploads/2016/11/xcode_scheme.png 877w, https://www.letmecompile.com/wp/wp-content/uploads/2016/11/xcode_scheme-300x165.png 300w, https://www.letmecompile.com/wp/wp-content/uploads/2016/11/xcode_scheme-624x343.png 624w" sizes="(max-width: 877px) 100vw, 877px" />][2]
 
 ## Android Studio 빌드 설정 구성하기
 
@@ -61,10 +61,10 @@ categories:
   * 각 Module은 Flavor를 여러개 설정해서 사용 가능하다. 
       * Module에는 기본적인 main 폴더의 src, res가 존재한다. 이때 해당 모듈 안에 Flavor에 이름과 동일한 폴더를 만들어서 추가적인 src, res를 넣으면 main 폴더의 src, res를 override 해서 사용하게 된다. 이는 다른 플랫폼에는 없는 Android만의 독특한 빌드 구성 방법이다.
       * ex) pro, lite 라는 각각의 Flavor를 생성한 후에 pro, lite 폴더를 만든 후 각각의 폴더 안에 이름이 동일하지만 다른 이미지를 각각 넣어서 override한다.
-      * [<img loading="lazy" width="898" height="557" src="http://www.letmecompile.com/wp/wp-content/uploads/2016/11/android_studio_flavor.png" alt="android_studio_flavor"  class="alignnone size-full wp-image-587" srcset="https://www.letmecompile.com/wp/wp-content/uploads/2016/11/android_studio_flavor.png 898w, https://www.letmecompile.com/wp/wp-content/uploads/2016/11/android_studio_flavor-300x186.png 300w, https://www.letmecompile.com/wp/wp-content/uploads/2016/11/android_studio_flavor-624x387.png 624w" sizes="(max-width: 898px) 100vw, 898px" />][3]
+      * [<img loading="lazy" width="898" height="557" src="/uploads/2016/11/android_studio_flavor.png" alt="android_studio_flavor"  class="alignnone size-full wp-image-587" srcset="https://www.letmecompile.com/wp/wp-content/uploads/2016/11/android_studio_flavor.png 898w, https://www.letmecompile.com/wp/wp-content/uploads/2016/11/android_studio_flavor-300x186.png 300w, https://www.letmecompile.com/wp/wp-content/uploads/2016/11/android_studio_flavor-624x387.png 624w" sizes="(max-width: 898px) 100vw, 898px" />][3]
   * 각 모듈에는 Build Type을 지정할수 있고 기본적으로 debug, release가 생성되어있다.
   * Android Studio의 Build Variant 윈도우를 통해서 어떤 flavor + 어떤 buildType 인지 선택하여 빌드를 진행 할 수 있다. 
-      * [<img loading="lazy" src="http://www.letmecompile.com/wp/wp-content/uploads/2016/11/android_studio_build_variant.png" alt="android_studio_build_variant" width="331" height="168" class="alignnone size-full wp-image-589" srcset="https://www.letmecompile.com/wp/wp-content/uploads/2016/11/android_studio_build_variant.png 331w, https://www.letmecompile.com/wp/wp-content/uploads/2016/11/android_studio_build_variant-300x152.png 300w" sizes="(max-width: 331px) 100vw, 331px" />][4] 
+      * [<img loading="lazy" src="/uploads/2016/11/android_studio_build_variant.png" alt="android_studio_build_variant" width="331" height="168" class="alignnone size-full wp-image-589" srcset="https://www.letmecompile.com/wp/wp-content/uploads/2016/11/android_studio_build_variant.png 331w, https://www.letmecompile.com/wp/wp-content/uploads/2016/11/android_studio_build_variant-300x152.png 300w" sizes="(max-width: 331px) 100vw, 331px" />][4] 
 
 ## Visual Stuio 빌드 설정 구성하기
 
@@ -81,14 +81,14 @@ categories:
   * 구성 관리자 (Configuration Manager) 
       * Xcode의 Scheme과 비슷한 개념이지만 약간 적용 방법이 다르다
       * Xcode의 경우 각 Build Action 별로 어떤 Configuration을 사용할지 미리 Scheme 정해놓는 방법을 사용하지만 Visual Studio의 경우 현재 활성화된 솔루션 구성(Solution Configuration) 에 따라서 각각의 프로젝트가 컴파일된다.
-      * [<img loading="lazy" width="697" height="433" src="http://www.letmecompile.com/wp/wp-content/uploads/2016/11/visual_studio_solution_configuration.png" alt="visual_studio_solution_configuration"  class="alignnone size-full wp-image-586" srcset="https://www.letmecompile.com/wp/wp-content/uploads/2016/11/visual_studio_solution_configuration.png 697w, https://www.letmecompile.com/wp/wp-content/uploads/2016/11/visual_studio_solution_configuration-300x186.png 300w, https://www.letmecompile.com/wp/wp-content/uploads/2016/11/visual_studio_solution_configuration-624x387.png 624w" sizes="(max-width: 697px) 100vw, 697px" />][5]
+      * [<img loading="lazy" width="697" height="433" src="/uploads/2016/11/visual_studio_solution_configuration.png" alt="visual_studio_solution_configuration"  class="alignnone size-full wp-image-586" srcset="https://www.letmecompile.com/wp/wp-content/uploads/2016/11/visual_studio_solution_configuration.png 697w, https://www.letmecompile.com/wp/wp-content/uploads/2016/11/visual_studio_solution_configuration-300x186.png 300w, https://www.letmecompile.com/wp/wp-content/uploads/2016/11/visual_studio_solution_configuration-624x387.png 624w" sizes="(max-width: 697px) 100vw, 697px" />][5]
 
 <li id="fn-591-MSBuild">
   <p>
     http://stackoverflow.com/questions/2358495/same-source-multiple-targets-with-different-resources-visual-studio-net-2008&#160;<a href="#fnref-591-MSBuild" rev="footnote">&#8617;</a> </fn></footnotes>
 
- [1]: http://www.letmecompile.com/wp/wp-content/uploads/2016/11/xcode_configuration.png
- [2]: http://www.letmecompile.com/wp/wp-content/uploads/2016/11/xcode_scheme.png
- [3]: http://www.letmecompile.com/wp/wp-content/uploads/2016/11/android_studio_flavor.png
- [4]: http://www.letmecompile.com/wp/wp-content/uploads/2016/11/android_studio_build_variant.png
- [5]: http://www.letmecompile.com/wp/wp-content/uploads/2016/11/visual_studio_solution_configuration.png
+ [1]: /uploads/2016/11/xcode_configuration.png
+ [2]: /uploads/2016/11/xcode_scheme.png
+ [3]: /uploads/2016/11/android_studio_flavor.png
+ [4]: /uploads/2016/11/android_studio_build_variant.png
+ [5]: /uploads/2016/11/visual_studio_solution_configuration.png

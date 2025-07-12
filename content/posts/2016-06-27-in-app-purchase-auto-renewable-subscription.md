@@ -73,7 +73,7 @@ Auto-Renewable Subscription 상품에 대한 결제 방식은 다른 종류의 I
   * Receipt 
       * [[NSBundle mainBundle] appStoreReceiptURL] 주소를 읽어들이면 receipt을 NSData 형태로 읽어들일 수 있다.
       * 암호화 되어 저장되어있으며, 이 receipt data안에 모든 결제건(transactions)들이 다 들어있다. 새로운 결제건이 생길때마다 다시 업데이트 된다.
-      * [<img loading="lazy" src="http://www.letmecompile.com/wp/wp-content/uploads/2016/06/apple_app_receipt-819x1024.png" alt="" width="625" height="781" class="alignnone size-large wp-image-673" srcset="https://www.letmecompile.com/wp/wp-content/uploads/2016/06/apple_app_receipt-819x1024.png 819w, https://www.letmecompile.com/wp/wp-content/uploads/2016/06/apple_app_receipt-240x300.png 240w, https://www.letmecompile.com/wp/wp-content/uploads/2016/06/apple_app_receipt-768x960.png 768w, https://www.letmecompile.com/wp/wp-content/uploads/2016/06/apple_app_receipt-150x188.png 150w, https://www.letmecompile.com/wp/wp-content/uploads/2016/06/apple_app_receipt.png 1192w" sizes="(max-width: 625px) 100vw, 625px" />][3]
+      * [<img loading="lazy" src="/uploads/2016/06/apple_app_receipt-819x1024.png" alt="" width="625" height="781" class="alignnone size-large wp-image-673" srcset="https://www.letmecompile.com/wp/wp-content/uploads/2016/06/apple_app_receipt-819x1024.png 819w, https://www.letmecompile.com/wp/wp-content/uploads/2016/06/apple_app_receipt-240x300.png 240w, https://www.letmecompile.com/wp/wp-content/uploads/2016/06/apple_app_receipt-768x960.png 768w, https://www.letmecompile.com/wp/wp-content/uploads/2016/06/apple_app_receipt-150x188.png 150w, https://www.letmecompile.com/wp/wp-content/uploads/2016/06/apple_app_receipt.png 1192w" sizes="(max-width: 625px) 100vw, 625px" />][3]
   * 어떻게 검증하는 것이 안전한가? 
       * 앱에서 직접 receipt validation을 구현하는 것도 가능하지만 추천하진 않는다. 
           * https://developer.apple.com/library/content/releasenotes/General/ValidateAppStoreReceipt/Chapters/ValidateLocally.html
@@ -101,7 +101,7 @@ Auto-Renewable Subscription 상품에 대한 결제 방식은 다른 종류의 I
 
 ## 인앱 결제 내역 복원하기 (Restore In-App Purchase Products)
 
-[<img loading="lazy" src="http://www.letmecompile.com/wp/wp-content/uploads/2016/06/iap-types.png" alt="iap-types" width="511" height="175" class="alignnone size-full wp-image-562" />][4]
+[<img loading="lazy" src="/uploads/2016/06/iap-types.png" alt="iap-types" width="511" height="175" class="alignnone size-full wp-image-562" />][4]
 
 위 표에서 많이들 헷갈려 하는 부분이 Restored _by the system_ 과 _by your app_의 차이이다. by the system 이란 Apple에서 지원하는 StoreKit을 이용해서 Apple server와 통신해서 상품을 restore를 하는 것이고 by your app이란 Apple과의 통신 없이 서비스 서버에서 상품을 restore 해 주는 것이다.
 
@@ -278,8 +278,8 @@ SandBox 결제의 특징들과 몇가지 테스팅 팁을 정리해보았다.
 
  [1]: https://developer.apple.com/app-store/subscriptions/whats-new/
  [2]: #server_noti
- [3]: http://www.letmecompile.com/wp/wp-content/uploads/2016/06/apple_app_receipt.png
- [4]: http://www.letmecompile.com/wp/wp-content/uploads/2016/06/iap-types.png
+ [3]: /uploads/2016/06/apple_app_receipt.png
+ [4]: /uploads/2016/06/iap-types.png
  [5]: https://developer.apple.com/library/ios/documentation/NetworkingInternet/Conceptual/StoreKitGuide/Chapters/Products.html
  [6]: http://stackoverflow.com/questions/17609347/restore-transactions-for-non-renewing-subscriptions-without-registration
  [7]: https://developer.apple.com/library/ios/documentation/StoreKit/Reference/SKPaymentTransaction_Class

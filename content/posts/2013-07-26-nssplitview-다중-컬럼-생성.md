@@ -29,11 +29,11 @@ tags:
 
 기본적으로 인터페이스 빌더(Interface Builder)에서 `NSSplitView`를 추가하면 행 또는 열이 2개로 나누어져서 추가된다. 여기서 삽질이 시작되었다. 컬럼 수를 늘리기 위해 IB의 스플릿뷰에대한 옵션을 아무리 찾아봐도 없어서 스플릿뷰의 한쪽에 다시 스플릿뷰를 넣어서 컬럼을 3개로 만들었는데, 아무리 생각해봐도 뭔가 이건 아니다 싶은 느낌이 들었다. 결국 한참을 구글링 한 끝에 IB의 Object Tree 화면에 그냥 `NSView`를 &#8216;Split View&#8217; 항목 아래로 끌어다 놓으면 된다는 사실을 발견하고나서 허탈해서 이 글을 포스팅 한다. &#8216;Split View&#8217; 아래의 subview들 숫자만큼 자동으로 컬럼 수가 나누어질지 누가 알았나 허허. (아래 그림 참조)
 
-[<img loading="lazy" width="940" height="531" src="http://www.letmecompile.com/wp/wp-content/uploads/2013/07/nssplitview_multiple.png" alt="NSSplitView multiple column screen shot" class="alignnone size-full wp-image-109" />][1]
+[<img loading="lazy" width="940" height="531" src="/uploads/2013/07/nssplitview_multiple.png" alt="NSSplitView multiple column screen shot" class="alignnone size-full wp-image-109" />][1]
 
 컬럼뷰 리사이징에 적절한 비율로 컨트롤하는 것에 대해서는 Matt Gallagher 님이 쓴 다음 글이 있는데 [An NSSplitView delegate for priority based resizing][2] 시간나는대로 번역을 해서 올릴 예정이다.
 
 며칠전에 Matt에게 컨택해서 번역해서 포스팅 해도 된다는 허락을 맡았으니 좋은 글들은 틈틈히 계속 번역할 예정이다. Matt이 지난 2년간 일이 바빠서 글을 거의 안올렸는데, 곧 다시 포스팅을 시작할거라 하니 기대해도 될듯.
 
- [1]: http://www.letmecompile.com/wp/wp-content/uploads/2013/07/nssplitview_multiple.png
+ [1]: /uploads/2013/07/nssplitview_multiple.png
  [2]: http://www.cocoawithlove.com/2009/09/nssplitview-delegate-for-priority-based.html

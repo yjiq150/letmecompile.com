@@ -61,8 +61,8 @@ tags:
 
   4. 이때 그림에서 보듯이 video-container자체의 내부 컨텐츠 높이는 0px이고, 패딩이 572px 이다. video-container안에 포함된 `iframe`이 video-container 내부 컨텐츠 height의 100%(= 0px)가 아닌 전체 박스모델 height(margin, border, padding, content 모두 포함)의 100%(= 30 + 572px) 로 확장되어야 한다. 이를 위해 `position: absolute` 속성을 추가한다.
 
-[<img loading="lazy" width="321" height="214" src="http://www.letmecompile.com/wp/wp-content/uploads/2013/08/Screen-Shot-2013-08-24-at-오후-7.09.42.png" alt="Box model"  class="alignnone size-full wp-image-167" />][1]
+[<img loading="lazy" width="321" height="214" src="/uploads/2013/08/Screen-Shot-2013-08-24-at-오후-7.09.42.png" alt="Box model"  class="alignnone size-full wp-image-167" />][1]
 
 결국 한마디로, absolute 포지셔닝과 박스모델 원리를 잘이용한 트릭같은 것인데 리스폰시브 웹페이지 구현을 위해 나중에 써먹을 구석이 많이 있지 않을까 생각된다.
 
- [1]: http://www.letmecompile.com/wp/wp-content/uploads/2013/08/Screen-Shot-2013-08-24-at-오후-7.09.42.png
+ [1]: /uploads/2013/08/Screen-Shot-2013-08-24-at-오후-7.09.42.png

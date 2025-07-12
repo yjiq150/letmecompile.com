@@ -4,7 +4,7 @@ author: yjiq150
 type: post
 date: 2023-09-08T14:50:19+00:00
 url: /manage-aws-resources-with-pulumi-iac/
-featured_image: http://www.letmecompile.com/wp/wp-content/uploads/2023/09/og-image-pulumi-150x79.jpg
+featured_image: /uploads/2023/09/og-image-pulumi-150x79.jpg
 crp_related_posts:
   - '<div class="crp_related  "><h3>관련 포스트:</h3><ul><li><a href="https://www.letmecompile.com/javascript-crawler-tutorial-part3/"     class="post-1019"><span class="crp_title">자바스크립트로 크롤러 만들기 3편: 다양한 유형의 웹페이지 크롤러 만들어보기</span></a></li><li><a href="https://www.letmecompile.com/javascript-crawler-tutorial-part2/"     class="post-1014"><span class="crp_title">자바스크립트로 크롤러 만들기 2편: 웹페이지 크롤링을 위한 배경 지식 알아보기</span></a></li><li><a href="https://www.letmecompile.com/javascript-crawler-tutorial-part1/"     class="post-1011"><span class="crp_title">자바스크립트로 크롤러 만들기 1편: 크롤링을 위한 크롬 개발자 도구 사용법 익히기</span></a></li><li><a href="https://www.letmecompile.com/kubernetes-nlb-nginx-ingress-update/"     class="post-931"><span class="crp_title">nginx ingress controller 무중단 업데이트하기</span></a></li><li><a href="https://www.letmecompile.com/s3-vs-backblaze-comparison/"     class="post-961"><span class="crp_title">Backblaze + 클라우드플레어를 이용한 서버 비용 절약 방법</span></a></li></ul><div class="crp_clear"></div></div>'
 crp_related_posts_feed:
@@ -233,7 +233,7 @@ Duration: 2s
 </p>
 
 <p>
-  <img src="http://www.letmecompile.com/wp/wp-content/uploads/2023/09/pulumi-up.png" alt="How pulumi up works" />
+  <img src="/uploads/2023/09/pulumi-up.png" alt="How pulumi up works" />
 </p>
 
 <p>
@@ -280,7 +280,7 @@ Duration: 2s
 </p>
 
 <p>
-  <img src="http://www.letmecompile.com/wp/wp-content/uploads/2023/09/pulumi-import.png" alt="How pulumi import works" />
+  <img src="/uploads/2023/09/pulumi-import.png" alt="How pulumi import works" />
 </p>
 
 <p>
@@ -476,7 +476,7 @@ Do you want to perform this update?  [Use arrows to move, type to filter]
 </p>
 
 <p>
-  <img src="http://www.letmecompile.com/wp/wp-content/uploads/2023/09/rds-blue-green-deploy.png" alt="RDS blue/green deployment" />
+  <img src="/uploads/2023/09/rds-blue-green-deploy.png" alt="RDS blue/green deployment" />
 </p>
 
 <p>
@@ -500,7 +500,7 @@ Do you want to perform this update?  [Use arrows to move, type to filter]
 </p>
 
 <p>
-  <img src="http://www.letmecompile.com/wp/wp-content/uploads/2023/09/pulumi-refresh.png" alt="How pulumi refresh works" />
+  <img src="/uploads/2023/09/pulumi-refresh.png" alt="How pulumi refresh works" />
 </p>
 
 <p>

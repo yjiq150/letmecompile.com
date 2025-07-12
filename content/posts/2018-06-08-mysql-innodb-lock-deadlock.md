@@ -345,5 +345,5 @@ https://stackoverflow.com/questions/25903764/why-is-an-ix-lock-compatible-with-a
 https://github.com/octachrome/innodb-locks
 
  [1]: https://www.letmecompile.com/database-transaction-isolation-level/
- [2]: http://www.letmecompile.com/wp/wp-content/uploads/2018/06/next_key_lock.png
+ [2]: /uploads/2018/06/next_key_lock.png
  [3]: https://www.letmecompile.com/mysql-innodb-auto-increment-%EC%84%B1%EB%8A%A5-%EC%B5%9C%EC%A0%81%ED%99%94/

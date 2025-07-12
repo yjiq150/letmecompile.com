@@ -27,7 +27,7 @@ NSView의 레이아웃 계층(layout hierachy)이 어떻게 구성되어있는�
     defaults write com.your.apps.bundlename NSShowAllViews YES
     
 
-[<img loading="lazy" width="777" height="522" src="http://www.letmecompile.com/wp/wp-content/uploads/2014/05/nsview_debug_draw.png" alt="nsview_debug_draw"  class="alignnone size-full wp-image-340" />][1]
+[<img loading="lazy" width="777" height="522" src="/uploads/2014/05/nsview_debug_draw.png" alt="nsview_debug_draw"  class="alignnone size-full wp-image-340" />][1]
 
 Constraint기반의 레이아웃이 어떻게 적용되고있는지는 `NSConstraintBasedLayoutVisualizeMutuallyExclusiveConstraints`을 이용하여 볼 수 있다.
 
@@ -41,7 +41,7 @@ Constraint기반의 레이아웃이 어떻게 적용되고있는지는 `NSConstr
 앞서 소개한것 처럼 커맨드라인에서 `NSUserDefaults` 키값을 강제로 바꿔줄 수도있지만, Xcode상에서 이 값을 scheme에 설정하여 실행할때마다 오버라이드하여 사용하는 방법 또한 편리하다.  
 Xcode의 Edit Scheme 메뉴로 들어가서 &#8216;Arguments&#8217; 탭의 Arguments Passed On Launch 항목에 아래 스크린샷처럼 `-NSShowAllViews YES` 라고 추가해 주면 해당 스킴에 의해 빌드되서 실행되는 어플리케이션의 경우 해당 값이 항상 설정되어 실행된다.
 
-[<img loading="lazy" width="690" height="453" src="http://www.letmecompile.com/wp/wp-content/uploads/2014/05/argument.png" alt="argument" class="alignnone size-full wp-image-344" />][2]
+[<img loading="lazy" width="690" height="453" src="/uploads/2014/05/argument.png" alt="argument" class="alignnone size-full wp-image-344" />][2]
 
- [1]: http://www.letmecompile.com/wp/wp-content/uploads/2014/05/nsview_debug_draw.png
- [2]: http://www.letmecompile.com/wp/wp-content/uploads/2014/05/argument.png
+ [1]: /uploads/2014/05/nsview_debug_draw.png
+ [2]: /uploads/2014/05/argument.png

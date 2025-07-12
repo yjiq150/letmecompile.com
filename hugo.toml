@@ -63,6 +63,12 @@ theme = 'PaperMod'
     googleSiteVerification = ""
     bingSiteVerification = ""
 
+# Markdown configuration to allow raw HTML
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 [menu]
   [[menu.main]]
     name = "Home"

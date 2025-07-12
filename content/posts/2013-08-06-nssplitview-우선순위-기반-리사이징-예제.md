@@ -34,13 +34,13 @@ tags:
 
 비율 리사이징의 경우, 윈도우 크기가 늘어나면 각 컬럼이 너비가 동일 비율로 증가한다.
 
-[<img loading="lazy" width="370" height="124" src="http://www.letmecompile.com/wp/wp-content/uploads/2013/08/proportionalsmall.png" alt="proportionalsmall" class="alignnone size-medium wp-image-121" />][1]  
-[<img loading="lazy" width="563" height="124" src="http://www.letmecompile.com/wp/wp-content/uploads/2013/08/proportionallarge.png" alt="proportionallarge" class="alignnone size-full wp-image-123" />][2]
+[<img loading="lazy" width="370" height="124" src="/uploads/2013/08/proportionalsmall.png" alt="proportionalsmall" class="alignnone size-medium wp-image-121" />][1]  
+[<img loading="lazy" width="563" height="124" src="/uploads/2013/08/proportionallarge.png" alt="proportionallarge" class="alignnone size-full wp-image-123" />][2]
 
 우선순위 리사이징의 경우, 다른 뷰들은 그대로 있고 우선순위가 가장 높은 뷰의 크기가 먼저 늘어나게 된다.
 
-[<img loading="lazy" width="427" height="124" src="http://www.letmecompile.com/wp/wp-content/uploads/2013/08/prioritysmall.png" alt="prioritysmall" class="alignnone size-full wp-image-120" />][3]  
-[<img loading="lazy" width="550" height="124" src="http://www.letmecompile.com/wp/wp-content/uploads/2013/08/prioritylarge.png" alt="prioritylarge" class="alignnone size-full wp-image-122" />][4]
+[<img loading="lazy" width="427" height="124" src="/uploads/2013/08/prioritysmall.png" alt="prioritysmall" class="alignnone size-full wp-image-120" />][3]  
+[<img loading="lazy" width="550" height="124" src="/uploads/2013/08/prioritylarge.png" alt="prioritylarge" class="alignnone size-full wp-image-122" />][4]
 
 > 우선순위 리사이징에 대한 샘플프로젝트는 다음 링크에서 다운로드 가능하다. [ColumnSplitView.zip (60kb)][5]
 
@@ -186,10 +186,10 @@ PrioritySplitViewDelegate는 `NSSplitView`를 사용할 경우 매번 발생하�
 이 글의 저작권은 [CocoaWithLove.com][6]을 운영중인 Matt Gallagher 에게 있고, 저자의 동의하에 한국어로 번역되었습니다. 원본 글은 다음 링크를 통해 접근 가능합니다.  
 [Link to original article][7]
 
- [1]: http://www.letmecompile.com/wp/wp-content/uploads/2013/08/proportionalsmall.png
- [2]: http://www.letmecompile.com/wp/wp-content/uploads/2013/08/proportionallarge.png
- [3]: http://www.letmecompile.com/wp/wp-content/uploads/2013/08/prioritysmall.png
- [4]: http://www.letmecompile.com/wp/wp-content/uploads/2013/08/prioritylarge.png
- [5]: http://www.letmecompile.com/wp/wp-content/uploads/2013/08/ColumnSplitView.zip
+ [1]: /uploads/2013/08/proportionalsmall.png
+ [2]: /uploads/2013/08/proportionallarge.png
+ [3]: /uploads/2013/08/prioritysmall.png
+ [4]: /uploads/2013/08/prioritylarge.png
+ [5]: /uploads/2013/08/ColumnSplitView.zip
  [6]: http://www.cocoawithlove.com
  [7]: http://www.cocoawithlove.com/2009/09/nssplitview-delegate-for-priority-based.html
