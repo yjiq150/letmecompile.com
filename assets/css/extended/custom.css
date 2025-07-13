@@ -1,4 +1,15 @@
-/* Custom CSS to preserve image aspect ratios */
+.post-content h2 {
+    margin-top: 40px;
+}
+
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6 {
+    margin-top: 32px;
+}
+
+    /* Custom CSS to preserve image aspect ratios */
 
 /* Ensure all images maintain their original aspect ratio */
 .post-content img {
@@ -94,7 +105,7 @@
 /* H2 heading with full-width underline */
 .post-content h2,
 .entry-content h2 {
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.3rem;
     margin-bottom: 1.5rem;
     border-bottom: 2px solid var(--border, #e5e7eb);
 }
