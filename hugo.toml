@@ -23,6 +23,10 @@ theme = 'PaperMod'
   filename = "sitemap.xml"
   priority = 0.5
 
+# Output formats for search functionality
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
 # URL handling for WordPress compatibility
 [params.urls]
   category = "/category"
@@ -46,6 +50,18 @@ theme = 'PaperMod'
   hideSummary = false
   showtoc = false
   tocopen = false
+
+  # Search configuration with Fuse.js
+  [params.fuseOpts]
+    isCaseSensitive = false
+    includeScore = false
+    includeMatches = false
+    minMatchCharLength = 2
+    shouldSort = true
+    threshold = 0.4
+    distance = 100
+    ignoreLocation = true
+    keys = ["title", "permalink", "summary", "content"]
 
   [params.homeInfoParams]
     Title = "Welcome to Knowledge Logger"
@@ -99,3 +115,7 @@ theme = 'PaperMod'
     name = "Archives"
     url = "/archives/"
     weight = 40
+  [[menu.main]]
+    name = "Search"
+    url = "/search/"
+    weight = 50
