@@ -160,4 +160,5 @@ menu:
 
 services:
   disqus:
-    shortname: yjiq150
+    # https://knowledgelogger.disqus.com/admin/settings/general/
+    shortname: knowledgelogger
