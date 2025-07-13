@@ -34,18 +34,15 @@ categories:
         redirection을 설정한다거나, https://letmecompile.com/my-page/ 로 접속하면 자동으로 https://letmecompile.com/my-page/index.html 를 찾아서 보여주는 등의 기본적인 웹서버의 동작을 지원하지 않음
       </p>
     </li>
-    
     <li>
       <p>
         full path를 정확히 입력해야만 해당 파일에 접근이 가능하기 때문에 backblaze만으로는 완전한 하나의 정적 웹사이트를 호스팅하는 것이 불가능
       </p>
     </li>
-    
     <li>
       <p>
         클라우드플레어에 CNAME을 등록하면 아래처럼 path부분을 그대로 유지하면서 host만 바꾸는 1:1 맵핑은 잘 작동함
       </p>
-      
       <ul>
         <li>
           CNAME 적용전: https://f004.backblazeb2.com/file/bucket-name/profile.png
@@ -55,48 +52,40 @@ categories:
         </li>
       </ul>
     </li>
-    
     <li>
       <p>
         클라우드플레어 워커를 같이 사용하면 이러한 단점 극복이 가능하지만 워커도 완전히 무료가 아니기 때문에 &#8216;S3 단독사용&#8217; vs &#8216;Backblaze + 클라우드플레어 워커&#8217; 비교했을 때 어느쪽이 더 비용 측면에서 유리한지는 상황에따라 다를 수 있음
       </p>
     </li>
-    
     <li>
       <p>
         대신 특정 경로에 단순히 파일 업로드해놓고 이미지 서버 혹은 파일 서버로 활용하는 용도인 경우 Bandwidth Alliance덕분에 Backblaze를 사용하면 대역폭 비용을 완전히 무료로 사용가능 (Backblaze가 저장 용량 대비 비용 또한 S3 보다 훨씬 저렴)
       </p>
     </li>
-    
     <li>
       <p>
         주의: 클라우드 플레어 SSL 설정시 전체구간(full) 옵션을 사용해야함. Backblaze의 웹서버는 https만 허용하기 때문에 flexible은 사용 불가. 반대로 S3 정적 웹사이트 호스팅의 경우 http만 지원하기 때문에 flexible만 사용 가능
       </p>
     </li>
-    
     <li>
       <p>
         S3 호환 프로토콜을 사용하기때문에 기존에 AWS CLI를 잘 사용하고있었다면 매우 쉽게 마이그레이션 가능.
       </p>
-      
       <ul>
         <li>
           <p>
             별도의 프로그램 설치 없이 aws s3 명령어를 그대로 사용하되, 다만 모든 명령어에 아래처럼 Backblaze 버킷에 해당하는 endpoint를 별도 지정해야함
           </p>
         </li>
-        
         <li>
           <p>
             &#8211;endpoint-url=https://s3.us-west-004.backblazeb2.com
           </p>
         </li>
-        
         <li>
           <p>
             예시)
           </p>
-          
           <pre><code>    aws s3 sync \
     --endpoint-url=https://s3.us-west-004.backblazeb2.com \
     --acl public-read \

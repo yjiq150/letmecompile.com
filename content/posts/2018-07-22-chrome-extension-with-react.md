@@ -105,19 +105,19 @@ tags:
       * CSP (Content Security Policy)가 설정된 웹사이트에서는 미리 설정된 domain에 대해서만 remote script를 load가능하기 때문에 함부로 아무 스크립트나 로드하는것이 불가능 하므로, inject할 스크립트는 되도록 익스텐션 패키지 안에 포함시키는 것이 안전하다.</p> 
 
   * 방법2: 인라인(inline) 방식
-    
-        var actualCode = '(' + function() {
-            // All code is executed in a local scope.
-            // For example, the following does NOT overwrite the global `alert` method
-            var alert = null;
-            // To overwrite a global variable, prefix `window`:
-            window.alert = null;
-        } + ')();';
-        var script = document.createElement('script');
-        script.textContent = actualCode;
-        (document.head||document.documentElement).appendChild(script);
-        script.remove();
-        
+    ```javascript
+    var actualCode = '(' + function() {
+        // All code is executed in a local scope.
+        // For example, the following does NOT overwrite the global `alert` method
+        var alert = null;
+        // To overwrite a global variable, prefix `window`:
+        window.alert = null;
+    } + ')();';
+    var script = document.createElement('script');
+    script.textContent = actualCode;
+    (document.head||document.documentElement).appendChild(script);
+    script.remove();
+    ```
 
   * 참고: <https://stackoverflow.com/questions/9515704/insert-code-into-the-page-context-using-a-content-script/9517879#9517879> 
 

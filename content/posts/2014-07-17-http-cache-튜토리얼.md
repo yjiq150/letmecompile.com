@@ -128,14 +128,14 @@ PHP, ASP, JSP등의 서버사이드 프로그램을 통해서 동적으로 생�
   3. 2번으로 부족할경우 서버사이드 프로그램 자체에서 ETag 같은 validator를 생성하여 응답헤더에 추가하고, 클라이언트에서 http 요청이 올경우 이를 파싱하여 직접 validation을 한다.
 
 <li id="fn-405-cache">
-  <p>
-    <a href="http://www.mnot.net/cache_docs/">http://www.mnot.net/cache_docs/</a>&#160;<a href="#fnref-405-cache" rev="footnote">&#8617;</a> </li> 
-    
-    <li id="fn-405-rfc">
+    <a href="http://www.mnot.net/cache_docs/">http://www.mnot.net/cache_docs/</a>&#160;<a href="#fnref-405-cache" rev="footnote">&#8617;</a> 
+</li> 
+<li id="fn-405-rfc">
       <a href="http://tools.ietf.org/html/rfc2616#section-14.9.3">RFC 2616</a>&#160;<a href="#fnref-405-rfc" rev="footnote">&#8617;</a>
-    </li>
-    <li id="fn-405-mobi">
-      <a href="http://www.mobify.com/blog/beginners-guide-to-http-cache-headers/">http://www.mobify.com/blog/beginners-guide-to-http-cache-headers/</a>&#160;<a href="#fnref-405-mobi" rev="footnote">&#8617;</a>
-    </li>
-    <li id="fn-405-heroku">
-      <a href="https://devcenter.heroku.com/articles/increasing-application-performance-with-http-cache-headers">https://devcenter.heroku.com/articles/increasing-application-performance-with-http-cache-headers</a>&#160;<a href="#fnref-405-heroku" rev="footnote">&#8617;</a> </fn></footnotes>
+</li>
+<li id="fn-405-mobi">
+  <a href="http://www.mobify.com/blog/beginners-guide-to-http-cache-headers/">http://www.mobify.com/blog/beginners-guide-to-http-cache-headers/</a>&#160;<a href="#fnref-405-mobi" rev="footnote">&#8617;</a>
+</li>
+<li id="fn-405-heroku">
+  <a href="https://devcenter.heroku.com/articles/increasing-application-performance-with-http-cache-headers">https://devcenter.heroku.com/articles/increasing-application-performance-with-http-cache-headers</a>&#160;<a href="#fnref-405-heroku" rev="footnote">&#8617;</a>
+</li>

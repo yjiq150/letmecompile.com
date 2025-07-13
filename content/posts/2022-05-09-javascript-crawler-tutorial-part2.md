@@ -399,8 +399,6 @@ document.querySelectorAll('#input-test-title + input');
 ### 각주 {#toc_21}
 
 <div class="footnotes">
-  <hr />
-  
   <ol>
     <li id="fn1">
       출처 &#8211; <a href="https://en.wikipedia.org/wiki/Document_Object_Model">https://en.wikipedia.org/wiki/Document<em>Object</em>Model</a> &nbsp;<a href="#fnref1" rev="footnote">↩</a>

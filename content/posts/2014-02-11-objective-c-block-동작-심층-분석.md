@@ -110,13 +110,11 @@ ARC환경에서 block을 사용할 경우 이미 컴파일러가 block 객체가
         https://developer.apple.com/library/ios/documentation/cocoa/conceptual/Blocks/Articles/bxOverview.html<a href="#fnref:1" rev="footnote">&#8617;</a>
       </p>
     </li>
-    
     <li id="fn:2">
       <p>
         http://www.cocoawithlove.com/2009/10/how-blocks-are-implemented-and.html<a href="#fnref:2" rev="footnote">&#8617;</a>
       </p>
     </li>
-    
     <li id="fn:3">
       <p>
         http://thirdcog.eu/pwcblocks/#objcblocks<a href="#fnref:3" rev="footnote">&#8617;</a>
@@ -124,6 +122,7 @@ ARC환경에서 block을 사용할 경우 이미 컴파일러가 block 객체가
     </li>
   </ol>
 </div>
+
 
  [1]: http://www.letmecompile.com/objective-c-%EB%9F%B0%ED%83%80%EC%9E%84runtime-%EB%82%B4%EB%B6%80-%EB%8F%99%EC%9E%91-%EB%B6%84%EC%84%9D
  [2]: /uploads/2014/02/block_struct.png

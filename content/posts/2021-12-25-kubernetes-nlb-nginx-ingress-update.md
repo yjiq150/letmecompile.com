@@ -65,7 +65,8 @@ ingress와 ingress-nginx controller의 동작 방식을 살펴보면서 왜 문�
 
 먼저 Ingress 리소스는 보통 아래와 같은 형식으로 정의되고, 여러 사이트를 운영하는 경우 여러개의 Ingress 리소스가 정의될 수 있습니다. 아래 내용 중 `kubernetes.io/ingress.class: nginx` 부분이 바로 어떤 종류의 &#8216;ingress controller&#8217;를 사용할지를 지정하는 부분입니다. 
 
-<pre class="EnlighterJSRAW" data-enlighter-language="generic" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">apiVersion: networking.k8s.io/v1beta1
+```yaml
+apiVersion: networking.k8s.io/v1beta1
 kind: Ingress
 metadata:
   name: example-ingress
@@ -78,7 +79,8 @@ spec:
         paths:
           - backend:
               serviceName: example-service
-              servicePort: http</pre>
+              servicePort: http
+```
 
 ingress-nginx는 대략 다음과 같은 방식으로 동작합니다.
 
@@ -96,7 +98,8 @@ ingress-nginx는 대략 다음과 같은 방식으로 동작합니다.
 
 helm chart를 이용하여 신규 ingress-nginx를 클러스터에 설치해 봅시다 (이 글에서는 helm v3.x를 사용합니다). 기존 운영중인 ingress-nginx 와 섞이지 않고 이중화를 하기 위해서 여기서는 `ingress-nginx-new` 라는 namespace를 새로 만들어서 이 namespace에 ingress-nginx를 설치합니다. 편의상 기존 nginx-ingress는 `ingress-nginx-old` 라는 namespace에 설치되어 운영되고있다고 가정합시다.
 
-<pre class="EnlighterJSRAW" data-enlighter-language="generic" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group=""># namespace 생성
+```
+# namespace 생성
 $ kubectl create namespace ingress-nginx-new
 
 # ingress-nginx chart를 처음 설치한다면 아래처럼 helm repo를 추가 후 업데이트 필요
@@ -107,11 +110,13 @@ $ helm repo update
 $ helm install --version 3.39.0 \
   -n ingress-nginx-new \
   ingress-nginx ingress-nginx/ingress-nginx \
-  -f values.yaml</pre>
+  -f values.yaml
+```
 
 위 명령어에서 사용한 values.yaml 파일은 ingress-nginx chart에서 제공되는 기본 설정값을 오버라이드 하기 위해 사용됩니다. 참고로 현재 스퀘어랩에서 실제 사용중인 values.yaml 파일의 내용은 다음과 같습니다.
 
-<pre class="EnlighterJSRAW" data-enlighter-language="generic" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">## nginx configuration
+```yaml
+## nginx configuration
 ## Ref: https://github.com/kubernetes/ingress-nginx/blob/main/docs/user-guide/nginx-configuration/index.md
 controller:
   replicaCount: 2
@@ -152,7 +157,8 @@ controller:
       service.beta.kubernetes.io/aws-load-balancer-proxy-protocol: "*"
   config:
     # This is required to client's IP-based access control (This config allows nlb passes a original client ip to nginx)
-    use-proxy-protocol: true</pre>
+    use-proxy-protocol: true
+```
 
 위 명령어를 수행하고 난 후 조금 기다리면 자동으로 NLB가 새롭게 생성될 것이고 생성된 NLB는 `ingress-nginx-new` namespace에 존재하는 ingress-nginx-contoller service에 연결되어있을 것 입니다. 이것으로 NLB, ingress-nginx 이중화가 완료되었습니다.
 
@@ -160,19 +166,26 @@ controller:
 
 변경 후에 아래 명령어를 이용하여 새로운 요청이 신규 ingress-nginx로 잘 인입되고있는지 로그를 통해 확인해 봅시다.
 
-<pre class="EnlighterJSRAW" data-enlighter-language="generic" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">$ stern -n ingress-nginx-new ingress-nginx-controller</pre>
+```bash
+$ stern -n ingress-nginx-new ingress-nginx-controller
+```
+
 
 혹시 stern 명령어가 설치되어있지 않다면 <https://github.com/wercker/stern> 사이트를 확인하여 설치해야합니다. (stern 명령어는 deployment에 포함된 모든 pod들의 로그를 모아서 볼 수 있어서 매우 편리합니다)
 
 로그를 통해 요청이 신규 ingress-nginx로 잘 들어오고있는 것을 확인하면 차차 다른 DNS 레코드들도 모두 신규 NLB 주소로 변경합니다. 이제 기존 NLB로 연결되어있던 모든 DNS 레코드가 신규 NLB를 가리키도록 변경되었습니다. DNS 변경사항은 캐시 등의 이유로 완전히 전파되는데 시간이 오래 걸릴 수 있습니다. 때문에 넉넉하게 48~72시간 정도는 기존 NLB를 유지하는 것이 안전합니다. 시간이 충분히 지난 후에 기존 ingress-nginx로 요청이 전달되는 것이 있는지 다음 명령어를 통해 확인합니다.
 
-<pre class="EnlighterJSRAW" data-enlighter-language="generic" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">$ stern -n ingress-nginx-old ingress-nginx-controller</pre>
+```bash
+$ stern -n ingress-nginx-old ingress-nginx-controller
+```
 
 아마 정상적으로 잘 변경이 되었다면 별다른 액세스 로그가 보이지 않을 것이고, 혹시 DNS레코드 변경 중 빼먹은 항목이 있다면 지속적으로 액세스 로그가 있을 수도 있으니 로그를 보고 추가적인 DNS 레코드 수정이 필요한지를 최종 확인합니다. 액세스 로그가 더이상 없다면 이제 기존 NLB, ingress-nginx를 삭제할 차례입니다. 
 
 아래처럼 `helm uninstall` 명령어를 사용하여 `ingress-nginx-old` namespace에 설치된 관련 리소스들을 모두 제거합니다. 
 
-<pre class="EnlighterJSRAW" data-enlighter-language="generic" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">$ helm uninstall -n ingress-nginx-old ingress-nginx</pre>
+```
+$ helm uninstall -n ingress-nginx-old ingress-nginx
+```
 
 이 명령어를 실행 하면 기존 NLB가 자동으로 삭제됩니다. 하지만 NLB에 삭제 방지 설정이 걸려있는 경우 자동으로 삭제되지 않을수도 있어서 직접 AWS EC2 콘솔의 로드밸런서 메뉴에서 NLB를 찾아보고 삭제 여부를 꼭 확인하도록 합시다.
 

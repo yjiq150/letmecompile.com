@@ -111,17 +111,4 @@ Objective-C를 접한지 얼마 안된경우 이 비슷한 이름을 가진 두�
   * Dates
   * Addresses
   * Links
-  * Phone numbers 
-    NSString *string = @&#8221;123 Main St. / (555) 555-5555&#8243;;  
-    NSError *error;  
-    NSDataDetector *detector = [NSDataDetector  
-    dataDetectorWithTypes:NSTextCheckingTypeLink |  
-    NSTextCheckingTypePhoneNumber  
-    error:&error];  
-    [detector enumerateMatchesInString:string  
-    options:kNilOptions  
-    range:NSMakeRange(0, [string length])  
-    usingBlock:^(NSTextCheckingResult *result, NSMatchingFlags flags,  
-    BOOL *stop) {  
-    NSLog(@&#8221;Match: %@&#8221;, result);  
-    }];
+  * Phone numbers

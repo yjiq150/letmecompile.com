@@ -133,13 +133,11 @@ LLDB가 등록된 `MyAddress_Summary(value,unused)` 파이썬 함수를 호출�
         http://lldb.llvm.org/python-reference.html<a href="#fnref:1" rev="footnote">&#8617;</a>
       </p>
     </li>
-    
     <li id="fn:2">
       <p>
         https://developer.apple.com/librarY/mac/documentation/IDEs/Conceptual/gdb_to_lldb_transition_guide/document/Introduction.html<a href="#fnref:2" rev="footnote">&#8617;</a>
       </p>
     </li>
-    
     <li id="fn:3">
       <p>
         https://developer.apple.com/wwdc/videos/<a href="#fnref:3" rev="footnote">&#8617;</a>

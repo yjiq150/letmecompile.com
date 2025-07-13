@@ -68,13 +68,11 @@ like 의 경우 뒤에 나열하는 것들과의 비슷함(similarity)을 표현
         http://www.grammarly.com/handbook/punctuation/comma/38/such-as-comma/<a href="#fnref-1" rev="footnote">&#8617;</a>
       </p>
     </li>
-    
     <li id="fn-2">
       <p>
         http://grammar.quickanddirtytips.com/like-versus-such-as.aspx<a href="#fnref-2" rev="footnote">&#8617;</a>
       </p>
     </li>
-    
     <li id="fn-2">
       <p>
         <a href="http://wordvice.com/the-great-comma-debate" rev="footnote">http://wordvice.com/the-great-comma-debate/</a>

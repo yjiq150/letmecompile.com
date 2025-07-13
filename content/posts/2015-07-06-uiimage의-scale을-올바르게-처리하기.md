@@ -36,17 +36,18 @@ categories:
 ### 문제 예시
 
   * postfix가 없는 파일 이미지데이터의 실제 사이즈가 600x600px이라고 가정.
-  * `UIImageView` 의 사이즈가 100&#215;100 이라 해당 이미지를 리사이즈해서 사용하기 위해 리사이즈 메서드 `[myImage category_myCustomResize:CGSizeMake(100,100)];` 을 실행 
-        - (UIImage*)category_myCustomResize:(CGSize)size 
-        {
-            UIGraphicsBeginImageContextWithOptions(size, NO, self.scale);
-            [self drawInRect:CGRectMake(0, 0, size.width, size.height)];
-            UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
-            UIGraphicsEndImageContext();
-        
-            return image;
-        }
-        
+  * `UIImageView` 의 사이즈가 100&#215;100 이라 해당 이미지를 리사이즈해서 사용하기 위해 리사이즈 메서드 `[myImage category_myCustomResize:CGSizeMake(100,100)];` 을 실행
+```
+- (UIImage*)category_myCustomResize:(CGSize)size 
+{
+    UIGraphicsBeginImageContextWithOptions(size, NO, self.scale);
+    [self drawInRect:CGRectMake(0, 0, size.width, size.height)];
+    UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+
+    return image;
+}
+```
 
   * 스케일 반영되어 포인트기준으로 생성된 myImage (width:300, scale:2) -> 리사이즈시 width:100, scale:2(실제 200px image 생성됨: 원하는 결과)
 

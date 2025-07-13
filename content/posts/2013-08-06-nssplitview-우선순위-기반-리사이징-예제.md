@@ -54,7 +54,7 @@ tags:
 
 예제파일에 포함된 `PrioritySplitViewDelegate` 클래스를 NSSplitView에 delegate로 등록하게되면 앞서 설명한 우선순위 기반의 리사이징이 가능하게 된다.
 
-<pre>@interface PrioritySplitViewDelegate : NSObject
+<pre><code>@interface PrioritySplitViewDelegate : NSObject
 {
     NSMutableDictionary *lengthsByViewIndex;
     NSMutableDictionary *viewIndicesByPriority;
@@ -66,7 +66,7 @@ tags:
     forViewAtIndex:(NSInteger)viewIndex;
 
 @end
-</pre>
+</code></pre>
 
 delegate가 스플릿뷰에 얼마나 많은 서브뷰들이 있는지 미리 모르기 때문에, 사용 전에 미리 뷰와 우선순위를 지정해야 한다. 모든 뷰에 우선순위를 지정하지 않으면 `NSSplitView`가 리사이징될 때 예외가 발생할 것이다. 최소크기의 경우 optional 이고, 직접 설정하지 않으면 기본값은 0이 된다.
 
@@ -78,7 +78,7 @@ delegate가 스플릿뷰에 얼마나 많은 서브뷰들이 있는지 미리 �
 
 두개의 컬럼 사이를 나누고 있는 divider를 왼쪽으로 드래그할경우, 왼쪽에있는 뷰가 줄어들게 되므로 여기에 대한 최소크기를 리턴해주어야 한다.
 
-<pre>- (CGFloat)splitView:(NSSplitView *)sender
+<pre><code>- (CGFloat)splitView:(NSSplitView *)sender
     constrainMinCoordinate:(CGFloat)proposedMin ofSubviewAt:(NSInteger)offset
 {
     NSView *subview = [[sender subviews] objectAtIndex:offset];
@@ -99,7 +99,7 @@ delegate가 스플릿뷰에 얼마나 많은 서브뷰들이 있는지 미리 �
 
     return frameOrigin + minimumSize;
 }
-</pre>
+</code></pre>
 
 `splitView:constrainMaxCoordinate:ofSubviewAt:` 의 경우도 비슷하다. 자세한 내용은 예제 프로젝트에서 확인 할 수 있다.
 
@@ -111,7 +111,7 @@ delegate가 스플릿뷰에 얼마나 많은 서브뷰들이 있는지 미리 �
   2. 전체 크기변화에 의한 변화를 각 뷰에 대해서 적용한다.
   3. 각 뷰에 새로운 크기를 적용했을때 미리 셋팅된 최소크기보다 작아질경우, 해당 뷰에 대해 크기변화를 적용할수 있는 만큼 최대한 적용한 후, 우선순위에 의해 다음뷰로 넘어가서 나머지 크기변화를 적용한다. 다음 뷰로 넘어가는 스플릿뷰의 크기 변화는 코드에서 `delta`로 표현된다.
 
-<pre>for (NSNumber *priorityIndex in [[viewIndicesByPriority allKeys] sortedArrayUsingSelector:@selector(compare:)])
+<pre><code>for (NSNumber *priorityIndex in [[viewIndicesByPriority allKeys] sortedArrayUsingSelector:@selector(compare:)])
 {
     NSNumber *viewIndex = [viewIndicesByPriority objectForKey:priorityIndex];
     NSInteger viewIndexValue = [viewIndex integerValue];
@@ -160,7 +160,7 @@ delegate가 스플릿뷰에 얼마나 많은 서브뷰들이 있는지 미리 �
     [view setFrameSize:frameSize];
     viewCountCheck++;
 }
-</pre>
+</code></pre>
 
 `continue`에 의해 유효하지 않은 우선순위들은 생략된다. 자잘한 에러들을 어떻게 다룰 것인지에 따라 이 부분을 적절히 수정하여 사용하도록하자.
 

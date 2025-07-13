@@ -110,50 +110,50 @@ module.exports = DomesticCrawler;
   _extractBasicStats() 함수 상세 내용
 </p>
 
-<div>
-  <pre><code class="language-none">  _extractBasicStats($) {
-    let result = null;
-    const titles = $('h5.s_title_in3');
-    titles.each((i, el) =&gt; {
-      // h5 태그 안에 텍스트(제목)와 span 태그(업데이트 날짜)가 섞여있는 경우가 존재
-      // ❶ 여기서 태그를 제외하고 순수 텍스트만 분리
-      const titleTextEl = $(el)
-        .contents() // 요소 서브의 텍스트 노드를 포함한 모든 노드를 반환
-        .toArray()
-        .filter((x) =&gt; x.type === 'text');
+```javascript
+_extractBasicStats($) {
+  let result = null;
+  const titles = $('h5.s_title_in3');
+  titles.each((i, el) => {
+    // h5 태그 안에 텍스트(제목)와 span 태그(업데이트 날짜)가 섞여있는 경우가 존재
+    // ❶ 여기서 태그를 제외하고 순수 텍스트만 분리
+    const titleTextEl = $(el)
+      .contents() // 요소 서브의 텍스트 노드를 포함한 모든 노드를 반환
+      .toArray()
+      .filter((x) => x.type === 'text');
 
-      // 제목 '누적 검사현황' 다음에 나오는 테이블을 찾기
-      if ($(titleTextEl).text().trim() === '누적 검사현황') {
-        const tableEl = $(el).next();
-        if (!tableEl) {
-          throw new Error('table not found.');
-        }
-        // ❷ 테이블 내의 셀을 모두 찾아서 가져옴
-        const cellEls = tableEl.find('tbody tr td');
-
-        // 찾아진 셀에 있는 텍스트를 읽어서 숫자로 변환
-        const values = cellEls
-          .toArray()
-          .map((node) =&gt; this._normalize($(node).text()));
-
-        result = {
-          confirmed: values[3],
-          released: values[1],
-          death: values[2],
-          tested: values[5],
-          testing: values[6],
-          negative: values[4],
-        };
+    // 제목 '누적 검사현황' 다음에 나오는 테이블을 찾기
+    if ($(titleTextEl).text().trim() === '누적 검사현황') {
+      const tableEl = $(el).next();
+      if (!tableEl) {
+        throw new Error('table not found.');
       }
-    });
+      // ❷ 테이블 내의 셀을 모두 찾아서 가져옴
+      const cellEls = tableEl.find('tbody tr td');
 
-    if (result == null) {
-      throw new Error('Data not found');
+      // 찾아진 셀에 있는 텍스트를 읽어서 숫자로 변환
+      const values = cellEls
+        .toArray()
+        .map((node) => this._normalize($(node).text()));
+
+      result = {
+        confirmed: values[3],
+        released: values[1],
+        death: values[2],
+        tested: values[5],
+        testing: values[6],
+        negative: values[4],
+      };
     }
+  });
 
-    return result;
-  }</code></pre>
-</div>
+  if (result == null) {
+    throw new Error('Data not found');
+  }
+
+  return result;
+}
+```
 
 국내 발생 현황 페이지에서 ‘확진자, 사망자, 격리해제, 검사중, 결과음성, 총 검사자 수’ 데이터는 ‘누적 검사현황’ 제목 바로 아래에 있는 테이블에 들어 있습니다. 안타깝게도 이 페이지의 DOM을 자세히 살펴봐도 이 테이블만 정확히 특정하는 id값이나 class 속성 설정이 되어 있지 않습니다. 이런 경우에는 ‘누적 검사현황’ 제목을 가진 요소를 찾고, 해당 요소 다음에 인접하여 존재하는 테이블 요소를 찾아나가는 식으로 코드를 작성해야 합니다.
 
@@ -171,8 +171,8 @@ module.exports = DomesticCrawler;
   _extractByAge(), _extractBySex() 함수 상세 내용
 </p>
 
-<div>
-  <pre><code class="language-none">  _extractByAge($) {
+```javascript
+_extractByAge($) {
     // '구분' 컬럼의 텍스트를 필드 이름으로 매핑
     const mapping = {
       '80 이상': '80',
@@ -201,12 +201,12 @@ module.exports = DomesticCrawler;
   _extractDataWithMapping(mapping, $) {
     const result = {};
 
-    $('.data_table table').each((i, el) =&gt; {
+    $('.data_table table').each((i, el) => {
       $(el)
         .find('tbody tr')
-        .each((j, row) =&gt; {
+        .each((j, row) => {
           const cols = $(row).children(); // 서브 요소를 모두 가져옴
-          _.forEach(mapping, (fieldName, firstColumnText) =&gt; {
+          _.forEach(mapping, (fieldName, firstColumnText) => {
             // 현재 행의 첫 번째 컬럼값이 mapping에 정의된 이름과 
             // 동일한 경우에만 데이터 추출
             if ($(cols.get(0)).text() === firstColumnText) {
@@ -224,8 +224,8 @@ module.exports = DomesticCrawler;
     }
 
     return result;
-  }</code></pre>
-</div>
+  }
+```
 
 위 코드는 모든 테이블을 순회하면서, 각 테이블의 행을 의미하는 `tr` 태그를 또 순회합니다. 각 행의 첫 번째 컬럼값이 찾고자 하는 컬럼값과 동일하면 해당 행의 첫 번째 컬럼을 확진자 수로, 두 번째 컬럼을 사망자 수로 결과 객체의 필드에 저장합니다.  
 이제 `DomesticCrawler` 클래스가 완성되었습니다.
@@ -255,9 +255,8 @@ main();</code></pre>
 작성이 완료되면 `node index.js` 명령어를 통해 크롤러를 실행합니다. 다음과 같이 크롤링된 결과가 출력되는 것을 확인 할 수 있습니다.
 
 [출력 결과]
-
-<div>
-  <pre><code class="language-none">{
+```json
+{
   basicStats: {
     confirmed: 143596,
     released: 133763,
@@ -281,8 +280,9 @@ main();</code></pre>
     male: { confirmed: 71544, death: 974 },
     female: { confirmed: 71308, death: 995 }
   }
-}</code></pre>
-</div>
+}
+
+```
 
 ## 마무리 {#toc_4}
 
@@ -311,8 +311,6 @@ main();</code></pre>
 ## 각주 {#toc_7}
 
 <div class="footnotes">
-  <hr />
-  
   <ol>
     <li id="fn1">
       질병관리청 코로나19 실제 사이트: http://ncov.mohw.go.kr/&nbsp;<a href="#fnref1" rev="footnote">↩</a>

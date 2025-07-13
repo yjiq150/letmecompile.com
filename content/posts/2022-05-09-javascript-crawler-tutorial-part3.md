@@ -447,8 +447,6 @@ main();
 ## 각주 {#toc_13}
 
 <div class="footnotes">
-  <hr />
-  
   <ol>
     <li id="fn1">
       크로미움은 크롬의 기반이되는 오픈소스 웹 브라우저 프로젝트입니다. 기본적인 웹브라우징 기능은 동일하기 때문에 크롤러를 만드는 데 문제가 없습니다.&nbsp;<a href="#fnref1" rev="footnote">↩</a>

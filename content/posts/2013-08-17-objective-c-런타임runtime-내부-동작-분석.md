@@ -54,18 +54,18 @@ Objective-C 문법의 특징인 대괄호 [ ] 사이에 쓰여지는 코드에 �
 
 메시지를 보내는 Objective-C 코드:
 
-<pre>[receiver message]
-</pre>
+<pre><code>[receiver message]
+</code></pre>
 
 컴파일러에 의해 컨버젼된 코드:
 
-<pre>objc_msgSend(receiver, selector)
-</pre>
+<pre><code>objc_msgSend(receiver, selector)
+</code></pre>
 
 인자(argument)가 있을경우:
 
-<pre>objc_msgSend(receiver, selector, arg1, arg2, ...)
-</pre>
+<pre><code>objc_msgSend(receiver, selector, arg1, arg2, ...)
+</code></pre>
 
 이러한 메세지 방식은 언뜻 보면 C의 함수 호출과 비슷해 보인다. 하지만 Obj-C에서는 타겟 객체에게 메시지를 보낸다고 해서 그 메시지에 포함된 명령이 100% 수행되는 것은 아니다. 타겟 객체는 메시지가 누구로 부터 왔는지 확인 해서 다른 메소드을 실행할지 혹은 다른 타겟 객체에게 메시지를 포워딩 할지를 결정하게 된다.
 
@@ -79,11 +79,11 @@ Objective-C 런타임은 애플사에의해 오픈소스로 공개되어있고 �
 
 런타임 라이브러리의 내부에는 다음과 같은 Objective-C의 클래스(`objc_class`)와 클래스로부터 생성된 객체(`objc_object`)를 표현하기 위한 C의 구조체 코드가 있다.
 
-<pre>typedef struct objc_class *Class;
+<pre><code>typedef struct objc_class *Class;
 typedef struct objc_object {
     Class isa;
 } *id;
-</pre>
+</code></pre>
 
 모든 `objc_object`들은 `isa`라고 정의된 클래스 변수를 갖고있다.  
 Objective-C 런타임은 이 `isa` 포인터를 이용하여 해당 객체가 어떤 클래스인지, 그리고 이 객체가 명령 메시지를 받았을때 셀렉터에 응답을 하는지를 확인한다. 마지막으로 이러한 `objc_object`들은 `id` 포인터로 `typedef` 되게 된다. 따라서 Objective-C 코드에서 이 `id` 포인터를 이용하게되면 해당 포인터가 지칭하고 있는 객체가 어떤 클래스인지, 어떤 메서드를 갖고있는지 등의 확인이 가능한 것이다.
@@ -92,20 +92,20 @@ Objective-C 런타임은 이 `isa` 포인터를 이용하여 해당 객체가 �
 
 셀렉터는 Obj-C의 메서드를 가리키는 구조체로 C언어로 다음과 같이 정의된다.
 
-<pre>typedef struct objc_selector  *SEL; 
-</pre>
+<pre><code>typedef struct objc_selector  *SEL; 
+</code></pre>
 
 실제 사용은 다음과 같이 할 수 있다.
 
-<pre>SEL aSel = @selector(sampleMethod);
-</pre>
+<pre><code>SEL aSel = @selector(sampleMethod);
+</code></pre>
 
 ### 메서드 호출 `objc.h`
 
 이제 Objective-C의 메서드가 어떤식으로 컴파일되어 동작하는지 확인하기 위해 다음 구문을 보자.
 
-<pre>typedef id (*IMP)(id self,SEL _cmd,...); 
-</pre>
+<pre><code>typedef id (*IMP)(id self,SEL _cmd,...); 
+</code></pre>
 
 `IMP`는 &#8220;**id를 리턴**하고 **타겟**, **셀렉터 명령**, 및 **추가 파라메터**들을 인자(argument)로 받는 함수 포인터&#8221;를 `typedef`한 것이다. (위 `typedef` 구문이 잘 이해가지 않는다면 분들은 C에서 함수포인터를 typedef 하는 방법에 대해 찾아 볼 것을 권장한다.)  
 결국 함수포인터 IMP는 Objective-C 메서드가 컴파일되어 생긴 C 함수를 포인팅 하게 되고, 이를 통해서 원하는 Objective-C 메서드에 대응하는 C 함수 호출이 일어난다.
@@ -114,15 +114,15 @@ Objective-C 런타임은 이 `isa` 포인터를 이용하여 해당 객체가 �
 
 다음과 같은 `NSObject`를 상속받은 빈 클래스가 있다고 가정하자.
 
-<pre>@interface EmptyClass : NSObject {
+<pre><code>@interface EmptyClass : NSObject {
 
 }
 @end
-</pre>
+</code></pre>
 
 빈 클래스임에도 불구하고 실제로 컴파일 시에 다음 코드를 통해 추가적인 정보가 자동으로 `EmptyClass`에 포함되게 된다. `objc_object`에서와 마찬가지로 `objc_class`에서도 `isa` 클래스 변수를 통해 해당 클래스의 정보에 접근이 가능하다. 또한 `super_class` 포인터를 통해서 상속받은 `NSObject`에 접근이 가능하며, `objc_protocol_list`, `objc_method_list` 등의 정보를 통해 실제 클래스의 세부적인 정보들을 알 수 있게 된다. 결국 Objective-C 컴파일러가 컴파일시 자동으로 삽입한 이러한 추가정보들은 Objective-C 런타임 환경에서의 동적인 동작을 위해 사용되는 것이다.
 
-<pre>struct objc_class {
+<pre><code>struct objc_class {
     Class isa;
 
 #if !__OBJC2__
@@ -137,7 +137,7 @@ Objective-C 런타임은 이 `isa` 포인터를 이용하여 해당 객체가 �
     struct objc_protocol_list *protocols                     OBJC2_UNAVAILABLE;
 #endif
 } 
-</pre>
+</code></pre>
 
 ## 메타클래스(MetaClass): 클래스 정의 자체도 객체다.
 
@@ -163,15 +163,15 @@ Objective-C 런타임이 isa포인터를 이용하여 해당 객체를 조사하
 
 이 사실을 염두해 두고 `MyObject *obj = [[MyObject alloc] init];` 코드가 실행될때 내부적으로 어떻게 동작하는지 상세히 살펴보도록 하자.
 
-<pre>@implementation MyObject
+<pre><code>@implementation MyObject
 -(id)init {
     if(self = [super init]){
-        [self setVarA:@”blah”];
+        [self setVarA:@"blah"];
     }
     return self;
 }
 @end
-</pre>
+</code></pre>
 
   1. `[MyObject alloc]` 메시지를 수신하면 `MyObject` 클래스 자체에는 `+alloc`이 구현되어있지 않기때문에 `superclass` 포인터를 따라 `NSObject`로 올라간다.
   2. `NSObject`는 `+alloc`에 응답을 한다(`NSObject` 클래스의 캐쉬에 `+alloc`이 저장된다). `+alloc` 메서드가 호출되면서 리시버 클래스(즉, `MyObject`)의 사이즈에 맞게 메모리 블락을 할당하고 `isa`포인터를 `MyObject` 클래스로 설정한다.
@@ -180,7 +180,7 @@ Objective-C 런타임이 isa포인터를 이용하여 해당 객체를 조사하
 
 ## `+alloc`, `-init` 이 항상 해당 클래스와 동일한 객체를 리턴할까?
 
-<pre>int main (int argc, const char * argv[]) {
+<pre><code>int main (int argc, const char * argv[]) {
     NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
 
  id obj1 = [NSMutableArray alloc];
@@ -204,27 +204,27 @@ Objective-C 런타임이 isa포인터를 이용하여 해당 객체를 조사하
  [pool drain];
     return 0;
 }
-</pre>
+</code></pre>
 
 아마도 다음과 같이 출력되리라 예상하겠지만,
 
-<pre>obj1 class is NSMutableArray
+<pre><code>obj1 class is NSMutableArray
 obj2 class is NSMutableArray 
 obj3 class is NSArray
 obj4 class is NSArray
 obj5 class is MyObject
 obj6 class is MyObject
-</pre>
+</code></pre>
 
 실제 출력 결과는 다음과 같다.
 
-<pre>obj1 class is __NSPlaceholderArray
+<pre><code>obj1 class is __NSPlaceholderArray
 obj2 class is NSCFArray
 obj3 class is __NSPlaceholderArray
 obj4 class is NSCFArray
 obj5 class is MyObject
 obj6 class is MyObject
-</pre>
+</code></pre>
 
 즉, Objective-C에서는 `+alloc`이 특정 클래스의 객체를 리턴하고, 이 객체에 `-init`메시지를 보내서 또 다른 객체를 리턴해주는 경우도 존재한다는 의미이다.
 
@@ -232,13 +232,13 @@ obj6 class is MyObject
 
 다음 코드는
 
-<pre>[self printMessageWithString:@"Hello World!"];
-</pre>
+<pre><code>[self printMessageWithString:@"Hello World!"];
+</code></pre>
 
 컴파일되면서 실제로는 다음과 같은 코드를 생성한다.
 
-<pre>objc_msgSend(self,@selector(printMessageWithString:),@"Hello World!");
-</pre>
+<pre><code>objc_msgSend(self,@selector(printMessageWithString:),@"Hello World!");
+</code></pre>
 
 이 코드로 부터 타겟 객체의 isa 포인터를 이용하여 해당 메시지에 대한 셀렉터 응답여부를 체크하고 실행하게 된다. 실제로 `objc_msgSend()`는 아무 값도 리턴하지 않지만, 이 메시지에 의해 실행되는 메서드가 결과를 리턴 하기 때문에 `objc_msgSend()`가 리턴한 것처럼 보인다.
 
@@ -254,19 +254,19 @@ obj6 class is MyObject
 
 Objective-C 메서드는 컴파일러에 의해 C 함수로 트랜스폼 된다. 예를들어 아래와 같은 이름을 가진 메서드는
 
-<pre>-(int) doComputeWithNum:(int)aNum 
-</pre>
+<pre><code>-(int) doComputeWithNum:(int)aNum 
+</code></pre>
 
 다음과 같은 C함수로 컨버전 된다.
 
-<pre>int aClass_doComputeWithNum(aClass *self,SEL _cmd,int aNum) 
-</pre>
+<pre><code>int aClass_doComputeWithNum(aClass *self,SEL _cmd,int aNum) 
+</code></pre>
 
 그리고 Objective-C 런타임은 함수포인터를 이용해 해당 함수를 호출한다.
 
 일반적으로 이렇게 생성된 C 함수에 직접적인 접근이 불가능하지만, 코코아에서 다음과같은 방법을 제공해 준다.
 
-<pre>//declare C function pointer
+<pre><code>//declare C function pointer
 int (computeNum *)(id,SEL,int);
 
 //methodForSelector is COCOA & not ObjC Runtime
@@ -275,7 +275,7 @@ computeNum = (int (*)(id,SEL,int))[target methodForSelector:@selector(doComputeW
 
 //execute the C function pointer returned by the runtime
 computeNum(obj,@selector(doComputeWithNum:),aNum); 
-</pre>
+</code></pre>
 
 위의 방법을 통해서 런타임에 의한 정해진 동작을 우회하여 해당 C 함수에 대한 직접적인 호출이 가능하며, 실제로 이 방식은 Objective-C 런타임이 `objc_msgSend()`를 통해서 메서드를 호출하는 방식과 동일하다.
 
@@ -288,7 +288,7 @@ Objective-C에서는 해당 객체가 메시지에 응답 가능한지 모르는
   1. 런타임은 클래스 캐쉬와 디스패치 테이블을 찾아보고 해당 메서드가 응답하는지 확인한다.
   2. 해당메서드에 응답하는 것을 찾지 못한경우 런타임은 `+ (BOOL) resolveInstanceMethod:(SEL)aSEL` 를 해당 클래스에 대해 호출한다. 이를 통해서 사용자가 메소드가 없을경우의 동작을 사용자가 직접 정의할 수 있는 기회가 주어진다.
     
-    <pre>void fooMethod(id obj, SEL _cmd)
+    <pre><code>void fooMethod(id obj, SEL _cmd)
  {
   NSLog(@"Doing Foo");
  }
@@ -301,26 +301,26 @@ Objective-C에서는 해당 객체가 메시지에 응답 가능한지 모르는
      }
      return [super resolveInstanceMethod];
  }
-</pre>
+</code></pre>
 
 `class_addMethod()`의 마지막 인자로 들어가있는 `"v@:"`가 메서드의 시그너쳐(signature)를 나타낸다(v는 `void` 리턴값,`@`는 객체 인자). Objective-C Runtime Programming Guide[^2]의 Type Encodings section 에 이 값을 어떻게 사용되는지 명시되어 있다.
 
   3. `resolveInstanceMethod:`가 `NO`를 리턴할경우, 런타임은 `- (id)forwardingTargetForSelector:(SEL)aSelector`을 호출하게 된다. 이를 통해서 다른 객체가 해당 메시지에 응답할 기회를 다시한번 주게되며 다음과 같이 구현한다. (이 함수에서 `self`를 리턴할 경우 무한루프에 빠지게되므로 주의할것. )
     
-    <pre>- (id)forwardingTargetForSelector:(SEL)aSelector
+    <pre><code>- (id)forwardingTargetForSelector:(SEL)aSelector
 {
     if(aSelector == @selector(mysteriousMethod:)){
         return alternateObject;
     }
     return [super forwardingTargetForSelector:aSelector];
 }
-</pre>
+</code></pre>
 
 이 메서드는 속도가 느린(expensive call) `forwardInvocation:`메서드로 메시지가 리디렉션 되기 전의 마지막 처리 기회이고, 일반적인 포워딩보다 10배정도 빠르게 동작하기 때문에 기본적인 프록시(proxying) 상황에서 유용하다.
 
   4. 위 함수에서도 `nil`값이 리턴되면, 런타임은 최종적으로 `- (void)forwardInvocation:(NSInvocation *)anInvocation`을 호출한다. `NSInvocation`은 Objective-C 메시지가 객체형태로 표현된 것이라고 생각하면 된다. 따라서 일단 `NSInvocation`이 생성되면, 메시지의 타겟, 셀렉터, 인수 등을 마음대로 변경이 가능해진다.
     
-    <pre>-(void)forwardInvocation:(NSInvocation *)invocation
+    <pre><code>-(void)forwardInvocation:(NSInvocation *)invocation
 {
     SEL invSEL = invocation.selector;
 
@@ -330,7 +330,7 @@ Objective-C에서는 해당 객체가 메시지에 응답 가능한지 모르는
         [self doesNotRecognizeSelector:invSEL];
     }
 }
-</pre>
+</code></pre>
 
 위의 함수를 오버라이드하지 않을경우 디폴트 동작으로 `-doesNotRecognizeSelector:`가 호출된다.
 
@@ -338,8 +338,8 @@ Objective-C에서는 해당 객체가 메시지에 응답 가능한지 모르는
 
 Objective-C의 카테고리(category)기능은 손이 많이가는 상속과정 없이도 기존에 존재하는 클래스에 추가로 메서드를 추가할 수 있게 해준다. 하지만 멤버 변수를 추가 할 수 없다는 것이 불편한 점이었다. 하지만 Mac OS X 10.6 스노우 레오파드(Snow Leopard), iOS 4.0 부터 Associated References 라는 기능이 추가되면서 이를 해결 할 수 있게 되었다(카테고리에 멤버 변수를 get/set하는 것 처럼 시뮬레이트하는 메서드를 추가하는 방식). 이미 존재하는 클래스에 멤버 변수를 추가하기 위한 다음 코드를 보자.
 
-<pre>#import &lt; Cocoa/Cocoa.h&gt; //Cocoa
-#include &lt;objc/runtime.h&gt; //objc runtime api’s
+<pre><code>#import &lt; Cocoa/Cocoa.h&gt; //Cocoa
+#include &lt;objc/runtime.h&gt; //objc runtime api's
 
 @interface NSView (CustomAdditions)
 @property(retain) NSImage *customImage;
@@ -361,7 +361,7 @@ static char img_key; //has a unique address (identifier)
 }
 
 @end
-</pre>
+</code></pre>
 
 위 코드는 기본적으로 기존 카테고리(category)를 선언할때와 동일하다. 이에 추가적으로 멤버 변수 처럼 동작을 시뮬레이트 하기 위해 `@property`가 정의되었고, `static` 키값 변수를 통해서 associated 될 객체들을 get/set 하도록 되어있다.
 
@@ -369,7 +369,7 @@ static char img_key; //has a unique address (identifier)
 
 `runtime.h`에 보면 set을 할때 필요한 옵션상수값들이 명시되어 있으니 해당 옵션 값을 `@property`정의할때 사용 했던 것과 일치시켜 사용하면 된다.
 
-<pre>objc_setAssociatedObject(). 
+<pre><code>objc_setAssociatedObject(). 
 /* Associated Object support. */
 
 /* objc_setAssociatedObject() options */
@@ -380,7 +380,7 @@ enum {
     OBJC_ASSOCIATION_RETAIN = 01401,
     OBJC_ASSOCIATION_COPY = 01403
 }; 
-</pre>
+</code></pre>
 
 ## Objective-C를 C/C++ 코드와 섞어쓸 수 있는 이유?
 
@@ -395,7 +395,6 @@ Objective-C는 C에 대해 OOP(object oriented programming)과 런타임 모델�
         http://cocoasamurai.blogspot.kr/2010/01/understanding-objective-c-runtime.html<a href="#fnref:1" rev="footnote">&#8617;</a>
       </p>
     </li>
-    
     <li id="fn:2">
       <p>
         http://developer.apple.com/mac/library/documentation/Cocoa/Conceptual/ObjCRuntimeGuide/Introduction/Introduction.html<a href="#fnref:2" rev="footnote">&#8617;</a>

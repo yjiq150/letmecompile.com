@@ -15,7 +15,8 @@ mongodb+srv://mongodb-atlas-serverles.asdf.mongodb.net
 
 위와같은 mongodb connection string이 있을때 해당 mongodb에 접속할 수 있는 실제 서버의 IP주소를 알고싶은 경우 다음과 같이하면 된다.
 
-<pre class="EnlighterJSRAW" data-enlighter-language="generic" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group=""># -type=SRV 옵션을 사용해서 DNS 레코드 중 SRV 타입을 검색한다
+```
+# -type=SRV 옵션을 사용해서 DNS 레코드 중 SRV 타입을 검색한다
 # connection string에 명시된 주소 앞쪽에 _mongodb._tcp 를 붙여준다.
 $ nslookup -type=SRV _mongodb._tcp.mongodb-atlas-serverles.asdf.mongodb.net
 
@@ -23,11 +24,13 @@ Server:		8.8.8.8
 Address:	8.8.8.8#53
 
 Non-authoritative answer:
-_mongodb._tcp.mongodb-atlas-serverles.asdf.mongodb.net	service = 0 0 27017 mongodb-atlas-serverless-example-dev-lb.asdf.mongodb.net.</pre>
+_mongodb._tcp.mongodb-atlas-serverles.asdf.mongodb.net	service = 0 0 27017 mongodb-atlas-serverless-example-dev-lb.asdf.mongodb.net.
+```
 
 출력된 결과를 보면 mongodb-atlas-serverless-example-dev-lb.asdf.mongodb.net 부분이있는데 이것이 실제 주소이다.
 
-<pre class="EnlighterJSRAW" data-enlighter-language="generic" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group=""># 위에서 얻은 주소로 다시한번 쿼리
+```
+# 위에서 얻은 주소로 다시한번 쿼리
 $ nslookup mongodb-atlas-serverless-example-dev-lb.asdf.mongodb.net
 
 Server:		8.8.8.8
@@ -38,6 +41,7 @@ mongodb-atlas-serverless-example-dev-lb.dvfze.mongodb.net	canonical name = 12345
 Name:	123456-nlb-12345.elb.ap-southeast-1.amazonaws.com
 Address: 13.213.131.24
 Name:	123456-nlb-12345.elb.ap-southeast-1.amazonaws.com
-Address: 13.213.229.91</pre>
+Address: 13.213.229.91
+```
 
 여기서 나온 IP 주소들이 실제 mongodb 서버의 주소이다.
