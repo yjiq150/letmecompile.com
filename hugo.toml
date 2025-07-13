@@ -32,6 +32,12 @@ theme = 'PaperMod'
   category = "/category"
   tag = "/tag"
 
+# Language-specific taxonomy configuration for templates
+# tags section in single.html does not show up without this
+[languages.ko-kr.params.taxonomies]
+  tag = "tags"
+  category = "categories"
+
 [params]
   ShowReadingTime = true
   ShowShareButtons = false
@@ -50,6 +56,14 @@ theme = 'PaperMod'
   hideSummary = false
   showtoc = false
   tocopen = false
+
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://linkedin.com/in/youngjae-kwon-a73a147/"
+
+  [[params.socialIcons]]
+    name = "x"
+    url = "https://x.com/yjiq150"
 
   # Search configuration with Fuse.js
   [params.fuseOpts]
