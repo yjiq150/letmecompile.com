@@ -78,12 +78,14 @@ params:
     category: /category/:slug/
     tag: /tag/:slug/
 
-  # Social icons configuration
   socialIcons:
     - name: linkedin
       url: "https://linkedin.com/in/youngjae-kwon-a73a147/"
     - name: x
       url: "https://x.com/yjiq150"
+
+  adsense:
+    client: ca-pub-5341321752766779
 
   # Search configuration with Fuse.js
   fuseOpts:

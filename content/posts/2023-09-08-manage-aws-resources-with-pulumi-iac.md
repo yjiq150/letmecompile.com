@@ -430,6 +430,8 @@ Resources:
 },
 </code></pre>
 
+{{< adsense slot="1075484447" >}}
+
 <p>
   이제 변경된 코드 내용을 기반으로 해당 내용을 RDS 설정에 반영하기 위해 <code>pulumi up</code>을 실행하자.
 </p>
@@ -463,6 +465,7 @@ Do you want to perform this update?  [Use arrows to move, type to filter]
  ~   └─ aws:rds:Instance  sss-database  updating (23s).    [diff: +blueGreenUpdate~engineVersion,instanceClass]
 
 </code></pre>
+
 
 <p>
   AWS쪽에 리소스 업데이트가 진행되는 동안에 Pulumi CLI에서는 계속 경과 시간이 표시되면서 대기하고있게된다.

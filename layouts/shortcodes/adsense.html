@@ -1,0 +1,14 @@
+{{/* AdSense In-Article Ad Shortcode */}}
+<div class="adsense-container" style="text-align: center; margin: 2rem 0; padding: 1rem 0;">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ .Get "client" | default site.Params.adsense.client }}"></script>
+  <!-- {{ .Get "name" | default "In-Article Ad" }} -->
+  <ins class="adsbygoogle"
+       style="display:block; text-align:center;"
+       data-ad-layout="in-article"
+       data-ad-format="{{ .Get "format" | default "fluid" }}"
+       data-ad-client="{{ .Get "client" | default site.Params.adsense.client }}"
+       data-ad-slot="{{ .Get "slot" }}"></ins>
+  <script>
+       (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</div>
