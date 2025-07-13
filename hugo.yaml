@@ -40,7 +40,7 @@ outputs:
   home: [HTML, RSS, JSON]
 
 params:
-  # Enable only for testing locally
+  # Enable production mode for OpenGraph tags
   # env: "production"
   ShowReadingTime: true
   ShowShareButtons: false

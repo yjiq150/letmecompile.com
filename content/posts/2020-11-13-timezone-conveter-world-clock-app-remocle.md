@@ -2,7 +2,8 @@
 title: 타임존 시차 계산기 앱 ‘리모클(Remocle)’ 추천
 date: 2020-11-12T16:13:25+00:00
 url: /timezone-conveter-world-clock-app-remocle/
-featured_image: /uploads/2020/11/open-graph-150x79.jpg
+cover:
+  image: "/uploads/2020/11/open-graph.jpg"
 crp_related_posts:
   - '<div class="crp_related  "><h3>관련 포스트:</h3><ul><li><a href="https://www.letmecompile.com/certificate-file-format-extensions-comparison/"     class="post-792"><span class="crp_title">인증서 파일 형식 및 확장자의 차이점 비교 설명 (Certificate file format&hellip;</span></a></li><li><a href="https://www.letmecompile.com/kotlin-coroutine-vs-javascript-async-comparison/"     class="post-873"><span class="crp_title">JavaScript 개발자에게 Kotlin coroutine 10분만에 이해시키기</span></a></li><li><a href="https://www.letmecompile.com/mysql-innodb-auto-increment-%ec%84%b1%eb%8a%a5-%ec%b5%9c%ec%a0%81%ed%99%94/"     class="post-750"><span class="crp_title">MySQL - InnoDB Auto Increment 성능 최적화</span></a></li><li><a href="https://www.letmecompile.com/mac-app-recommendation-for-developer/"     class="post-836"><span class="crp_title">개발자를 위한 필수 맥 앱(Mac App) 10선</span></a></li><li><a href="https://www.letmecompile.com/shotcut-linux-server-video-generation/"     class="post-753"><span class="crp_title">Shotcut을 이용하여 리눅스 서버에서 템플릿 기반의 동영상 만들기</span></a></li></ul><div class="crp_clear"></div></div>'
 crp_related_posts_feed:
@@ -11,7 +12,6 @@ categories:
   - 앱추천
 
 ---
-## [<img loading="lazy" class="aligncenter size-large wp-image-902" src="/uploads/2020/11/open-graph-1024x538.jpg" alt="" width="625" height="328" srcset="https://www.letmecompile.com/wp/wp-content/uploads/2020/11/open-graph-1024x538.jpg 1024w, https://www.letmecompile.com/wp/wp-content/uploads/2020/11/open-graph-300x158.jpg 300w, https://www.letmecompile.com/wp/wp-content/uploads/2020/11/open-graph-768x403.jpg 768w, https://www.letmecompile.com/wp/wp-content/uploads/2020/11/open-graph-150x79.jpg 150w, https://www.letmecompile.com/wp/wp-content/uploads/2020/11/open-graph.jpg 1200w" sizes="(max-width: 625px) 100vw, 625px" />][1]
 
 ## 골치아픈 타임존(Timezone) 시차 계산
 
@@ -69,7 +69,6 @@ categories:
   * [iOS 앱스토어][3]
   * [Android 플레이스토어][4]
 
- [1]: /uploads/2020/11/open-graph.jpg
  [2]: https://remocle.com/ko
  [3]: https://apps.apple.com/us/app/id1522259532
  [4]: https://play.google.com/store/apps/details?id=com.dundinstudio.remocle

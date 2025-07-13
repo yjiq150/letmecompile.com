@@ -2,7 +2,8 @@
 title: 개발자를 위한 필수 맥 앱(Mac App) 10선
 date: 2019-02-13T18:31:00+00:00
 url: /mac-app-recommendation-for-developer/
-featured_image: /uploads/2019/02/sublime_merge_mac_app-150x104.png
+cover:
+  image: "/uploads/2019/02/sublime_merge_mac_app-150x104.png"
 dsq_thread_id:
   - 7230379312
 dsq_needs_sync:

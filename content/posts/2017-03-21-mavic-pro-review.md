@@ -2,7 +2,8 @@
 title: '매빅 프로 드론 개봉기 & 리뷰'
 date: 2017-03-20T18:27:39+00:00
 url: /mavic-pro-review/
-featured_image: /uploads/2017/03/mavic_pro_03-624x417.jpg
+cover:
+  image: "/uploads/2017/03/mavic_pro_03-624x417.jpg"
 dsq_thread_id:
   - 5652966332
 crp_related_posts:
