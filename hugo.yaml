@@ -41,7 +41,7 @@ outputs:
 
 params:
   # Enable production mode for OpenGraph tags
-  # env: "production"
+  env: "production"
 
   # Logo configuration
   label:
