@@ -90,9 +90,9 @@ theme = 'PaperMod'
     enabled = true
     title = "Knowledge Logger"
     subtitle = "A blog about programming, development, and technology"
-    # imageUrl = "images/profile.jpg"  # Add your profile image path here
-    # imageWidth = 150
-    # imageHeight = 150
+     imageUrl = "images/profile_bg_white.png"  # Add your profile image path here
+     imageWidth = 150
+     imageHeight = 150
 
   # Commented out homeInfoParams as it conflicts with profileMode
   # [params.homeInfoParams]
