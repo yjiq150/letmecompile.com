@@ -60,6 +60,9 @@ enableRobotsTXT = true
   UseHugoToc = true
   # Enable syntax highlighting
   assets.disableHLJS = false
+  
+  # Favicon configuration
+  assets.favicon = "/images/profile_bg_white.png"
   disableSpecial1stPost = false
   disableScrollToTop = false
   comments = true

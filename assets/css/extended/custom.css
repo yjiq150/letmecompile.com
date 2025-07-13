@@ -1,5 +1,14 @@
+.post-title {
+    font-size: 38px;
+}
+
 .post-content h2 {
     margin-top: 40px;
+    font-size: 26px;
+}
+
+.post-content h3 {
+    font-size: 20px;
 }
 
 .post-content h3,
@@ -9,7 +18,7 @@
     margin-top: 32px;
 }
 
-    /* Custom CSS to preserve image aspect ratios */
+/* Custom CSS to preserve image aspect ratios */
 
 /* Ensure all images maintain their original aspect ratio */
 .post-content img {
