@@ -1,7 +1,5 @@
 ---
 title: MySQL InnoDB Transaction Model 이해하기
-author: yjiq150
-type: post
 date: 2018-06-07T18:03:48+00:00
 url: /mysql-innodb-transaction-model/
 dsq_thread_id:

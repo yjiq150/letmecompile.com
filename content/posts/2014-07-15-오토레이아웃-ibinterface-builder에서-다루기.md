@@ -1,7 +1,5 @@
 ---
 title: 오토레이아웃 IB(Interface Builder)에서 다루기
-author: yjiq150
-type: post
 date: 2014-07-15T13:15:37+00:00
 url: /오토레이아웃-ibinterface-builder에서-다루기/
 dsq_thread_id:

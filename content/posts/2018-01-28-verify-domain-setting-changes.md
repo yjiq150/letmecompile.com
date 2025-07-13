@@ -1,7 +1,5 @@
 ---
 title: 도메인 설정 변경 확인 명령어
-author: yjiq150
-type: post
 date: 2018-01-28T14:58:48+00:00
 url: /verify-domain-setting-changes/
 dsq_thread_id:

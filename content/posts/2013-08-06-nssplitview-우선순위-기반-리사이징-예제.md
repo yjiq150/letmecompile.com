@@ -1,7 +1,5 @@
 ---
 title: NSSplitView 우선순위 기반 리사이징 예제
-author: yjiq150
-type: post
 date: 2013-08-05T15:57:40+00:00
 url: /nssplitview-우선순위-기반-리사이징-예제/
 dsq_thread_id:

@@ -1,7 +1,5 @@
 ---
 title: C auto, static, extern 키워드 의미
-author: yjiq150
-type: post
 date: 2014-02-20T13:02:04+00:00
 url: /c-auto-static-extern-키워드-의미/
 dsq_thread_id:

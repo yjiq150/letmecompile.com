@@ -1,7 +1,5 @@
 ---
 title: NginX vs. Apache on AWS micro
-author: yjiq150
-type: post
 date: 2013-11-10T15:51:56+00:00
 url: /nginx-vs-apache-on-aws-micro/
 dsq_thread_id:

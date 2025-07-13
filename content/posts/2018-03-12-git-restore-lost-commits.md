@@ -1,7 +1,5 @@
 ---
 title: 깃(Git) 에서 유실된 커밋(commit) 복원하기
-author: yjiq150
-type: post
 date: 2018-03-11T15:03:34+00:00
 url: /git-restore-lost-commits/
 dsq_thread_id:

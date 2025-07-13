@@ -1,7 +1,5 @@
 ---
 title: 'MySQL InnoDB lock & deadlock 이해하기'
-author: yjiq150
-type: post
 date: 2018-06-07T17:57:28+00:00
 url: /mysql-innodb-lock-deadlock/
 dsq_thread_id:

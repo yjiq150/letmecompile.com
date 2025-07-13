@@ -1,7 +1,5 @@
 ---
 title: 디익스트라 알고리즘(Dijkstra algorithm)
-author: yjiq150
-type: post
 date: 2013-11-01T15:04:10+00:00
 url: /디익스트라-알고리즘dijkstra-algorithm/
 dsq_thread_id:

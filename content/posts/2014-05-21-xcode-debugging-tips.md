@@ -1,7 +1,5 @@
 ---
 title: Xcode Debugging tips
-author: yjiq150
-type: post
 date: 2014-05-20T15:00:27+00:00
 url: /xcode-debugging-tips/
 dsq_thread_id:

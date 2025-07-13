@@ -1,7 +1,5 @@
 ---
 title: 우분투 JVM Segmetation Fault 버그 해결 및 커널 업데이트 방법
-author: yjiq150
-type: post
 date: 2018-04-03T15:33:53+00:00
 url: /ubuntu-jvm-segmetation-fault-kernel-update/
 dsq_thread_id:

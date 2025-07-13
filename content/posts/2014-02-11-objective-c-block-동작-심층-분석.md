@@ -1,7 +1,5 @@
 ---
 title: Objective-C Block 동작 심층 분석
-author: yjiq150
-type: post
 date: 2014-02-11T14:33:28+00:00
 url: /objective-c-block-동작-심층-분석/
 dsq_thread_id:

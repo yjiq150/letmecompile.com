@@ -1,7 +1,5 @@
 ---
 title: 모바일 디바이스간 P2P 연결 및 데이터 전송 방법
-author: yjiq150
-type: post
 date: 2018-12-15T04:05:47+00:00
 url: /p2p-connection-for-mobile-device/
 dsq_thread_id:

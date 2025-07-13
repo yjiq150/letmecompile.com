@@ -1,7 +1,5 @@
 ---
 title: 스팀잇 폰트체인저 – 한글 폰트 최적화로 스팀잇 포스트의 가독성을 향상시키기
-author: yjiq150
-type: post
 date: 2018-02-28T00:46:17+00:00
 url: /steemit-font-changer/
 dsq_thread_id:

@@ -1,7 +1,5 @@
 ---
 title: Responsive 유튜브(비메오) 임베딩 하기
-author: yjiq150
-type: post
 date: 2013-08-24T10:52:54+00:00
 url: /responsive-유튜브-비메오-임베딩-하기-2/
 dsq_thread_id:

@@ -1,7 +1,5 @@
 ---
 title: 작업 스케쥴러 크론(Cron) 간단 사용법
-author: yjiq150
-type: post
 date: 2018-03-23T13:17:51+00:00
 url: /scheduler-cron-tutorial/
 dsq_thread_id:

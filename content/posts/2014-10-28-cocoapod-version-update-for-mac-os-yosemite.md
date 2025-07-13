@@ -1,7 +1,5 @@
 ---
 title: Cocoapod version update for Mac OS Yosemite
-author: yjiq150
-type: post
 date: 2014-10-27T15:31:08+00:00
 url: /cocoapod-version-update-for-mac-os-yosemite/
 dsq_thread_id:

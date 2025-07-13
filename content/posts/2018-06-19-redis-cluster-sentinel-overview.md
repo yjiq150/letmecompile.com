@@ -1,7 +1,5 @@
 ---
 title: 레디스 클러스터, 센티넬 구성 및 동작 방식
-author: yjiq150
-type: post
 date: 2018-06-19T00:29:54+00:00
 url: /redis-cluster-sentinel-overview/
 dsq_thread_id:

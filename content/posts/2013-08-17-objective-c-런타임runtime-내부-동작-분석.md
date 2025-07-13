@@ -1,7 +1,5 @@
 ---
 title: Objective-C 런타임(runtime) 내부 동작 분석
-author: yjiq150
-type: post
 date: 2013-08-17T02:44:54+00:00
 url: /objective-c-런타임runtime-내부-동작-분석/
 dsq_thread_id:

@@ -1,7 +1,5 @@
 ---
 title: SSH shell에서 실행중인 작업을 연결 종료 후에도 유지하기
-author: yjiq150
-type: post
 date: 2018-12-25T13:49:52+00:00
 url: /keep-process-after-disconnected-from-ssh-shell/
 dsq_thread_id:

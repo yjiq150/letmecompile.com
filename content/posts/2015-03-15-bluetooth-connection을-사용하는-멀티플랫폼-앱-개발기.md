@@ -1,7 +1,5 @@
 ---
 title: Bluetooth Connection을 사용하는 멀티플랫폼 앱 개발기
-author: yjiq150
-type: post
 date: 2015-03-15T03:03:21+00:00
 url: /bluetooth-connection을-사용하는-멀티플랫폼-앱-개발기/
 dsq_thread_id:

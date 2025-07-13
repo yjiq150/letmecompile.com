@@ -1,7 +1,5 @@
 ---
 title: NSSplitView 다중 컬럼 생성
-author: yjiq150
-type: post
 date: 2013-07-25T16:33:47+00:00
 url: /nssplitview-다중-컬럼-생성/
 dsq_thread_id:

@@ -1,7 +1,5 @@
 ---
 title: MySQL utf8에서 utf8mb4로 마이그레이션 하기
-author: yjiq150
-type: post
 date: 2017-11-14T18:14:06+00:00
 url: /mysql-utf8-utf8mb4-migration/
 dsq_thread_id:

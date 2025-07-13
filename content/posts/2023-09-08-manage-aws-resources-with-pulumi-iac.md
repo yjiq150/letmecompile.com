@@ -1,7 +1,5 @@
 ---
 title: Pulumi를 이용하여 코드로 AWS 리소스 관리하기
-author: yjiq150
-type: post
 date: 2023-09-08T14:50:19+00:00
 url: /manage-aws-resources-with-pulumi-iac/
 featured_image: /uploads/2023/09/og-image-pulumi-150x79.jpg

@@ -1,7 +1,5 @@
 ---
 title: '자바스크립트로 크롤러 만들기 3편: 다양한 유형의 웹페이지 크롤러 만들어보기'
-author: yjiq150
-type: post
 date: 2022-05-09T14:38:20+00:00
 url: /javascript-crawler-tutorial-part3/
 featured_image: /uploads/2022/05/javascript-crawler-tutorial-og-03-150x79.png

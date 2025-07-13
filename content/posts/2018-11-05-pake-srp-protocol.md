@@ -1,7 +1,5 @@
 ---
 title: PAKE와 SRP Protocol을 이용한 인증
-author: yjiq150
-type: post
 date: 2018-11-04T17:13:01+00:00
 url: /pake-srp-protocol/
 dsq_thread_id:

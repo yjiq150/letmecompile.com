@@ -1,7 +1,5 @@
 ---
 title: Shotcut을 이용하여 리눅스 서버에서 템플릿 기반의 동영상 만들기
-author: yjiq150
-type: post
 date: 2018-05-22T19:08:07+00:00
 url: /shotcut-linux-server-video-generation/
 dsq_thread_id:

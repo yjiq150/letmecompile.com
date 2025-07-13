@@ -1,7 +1,5 @@
 ---
 title: Swift 익스텐션, Obj-C 카테고리 메서드명 Prefix하기
-author: yjiq150
-type: post
 date: 2017-09-23T14:51:47+00:00
 url: /swift-extension-obj-c-category-method-prefix/
 dsq_thread_id:

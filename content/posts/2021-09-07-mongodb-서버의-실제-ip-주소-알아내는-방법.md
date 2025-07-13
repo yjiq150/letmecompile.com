@@ -1,7 +1,5 @@
 ---
 title: mongodb 서버의 실제 IP 주소 알아내는 방법
-author: yjiq150
-type: post
 date: 2021-09-07T09:05:55+00:00
 url: /mongodb-서버의-실제-ip-주소-알아내는-방법/
 crp_related_posts:

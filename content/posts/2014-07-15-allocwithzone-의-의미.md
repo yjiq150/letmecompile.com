@@ -1,7 +1,5 @@
 ---
 title: 'allocWithZone: 의 의미'
-author: yjiq150
-type: post
 date: 2014-07-15T13:30:08+00:00
 url: /allocwithzone-의-의미/
 dsq_thread_id:

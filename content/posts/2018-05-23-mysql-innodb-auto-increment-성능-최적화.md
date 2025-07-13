@@ -1,7 +1,5 @@
 ---
 title: MySQL – InnoDB Auto Increment 성능 최적화
-author: yjiq150
-type: post
 date: 2018-05-22T19:06:07+00:00
 url: /mysql-innodb-auto-increment-성능-최적화/
 dsq_thread_id:

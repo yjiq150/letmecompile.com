@@ -1,7 +1,5 @@
 ---
 title: 유니버셜링크 vs. 커스텀URL스킴 비교 분석
-author: yjiq150
-type: post
 date: 2017-08-21T05:50:44+00:00
 url: /universal-link-vs-custom-url-scheme/
 dsq_thread_id:

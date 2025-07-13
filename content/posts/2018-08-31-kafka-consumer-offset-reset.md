@@ -1,7 +1,5 @@
 ---
 title: 카프카(Kafka) Consumer offset reset 방법
-author: yjiq150
-type: post
 date: 2018-08-31T06:54:43+00:00
 url: /kafka-consumer-offset-reset/
 dsq_thread_id:

@@ -1,7 +1,5 @@
 ---
 title: 타임존 시차 계산기 앱 ‘리모클(Remocle)’ 추천
-author: yjiq150
-type: post
 date: 2020-11-12T16:13:25+00:00
 url: /timezone-conveter-world-clock-app-remocle/
 featured_image: /uploads/2020/11/open-graph-150x79.jpg

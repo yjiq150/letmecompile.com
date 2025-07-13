@@ -1,7 +1,5 @@
 ---
 title: 정규식 Negative Lookahead 예제
-author: yjiq150
-type: post
 date: 2018-09-09T14:12:49+00:00
 url: /regex-negative-lookahead-example/
 dsq_thread_id:

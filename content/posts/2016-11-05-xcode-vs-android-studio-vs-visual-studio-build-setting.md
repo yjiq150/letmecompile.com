@@ -1,7 +1,5 @@
 ---
 title: Xcode vs. Android Studio vs. Visual Studio 프로젝트 설정 방법 비교
-author: yjiq150
-type: post
 date: 2016-11-05T13:20:30+00:00
 url: /xcode-vs-android-studio-vs-visual-studio-build-setting/
 dsq_thread_id:

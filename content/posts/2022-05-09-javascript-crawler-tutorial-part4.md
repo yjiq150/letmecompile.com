@@ -1,7 +1,5 @@
 ---
 title: '자바스크립트로 크롤러 만들기 4편: 실제 웹페이지 크롤링해보기'
-author: yjiq150
-type: post
 date: 2022-05-09T14:48:47+00:00
 url: /javascript-crawler-tutorial-part4/
 featured_image: /uploads/2022/05/javascript-crawler-tutorial-og-04-150x79.png

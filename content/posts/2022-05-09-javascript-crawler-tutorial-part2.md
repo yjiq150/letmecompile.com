@@ -1,7 +1,5 @@
 ---
 title: '자바스크립트로 크롤러 만들기 2편: 웹페이지 크롤링을 위한 배경 지식 알아보기'
-author: yjiq150
-type: post
 date: 2022-05-09T14:33:02+00:00
 url: /javascript-crawler-tutorial-part2/
 featured_image: /uploads/2022/05/javascript-crawler-tutorial-og-02-150x79.png

@@ -1,7 +1,5 @@
 ---
 title: NSView debug drawing
-author: yjiq150
-type: post
 date: 2014-05-10T10:24:24+00:00
 url: /nsview-debug-drawing/
 dsq_thread_id:

@@ -1,7 +1,5 @@
 ---
 title: 앱스토어 계정 이전시 애플 로그인 마이그레이션
-author: yjiq150
-type: post
 date: 2023-09-13T01:40:23+00:00
 url: /apple-sign-in-migration-on-appstore-app-transfer/
 crp_related_posts:

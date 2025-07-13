@@ -1,7 +1,5 @@
 ---
 title: 코코아팟(CocoaPods) 젠킨스(Jenkins) 설정 연동
-author: yjiq150
-type: post
 date: 2014-07-23T04:47:28+00:00
 url: /코코아팟cocoapods-젠킨스jenkins-설정-연동/
 dsq_thread_id:

@@ -1,7 +1,5 @@
 ---
 title: '인증서 파일 형식 및 확장자의 차이점 비교 설명 (Certificate file format & extensions)'
-author: yjiq150
-type: post
 date: 2018-10-19T09:02:10+00:00
 url: /certificate-file-format-extensions-comparison/
 dsq_thread_id:

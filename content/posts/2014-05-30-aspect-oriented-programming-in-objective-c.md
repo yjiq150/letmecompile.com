@@ -1,7 +1,5 @@
 ---
 title: Aspect Oriented Programming in Objective-C
-author: yjiq150
-type: post
 date: 2014-05-30T14:29:11+00:00
 url: /aspect-oriented-programming-in-objective-c/
 dsq_thread_id:

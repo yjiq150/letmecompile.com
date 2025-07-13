@@ -1,7 +1,5 @@
 ---
 title: '자바스크립트로 크롤러 만들기 1편: 크롤링을 위한 크롬 개발자 도구 사용법 익히기'
-author: yjiq150
-type: post
 date: 2022-05-09T14:25:06+00:00
 url: /javascript-crawler-tutorial-part1/
 featured_image: /uploads/2022/05/javascript-crawler-tutorial-og-01-150x79.png

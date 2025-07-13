@@ -1,7 +1,5 @@
 ---
 title: Elastic Beanstalk 및 EC2 인스턴스 Graceful shutdown 설정
-author: yjiq150
-type: post
 date: 2019-02-10T16:16:34+00:00
 url: /eb-ec2-instance-graceful-shutdown/
 dsq_thread_id:

@@ -1,7 +1,5 @@
 ---
 title: IE8 CSS selector limit
-author: yjiq150
-type: post
 date: 2016-05-12T00:23:22+00:00
 url: /ie8-css-selector-limit/
 dsq_thread_id:

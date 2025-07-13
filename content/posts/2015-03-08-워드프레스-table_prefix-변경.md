@@ -1,7 +1,5 @@
 ---
 title: 워드프레스 table_prefix 변경
-author: yjiq150
-type: post
 date: 2015-03-07T15:31:40+00:00
 url: /워드프레스-table_prefix-변경/
 dsq_thread_id:

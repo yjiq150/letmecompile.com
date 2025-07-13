@@ -1,7 +1,5 @@
 ---
 title: DB 트랜잭션 격리 수준
-author: yjiq150
-type: post
 date: 2018-06-04T12:12:28+00:00
 url: /database-transaction-isolation-level/
 dsq_thread_id:

@@ -1,7 +1,5 @@
 ---
 title: NSSplitView 구현 팁
-author: yjiq150
-type: post
 date: 2014-05-08T13:21:15+00:00
 url: /nssplitview-구현-팁/
 dsq_thread_id:

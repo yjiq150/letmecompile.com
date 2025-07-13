@@ -1,7 +1,5 @@
 ---
 title: Objective-C Tips from WWDC 2013
-author: yjiq150
-type: post
 date: 2014-05-19T14:38:03+00:00
 url: /objective-c-tips-from-wwdc-2013/
 dsq_thread_id:

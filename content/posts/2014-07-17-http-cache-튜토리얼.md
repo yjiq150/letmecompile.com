@@ -1,7 +1,5 @@
 ---
 title: HTTP Cache 튜토리얼
-author: yjiq150
-type: post
 date: 2014-07-17T00:25:07+00:00
 url: /http-cache-튜토리얼/
 dsq_thread_id:

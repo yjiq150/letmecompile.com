@@ -1,7 +1,5 @@
 ---
 title: nginx ingress controller 무중단 업데이트하기
-author: yjiq150
-type: post
 date: 2021-12-24T15:46:00+00:00
 url: /kubernetes-nlb-nginx-ingress-update/
 crp_related_posts:

@@ -1,7 +1,5 @@
 ---
 title: NSViewController를 리스폰더 체인에 추가하기
-author: yjiq150
-type: post
 date: 2013-10-28T11:58:02+00:00
 url: /nsviewcontroller를-리스폰더-체인에-추가하기/
 dsq_thread_id:

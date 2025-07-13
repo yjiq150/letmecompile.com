@@ -1,7 +1,5 @@
 ---
 title: such as, like 용법 구분 및 쉼표
-author: yjiq150
-type: post
 date: 2013-07-15T16:54:38+00:00
 url: /such-as-like-용법-구분/
 dsq_thread_id:

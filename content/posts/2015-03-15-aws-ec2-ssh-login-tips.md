@@ -1,7 +1,5 @@
 ---
 title: AWS EC2 ssh 로그인 tips
-author: yjiq150
-type: post
 date: 2015-03-15T01:58:03+00:00
 url: /aws-ec2-ssh-login-tips/
 dsq_thread_id:

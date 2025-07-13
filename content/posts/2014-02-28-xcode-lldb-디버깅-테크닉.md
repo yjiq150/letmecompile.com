@@ -1,7 +1,5 @@
 ---
 title: Xcode LLDB 디버깅 테크닉
-author: yjiq150
-type: post
 date: 2014-02-28T09:19:37+00:00
 url: /xcode-lldb-디버깅-테크닉/
 dsq_thread_id:

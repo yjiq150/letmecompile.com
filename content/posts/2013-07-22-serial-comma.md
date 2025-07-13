@@ -1,7 +1,5 @@
 ---
 title: Serial comma
-author: yjiq150
-type: post
 date: 2013-07-21T17:06:57+00:00
 url: /serial-comma/
 dsq_thread_id:

@@ -1,7 +1,5 @@
 ---
 title: 커버로스 프로토콜(Kerberos Protocol) – 서버 접근 권한 관리
-author: yjiq150
-type: post
 date: 2018-04-30T04:37:30+00:00
 url: /kerberos-protocol/
 dsq_thread_id:

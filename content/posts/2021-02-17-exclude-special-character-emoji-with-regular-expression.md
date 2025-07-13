@@ -1,7 +1,5 @@
 ---
 title: 정규식으로 사용자 이름에서 특수문자, 이모지 걸러내기
-author: yjiq150
-type: post
 date: 2021-02-17T09:48:46+00:00
 url: /exclude-special-character-emoji-with-regular-expression/
 crp_related_posts:

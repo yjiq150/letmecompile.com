@@ -1,7 +1,5 @@
 ---
 title: 클라우드플레어(Cloudflare) 동작 원리
-author: yjiq150
-type: post
 date: 2018-04-30T04:40:15+00:00
 url: /how-cloudflare-works/
 dsq_thread_id:

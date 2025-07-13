@@ -1,7 +1,5 @@
 ---
 title: 무료 SSL 인증서 적용하기 (Let’s Encrypt)
-author: yjiq150
-type: post
 date: 2017-09-07T01:04:08+00:00
 url: /무료-ssl-인증서-적용하기-lets-encrypt/
 dsq_thread_id:

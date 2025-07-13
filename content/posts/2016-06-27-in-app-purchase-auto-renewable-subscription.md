@@ -1,7 +1,5 @@
 ---
 title: iOS 인앱 정기결제(IAP Auto-renewable Subscription) 튜토리얼
-author: yjiq150
-type: post
 date: 2016-06-26T15:10:33+00:00
 url: /in-app-purchase-auto-renewable-subscription/
 dsq_thread_id:

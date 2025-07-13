@@ -1,7 +1,5 @@
 ---
 title: Swift Closure vs. Objective-C Block 차이점 비교 분석
-author: yjiq150
-type: post
 date: 2018-01-30T03:07:08+00:00
 url: /swift-closure-vs-objective-c-block/
 dsq_thread_id:

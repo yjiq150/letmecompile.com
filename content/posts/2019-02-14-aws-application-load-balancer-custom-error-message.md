@@ -1,7 +1,5 @@
 ---
 title: AWS Application Load Balancer Custom Error Message
-author: yjiq150
-type: post
 date: 2019-02-13T16:01:05+00:00
 url: /aws-application-load-balancer-custom-error-message/
 dsq_thread_id:

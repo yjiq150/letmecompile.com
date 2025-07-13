@@ -1,7 +1,5 @@
 ---
 title: UIImage의 scale을 올바르게 처리하기
-author: yjiq150
-type: post
 date: 2015-07-06T02:21:33+00:00
 url: /uiimage의-scale을-올바르게-처리하기/
 dsq_thread_id:

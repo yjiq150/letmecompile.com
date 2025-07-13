@@ -1,7 +1,5 @@
 ---
 title: Jenkins에 저장된 credential/password 값 알아내기
-author: yjiq150
-type: post
 date: 2021-10-27T14:12:30+00:00
 url: /jenkins에-저장된-credential-값-알아내기/
 crp_related_posts_feed:

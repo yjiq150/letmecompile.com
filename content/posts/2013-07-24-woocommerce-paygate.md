@@ -1,7 +1,5 @@
 ---
 title: Woocommerce 페이게이트 결제 모듈 개발
-author: yjiq150
-type: post
 date: 2013-07-24T11:32:18+00:00
 draft: true
 private: true

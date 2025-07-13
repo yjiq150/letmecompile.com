@@ -1,7 +1,5 @@
 ---
 title: Swift struct vs. class 차이점 비교 분석
-author: yjiq150
-type: post
 date: 2018-01-30T04:06:39+00:00
 url: /swift-struct-vs-class-차이점-비교-분석/
 dsq_thread_id:

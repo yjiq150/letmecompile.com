@@ -1,7 +1,5 @@
 ---
 title: brew service 명령어 사용법 및 주요 경로
-author: yjiq150
-type: post
 date: 2021-09-02T14:49:54+00:00
 url: /brew-service-명령어-사용법-및-주요-경로/
 crp_related_posts:

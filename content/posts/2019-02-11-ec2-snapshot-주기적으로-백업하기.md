@@ -1,7 +1,5 @@
 ---
 title: EC2 Snapshot 주기적으로 백업하기
-author: yjiq150
-type: post
 date: 2019-02-11T01:28:02+00:00
 url: /ec2-snapshot-주기적으로-백업하기/
 dsq_thread_id:

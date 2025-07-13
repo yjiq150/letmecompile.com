@@ -1,7 +1,5 @@
 ---
 title: restrictive clause, non-restrictive clause 구분하기
-author: yjiq150
-type: post
 date: 2013-07-16T14:11:49+00:00
 url: /restrictive-clause-non-restrictive-clause-구분하기/
 dsq_thread_id:

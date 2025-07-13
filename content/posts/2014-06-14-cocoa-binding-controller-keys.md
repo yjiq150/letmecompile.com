@@ -1,7 +1,5 @@
 ---
 title: Cocoa Binding Controller Keys
-author: yjiq150
-type: post
 date: 2014-06-14T07:37:57+00:00
 url: /cocoa-binding-controller-keys/
 dsq_thread_id:

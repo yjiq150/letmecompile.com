@@ -1,7 +1,5 @@
 ---
 title: Backblaze + 클라우드플레어를 이용한 서버 비용 절약 방법
-author: yjiq150
-type: post
 date: 2022-02-02T15:15:59+00:00
 url: /s3-vs-backblaze-comparison/
 crp_related_posts:

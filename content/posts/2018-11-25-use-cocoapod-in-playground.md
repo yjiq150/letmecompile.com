@@ -1,7 +1,5 @@
 ---
 title: Playground에서 Cocoapod 라이브러리 사용하기
-author: yjiq150
-type: post
 date: 2018-11-24T18:17:03+00:00
 url: /use-cocoapod-in-playground/
 dsq_thread_id:

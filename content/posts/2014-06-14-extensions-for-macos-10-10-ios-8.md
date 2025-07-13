@@ -1,7 +1,5 @@
 ---
 title: 'MacOS 10.10 & iOS 8 새기능 익스텐션(Extensions) 개념 잡기'
-author: yjiq150
-type: post
 date: 2014-06-14T06:03:45+00:00
 url: /extensions-for-macos-10-10-ios-8/
 dsq_thread_id:

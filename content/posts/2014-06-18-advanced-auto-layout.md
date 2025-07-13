@@ -1,7 +1,5 @@
 ---
 title: iOS 고급 오토레이아웃(auto layout)
-author: yjiq150
-type: post
 date: 2014-06-18T09:39:09+00:00
 url: /advanced-auto-layout/
 dsq_thread_id:

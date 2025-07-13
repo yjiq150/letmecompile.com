@@ -1,7 +1,5 @@
 ---
 title: '자바스크립트로 크롤러 만들기: 크롤링 개념 및 튜토리얼 소개'
-author: yjiq150
-type: post
 date: 2022-05-09T13:51:37+00:00
 url: /javascript-crawler-tutorial-intro/
 featured_image: /uploads/2022/05/javascript-crawler-tutorial-og-00-150x79.png

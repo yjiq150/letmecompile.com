@@ -1,7 +1,5 @@
 ---
 title: Shotcut – Size and Position filter
-author: yjiq150
-type: post
 date: 2018-05-20T14:27:59+00:00
 url: /shotcut-size-and-position-filter/
 dsq_thread_id:

@@ -1,7 +1,5 @@
 ---
 title: 상수 포인터(constant pointer)와 상수를 가리키는 포인터(pointer to constant)
-author: yjiq150
-type: post
 date: 2014-07-14T09:19:19+00:00
 url: /상수-포인터constant-pointer와-상수를-가리키는-포인터pointer-to-constant/
 dsq_thread_id:

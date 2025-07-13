@@ -1,7 +1,5 @@
 ---
 title: NginX, PHP-FPM 맥에 설치하기
-author: yjiq150
-type: post
 date: 2013-11-03T19:00:41+00:00
 url: /nginx-php-fpm-맥에-설치하기/
 dsq_thread_id:

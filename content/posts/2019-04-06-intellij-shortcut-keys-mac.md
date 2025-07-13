@@ -1,7 +1,5 @@
 ---
 title: 개발자라면 알아야 할 IntelliJ 필수 단축키 20선 for Mac
-author: yjiq150
-type: post
 date: 2019-04-05T15:37:58+00:00
 url: /intellij-shortcut-keys-mac/
 dsq_thread_id:

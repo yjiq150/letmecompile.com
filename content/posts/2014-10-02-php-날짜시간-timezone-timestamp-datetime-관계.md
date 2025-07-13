@@ -1,7 +1,5 @@
 ---
 title: PHP 날짜/시간 Timezone, TimeStamp, DateTime 관계
-author: yjiq150
-type: post
 date: 2014-10-02T14:32:09+00:00
 url: /php-날짜시간-timezone-timestamp-datetime-관계/
 dsq_thread_id:

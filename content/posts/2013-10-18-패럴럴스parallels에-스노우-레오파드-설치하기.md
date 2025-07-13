@@ -1,7 +1,5 @@
 ---
 title: 패럴럴스(Parallels)에 스노우 레오파드 설치하기
-author: yjiq150
-type: post
 date: 2013-10-18T04:46:38+00:00
 url: /패럴럴스parallels에-스노우-레오파드-설치하기/
 dsq_thread_id:

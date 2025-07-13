@@ -1,7 +1,5 @@
 ---
 title: 크롬 익스텐션 개발 + 리액트 적용하기
-author: yjiq150
-type: post
 date: 2018-07-21T17:05:44+00:00
 url: /chrome-extension-with-react/
 dsq_thread_id:

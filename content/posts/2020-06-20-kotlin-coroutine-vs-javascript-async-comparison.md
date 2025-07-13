@@ -1,7 +1,5 @@
 ---
 title: JavaScript 개발자에게 Kotlin coroutine 10분만에 이해시키기
-author: yjiq150
-type: post
 date: 2020-06-19T16:58:45+00:00
 url: /kotlin-coroutine-vs-javascript-async-comparison/
 dsq_thread_id:

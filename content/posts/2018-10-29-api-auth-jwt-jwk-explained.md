@@ -1,7 +1,5 @@
 ---
 title: API 서버 인증을 위한 JWT와 JWK 이해하기
-author: yjiq150
-type: post
 date: 2018-10-28T16:35:21+00:00
 url: /api-auth-jwt-jwk-explained/
 dsq_thread_id:
