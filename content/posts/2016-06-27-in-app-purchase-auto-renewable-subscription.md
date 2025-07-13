@@ -71,7 +71,7 @@ Auto-Renewable Subscription 상품에 대한 결제 방식은 다른 종류의 I
   * Receipt 
       * [[NSBundle mainBundle] appStoreReceiptURL] 주소를 읽어들이면 receipt을 NSData 형태로 읽어들일 수 있다.
       * 암호화 되어 저장되어있으며, 이 receipt data안에 모든 결제건(transactions)들이 다 들어있다. 새로운 결제건이 생길때마다 다시 업데이트 된다.
-      * [<img loading="lazy" src="/uploads/2016/06/apple_app_receipt-819x1024.png" alt="" width="625" height="781" class="alignnone size-large wp-image-673" srcset="https://www.letmecompile.com/wp/wp-content/uploads/2016/06/apple_app_receipt-819x1024.png 819w, https://www.letmecompile.com/wp/wp-content/uploads/2016/06/apple_app_receipt-240x300.png 240w, https://www.letmecompile.com/wp/wp-content/uploads/2016/06/apple_app_receipt-768x960.png 768w, https://www.letmecompile.com/wp/wp-content/uploads/2016/06/apple_app_receipt-150x188.png 150w, https://www.letmecompile.com/wp/wp-content/uploads/2016/06/apple_app_receipt.png 1192w" sizes="(max-width: 625px) 100vw, 625px" />][3]
+      * [<img loading="lazy" src="/uploads/2016/06/apple_app_receipt-819x1024.png" alt="" width="625" height="781" class="alignnone size-large wp-image-673" srcset="/uploads/2016/06/apple_app_receipt-819x1024.png 819w, /uploads/2016/06/apple_app_receipt-240x300.png 240w, /uploads/2016/06/apple_app_receipt-768x960.png 768w, /uploads/2016/06/apple_app_receipt-150x188.png 150w, /uploads/2016/06/apple_app_receipt.png 1192w" sizes="(max-width: 625px) 100vw, 625px" />][3]
   * 어떻게 검증하는 것이 안전한가? 
       * 앱에서 직접 receipt validation을 구현하는 것도 가능하지만 추천하진 않는다. 
           * https://developer.apple.com/library/content/releasenotes/General/ValidateAppStoreReceipt/Chapters/ValidateLocally.html

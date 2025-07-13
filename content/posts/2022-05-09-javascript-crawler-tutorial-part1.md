@@ -23,7 +23,7 @@ categories:
 
 크롬 화면에서 마우스 오른쪽 버튼을 눌러 나오는 팝업 메뉴에서 [검사]를 선택하거나, 키보드의 F12 키(맥에서는 Fn + F12)를 누르면 [그림 4-1]과 같은 모습의 [개발자 도구]가 열립니다.
 
-<img loading="lazy" width="1024" height="640" src="/uploads/2022/05/4-1_chrome-developer-tool-overview-1024x640.png" alt="[그림 4-1] 크롬 개발자 도구" class="wp-image-987" srcset="https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-1_chrome-developer-tool-overview-1024x640.png 1024w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-1_chrome-developer-tool-overview-300x188.png 300w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-1_chrome-developer-tool-overview-768x480.png 768w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-1_chrome-developer-tool-overview-150x94.png 150w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-1_chrome-developer-tool-overview.png 1340w" sizes="(max-width: 1024px) 100vw, 1024px" /> 
+<img loading="lazy" width="1024" height="640" src="/uploads/2022/05/4-1_chrome-developer-tool-overview-1024x640.png" alt="[그림 4-1] 크롬 개발자 도구" class="wp-image-987" srcset="/uploads/2022/05/4-1_chrome-developer-tool-overview-1024x640.png 1024w, /uploads/2022/05/4-1_chrome-developer-tool-overview-300x188.png 300w, /uploads/2022/05/4-1_chrome-developer-tool-overview-768x480.png 768w, /uploads/2022/05/4-1_chrome-developer-tool-overview-150x94.png 150w, /uploads/2022/05/4-1_chrome-developer-tool-overview.png 1340w" sizes="(max-width: 1024px) 100vw, 1024px" /> 
 
 보다시피 화면 왼쪽 ❶에는 웹페이지가 유지되고, 오른쪽 ❷에 [개발자 도구] UI가 나타납니다. 이제부터 ❸ [개발자 도구] 상단 메뉴들을 왼쪽부터 하나씩 설명하겠습니다.
 
@@ -33,13 +33,13 @@ categories:
 
 이 기능을 사용하면 웹페이지 화면에서 원하는 요소를 빠르게 찾을 수 있으니 꼭 기억해둡시다.
 
-<img loading="lazy" width="992" height="730" src="/uploads/2022/05/4-2_chrome-developer-tool-inspector-highlight.png" alt="[그림 4-2] 요소를 선택해 하이라이트된 모습" class="wp-image-986" srcset="https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-2_chrome-developer-tool-inspector-highlight.png 992w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-2_chrome-developer-tool-inspector-highlight-300x221.png 300w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-2_chrome-developer-tool-inspector-highlight-768x565.png 768w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-2_chrome-developer-tool-inspector-highlight-150x110.png 150w" sizes="(max-width: 992px) 100vw, 992px" /> 
+<img loading="lazy" width="992" height="730" src="/uploads/2022/05/4-2_chrome-developer-tool-inspector-highlight.png" alt="[그림 4-2] 요소를 선택해 하이라이트된 모습" class="wp-image-986" srcset="/uploads/2022/05/4-2_chrome-developer-tool-inspector-highlight.png 992w, /uploads/2022/05/4-2_chrome-developer-tool-inspector-highlight-300x221.png 300w, /uploads/2022/05/4-2_chrome-developer-tool-inspector-highlight-768x565.png 768w, /uploads/2022/05/4-2_chrome-developer-tool-inspector-highlight-150x110.png 150w" sizes="(max-width: 992px) 100vw, 992px" /> 
 
 ### Device Toolbar 토글 {#toc_2}
 
 상단 메뉴에서 두 번째 스마트폰/태블릿을 겹쳐둔 모양의 아이콘은 Device Toolbar를 보이게 하거나 사라지게 합니다. Device Toolbar로는 웹페이지 화면의 해상도를 자유롭게 변경할 수 있어서 해상도에 따라 디자인이 바뀌는 반응형 웹페이지를 손쉽게 테스트할 수 있습니다. 주요 스마트폰과 태블릿의 해상도 프리셋을 제공하기 때문에 스마트폰에서 웹페이지가 어떻게 보이는지를 PC에서도 확인할 수 있습니다. PC와 모바일을 모두 지원하는 웹사이트를 만들 때 자주 사용하는 기능입니다.
 
-<img loading="lazy" width="1024" height="797" src="/uploads/2022/05/4-3_chrome-developer-tool-device-toolbar-1024x797.png" alt="[그림 4-3] Device Toolbar가 활성화된 상태" class="wp-image-985" srcset="https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-3_chrome-developer-tool-device-toolbar-1024x797.png 1024w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-3_chrome-developer-tool-device-toolbar-300x234.png 300w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-3_chrome-developer-tool-device-toolbar-768x598.png 768w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-3_chrome-developer-tool-device-toolbar-150x117.png 150w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-3_chrome-developer-tool-device-toolbar.png 1164w" sizes="(max-width: 1024px) 100vw, 1024px" /> 
+<img loading="lazy" width="1024" height="797" src="/uploads/2022/05/4-3_chrome-developer-tool-device-toolbar-1024x797.png" alt="[그림 4-3] Device Toolbar가 활성화된 상태" class="wp-image-985" srcset="/uploads/2022/05/4-3_chrome-developer-tool-device-toolbar-1024x797.png 1024w, /uploads/2022/05/4-3_chrome-developer-tool-device-toolbar-300x234.png 300w, /uploads/2022/05/4-3_chrome-developer-tool-device-toolbar-768x598.png 768w, /uploads/2022/05/4-3_chrome-developer-tool-device-toolbar-150x117.png 150w, /uploads/2022/05/4-3_chrome-developer-tool-device-toolbar.png 1164w" sizes="(max-width: 1024px) 100vw, 1024px" /> 
 
 ### Elements 탭 {#toc_3}
 
@@ -51,7 +51,7 @@ categories:
 
 참고로 [Elements] 탭에서 수정한 내용은 페이지를 새로고침하면 원래 웹페이지로 돌아가게 됩니다. 그러니 마음 놓고 값을 바꿔가면서 테스트해도 아무런 문제가 없습니다.
 
-<img loading="lazy" width="1024" height="727" src="/uploads/2022/05/4-4_chrome-developer-tool-element-tab-1024x727.png" alt="[그림 4-4] [Elements] 탭 사용하기" class="wp-image-984" srcset="https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-4_chrome-developer-tool-element-tab-1024x727.png 1024w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-4_chrome-developer-tool-element-tab-300x213.png 300w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-4_chrome-developer-tool-element-tab-768x545.png 768w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-4_chrome-developer-tool-element-tab-150x107.png 150w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-4_chrome-developer-tool-element-tab.png 1104w" sizes="(max-width: 1024px) 100vw, 1024px" /> 
+<img loading="lazy" width="1024" height="727" src="/uploads/2022/05/4-4_chrome-developer-tool-element-tab-1024x727.png" alt="[그림 4-4] [Elements] 탭 사용하기" class="wp-image-984" srcset="/uploads/2022/05/4-4_chrome-developer-tool-element-tab-1024x727.png 1024w, /uploads/2022/05/4-4_chrome-developer-tool-element-tab-300x213.png 300w, /uploads/2022/05/4-4_chrome-developer-tool-element-tab-768x545.png 768w, /uploads/2022/05/4-4_chrome-developer-tool-element-tab-150x107.png 150w, /uploads/2022/05/4-4_chrome-developer-tool-element-tab.png 1104w" sizes="(max-width: 1024px) 100vw, 1024px" /> 
 
 ### Console 탭 {#toc_4}
 
@@ -61,7 +61,7 @@ categories:
 
 콘솔창에서는 간단한 자바스크립트 코드를 실행해볼 수도 있습니다. 다음처럼 ‘윈도우’라고 코드를 입력하고 Enter키를 쳐서 실행하면 윈도우 객체의 요약 정보가 출력됩니다(윈도우는 웹 브라우저에 항상 존재하는 전역 객체입니다). 왼쪽 부분의 삼각형 아이콘을 클릭하면 해당 객체에 대한 더 자세한 정보를 살펴볼 수 있습니다.
 
-<img loading="lazy" width="1024" height="290" src="/uploads/2022/05/4-5_chrome-developer-tool-console-1024x290.png" alt="[그림 4-5] 콘솔창에 코드를 입력하여 실행하기" class="wp-image-983" srcset="https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-5_chrome-developer-tool-console-1024x290.png 1024w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-5_chrome-developer-tool-console-300x85.png 300w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-5_chrome-developer-tool-console-768x218.png 768w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-5_chrome-developer-tool-console-150x43.png 150w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-5_chrome-developer-tool-console.png 1094w" sizes="(max-width: 1024px) 100vw, 1024px" /> 
+<img loading="lazy" width="1024" height="290" src="/uploads/2022/05/4-5_chrome-developer-tool-console-1024x290.png" alt="[그림 4-5] 콘솔창에 코드를 입력하여 실행하기" class="wp-image-983" srcset="/uploads/2022/05/4-5_chrome-developer-tool-console-1024x290.png 1024w, /uploads/2022/05/4-5_chrome-developer-tool-console-300x85.png 300w, /uploads/2022/05/4-5_chrome-developer-tool-console-768x218.png 768w, /uploads/2022/05/4-5_chrome-developer-tool-console-150x43.png 150w, /uploads/2022/05/4-5_chrome-developer-tool-console.png 1094w" sizes="(max-width: 1024px) 100vw, 1024px" /> 
 
 입력된 코드는 현재 웹페이지에 포함된 자바스크립트 코드가 모두 로드된 상태에서 실행됩니다. 즉, 현재 페이지의 자바스크립트 변수에 의도한 값이 잘 들어 있는지 확인해볼 수 있습니다. 또한 코드를 입력하면 바로바로 실행되기 때문에, 잘 이용하면 개발 생산성 향상에도 큰 도움을 줄 수 있습니다.
 
@@ -75,7 +75,7 @@ categories:
 > 
 > 코드의 특정 위치에 브레이크포인트를 지정하면 프로그램이 실행되다가 해당 위치에 도달하는 순간 일시적으로 실행을 멈추게됩니다. 이렇게 프로그램의 실행을 일시적으로 멈춰놓으면 실행중이던 프로그램에 존재하는 다양한 변수들에 저장된 값들을 손쉽게 확인할 수 있습니다. 이를 통해 프로그램이 자신이 의도한 대로 동작하지 않는 경우 적절한 위치에 브레이크포인트를 지정하여 원인 파악을 하기위해 많이 사용합니다.
 
-<img loading="lazy" width="1024" height="561" src="/uploads/2022/05/4-6_chrome-developer-tool-breakpoint-1024x561.png" alt="[그림 4-6] [Sources] 탭에서 브레이크포인트 설정하기" class="wp-image-982" srcset="https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-6_chrome-developer-tool-breakpoint-1024x561.png 1024w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-6_chrome-developer-tool-breakpoint-300x164.png 300w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-6_chrome-developer-tool-breakpoint-768x421.png 768w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-6_chrome-developer-tool-breakpoint-150x82.png 150w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-6_chrome-developer-tool-breakpoint.png 1222w" sizes="(max-width: 1024px) 100vw, 1024px" /> 
+<img loading="lazy" width="1024" height="561" src="/uploads/2022/05/4-6_chrome-developer-tool-breakpoint-1024x561.png" alt="[그림 4-6] [Sources] 탭에서 브레이크포인트 설정하기" class="wp-image-982" srcset="/uploads/2022/05/4-6_chrome-developer-tool-breakpoint-1024x561.png 1024w, /uploads/2022/05/4-6_chrome-developer-tool-breakpoint-300x164.png 300w, /uploads/2022/05/4-6_chrome-developer-tool-breakpoint-768x421.png 768w, /uploads/2022/05/4-6_chrome-developer-tool-breakpoint-150x82.png 150w, /uploads/2022/05/4-6_chrome-developer-tool-breakpoint.png 1222w" sizes="(max-width: 1024px) 100vw, 1024px" /> 
 
 자바스크립트는 파일 크기를 최소화하기 위해 소스 코드를 미니파이 및 어글리파이해서 배포하기도 합니다. 그러면 불필요하게 긴 변수 이름을 짧게 줄이고 공백, 세미콜론, 줄바꿈 문자까지 모두 삭제되기 때문에 [그림 4-7]처럼 한 줄로 표현됩니다. 코드가 한 줄이면 읽기도 힘들 뿐더러 디버깅을 위해 브레이크포인트를 지정하는 것은 더욱 힘이 듭니다. 이럴 때는 [pretty print] 버튼을 클릭하면 그나마 코드 형태를 사람이 읽기 좋은 형태로 바꿔주기 때문에 매우 유용합니다..
 
@@ -83,19 +83,19 @@ categories:
 > 
 > 미니파이는 코드 실행에 불필요한 주석, 공백, 세미콜론, 줄바꿈 문자들을 삭제해 용량을 줄이는 기법입니다. 어글리파이는 미니파이에서 한 단계 더 나아가 변수 이름이나 함수 이름 등을 가능한 짧게 대체하여 용량을 줄입니다. 어글리파이된 코드는 사람이 분석하기 어렵습니다.
 
-<img loading="lazy" width="898" height="894" src="/uploads/2022/05/4-7_chrome-developer-tool-pretty-print.png" alt="[그림 4-7] [Sources] 탭에서 미니파이된 코드를 pretty print하기" class="wp-image-981" srcset="https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-7_chrome-developer-tool-pretty-print.png 898w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-7_chrome-developer-tool-pretty-print-300x300.png 300w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-7_chrome-developer-tool-pretty-print-150x149.png 150w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-7_chrome-developer-tool-pretty-print-768x765.png 768w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-7_chrome-developer-tool-pretty-print-50x50.png 50w" sizes="(max-width: 898px) 100vw, 898px" /> 
+<img loading="lazy" width="898" height="894" src="/uploads/2022/05/4-7_chrome-developer-tool-pretty-print.png" alt="[그림 4-7] [Sources] 탭에서 미니파이된 코드를 pretty print하기" class="wp-image-981" srcset="/uploads/2022/05/4-7_chrome-developer-tool-pretty-print.png 898w, /uploads/2022/05/4-7_chrome-developer-tool-pretty-print-300x300.png 300w, /uploads/2022/05/4-7_chrome-developer-tool-pretty-print-150x149.png 150w, /uploads/2022/05/4-7_chrome-developer-tool-pretty-print-768x765.png 768w, /uploads/2022/05/4-7_chrome-developer-tool-pretty-print-50x50.png 50w" sizes="(max-width: 898px) 100vw, 898px" /> 
 
 ### [Network] 탭 {#toc_6}
 
 [Network] 탭은 현재 웹페이지에서 발생하는 모든 HTTP 요청과 응답을 모니터링한 결과를 보여줍니다.
 
-<img loading="lazy" width="1024" height="712" src="/uploads/2022/05/4-8_chrome-developer-tool-network-tab-1024x712.png" alt="[그림 4-8] [Network] 탭 살펴보기" class="wp-image-980" srcset="https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-8_chrome-developer-tool-network-tab-1024x712.png 1024w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-8_chrome-developer-tool-network-tab-300x209.png 300w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-8_chrome-developer-tool-network-tab-768x534.png 768w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-8_chrome-developer-tool-network-tab-150x104.png 150w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-8_chrome-developer-tool-network-tab.png 1292w" sizes="(max-width: 1024px) 100vw, 1024px" /> 
+<img loading="lazy" width="1024" height="712" src="/uploads/2022/05/4-8_chrome-developer-tool-network-tab-1024x712.png" alt="[그림 4-8] [Network] 탭 살펴보기" class="wp-image-980" srcset="/uploads/2022/05/4-8_chrome-developer-tool-network-tab-1024x712.png 1024w, /uploads/2022/05/4-8_chrome-developer-tool-network-tab-300x209.png 300w, /uploads/2022/05/4-8_chrome-developer-tool-network-tab-768x534.png 768w, /uploads/2022/05/4-8_chrome-developer-tool-network-tab-150x104.png 150w, /uploads/2022/05/4-8_chrome-developer-tool-network-tab.png 1292w" sizes="(max-width: 1024px) 100vw, 1024px" /> 
 
 왼쪽 위 레코딩<sup>recording</sup> 버튼이 빨간색이면 현재 요청/응답을 계속 레코딩한다는 뜻입니다. 그 옆의 [Clear] 버튼을 누르면 레코딩된 내용이 모두 초기화됩니다. ❷ 영역에는 레코딩된 HTTP 요청에 대한 타임라인이 표시됩니다. 이를 통해서 어떤 요청이 응답을 받는 데까지 얼마나 걸리는지, 한꺼번에 얼마나 많은 요청이 병렬로 수행되고 있는지를 한눈에 볼 수 있습니다. ❸ 영역에서는 개별 요청/응답을 하나하나 살펴볼 수 있습니다. 상단 메뉴 중 깔때기 모양의 [Filter] 아이콘을 선택하면 ❶ 영역이 나타납니다. 이 영역에 키워드를 입력하면 레코딩된 결과들을 요청 이름 기준으로 필터링하여 볼 수 있고 [XHR], [JS], [CSS] 등의 버튼을 클릭해 타입별로 필터링할 수도 있습니다.
 
 [Name]에서 특정 요청/응답을 선택하면 오른쪽에 추가로 탭이 나타납니다.
 
-<img loading="lazy" width="1024" height="555" src="/uploads/2022/05/4-9_chrome-developer-tool-request-response-1024x555.png" alt="[그림 4-9] 개별 요청/응답 자세히 살펴보기" class="wp-image-979" srcset="https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-9_chrome-developer-tool-request-response-1024x555.png 1024w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-9_chrome-developer-tool-request-response-300x163.png 300w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-9_chrome-developer-tool-request-response-768x416.png 768w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-9_chrome-developer-tool-request-response-150x81.png 150w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-9_chrome-developer-tool-request-response.png 1162w" sizes="(max-width: 1024px) 100vw, 1024px" /> 
+<img loading="lazy" width="1024" height="555" src="/uploads/2022/05/4-9_chrome-developer-tool-request-response-1024x555.png" alt="[그림 4-9] 개별 요청/응답 자세히 살펴보기" class="wp-image-979" srcset="/uploads/2022/05/4-9_chrome-developer-tool-request-response-1024x555.png 1024w, /uploads/2022/05/4-9_chrome-developer-tool-request-response-300x163.png 300w, /uploads/2022/05/4-9_chrome-developer-tool-request-response-768x416.png 768w, /uploads/2022/05/4-9_chrome-developer-tool-request-response-150x81.png 150w, /uploads/2022/05/4-9_chrome-developer-tool-request-response.png 1162w" sizes="(max-width: 1024px) 100vw, 1024px" /> 
 
 이곳의 [Headers] 탭에서는 선택된 HTTP 요청/응답의 헤더 정보가 출력됩니다. 헤더 정보로부터 캐시 지시자, 인증 정보, 쿠키 등, HTTP 본문에는 나타나지 않는 다양한 정보를 알 수 있습니다. [Preview]나 [Response] 탭을 선택하면 실제 HTTP 응답 바디를 확인할 수 있습니다.
 
@@ -103,7 +103,7 @@ categories:
 
 마지막으로 응답 본문 자체를 검색하는 기능도 존재합니다. 찾고자 하는 응답 내용이 명확한 경우 이 기능을 사용하여 직접 검색할 수 있습니다. 아래 그림에서 ❶의 돋보기 버튼을 클릭하면 왼쪽에 ❷ 영역이 보여집니다. 여기에 검색 키워드를 입력하고 Enter를 누르면 응답 본문에 해당 키워드를 포함하는 요청/응답이 모두 검색되고, 이를 클릭하면 해당 응답 본문이 보여지면서 하이라이트 처리됩니다.
 
-<img loading="lazy" src="/uploads/2022/05/4-10_chrome-developer-tool-search-body-1024x770.png" alt="[그림 4-10] 응답 본문 검색하기" class="wp-image-978" width="580" height="436" srcset="https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-10_chrome-developer-tool-search-body-1024x770.png 1024w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-10_chrome-developer-tool-search-body-300x226.png 300w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-10_chrome-developer-tool-search-body-768x577.png 768w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-10_chrome-developer-tool-search-body-150x113.png 150w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-10_chrome-developer-tool-search-body.png 1200w" sizes="(max-width: 580px) 100vw, 580px" /> 
+<img loading="lazy" src="/uploads/2022/05/4-10_chrome-developer-tool-search-body-1024x770.png" alt="[그림 4-10] 응답 본문 검색하기" class="wp-image-978" width="580" height="436" srcset="/uploads/2022/05/4-10_chrome-developer-tool-search-body-1024x770.png 1024w, /uploads/2022/05/4-10_chrome-developer-tool-search-body-300x226.png 300w, /uploads/2022/05/4-10_chrome-developer-tool-search-body-768x577.png 768w, /uploads/2022/05/4-10_chrome-developer-tool-search-body-150x113.png 150w, /uploads/2022/05/4-10_chrome-developer-tool-search-body.png 1200w" sizes="(max-width: 580px) 100vw, 580px" /> 
 
 ### 그 외 기능 {#toc_7}
 

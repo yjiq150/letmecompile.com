@@ -19,7 +19,7 @@ categories:
 
 웹페이지는 HTML 형식으로 제공되는 일종의 문서라고 생각할 수 있습니다. 웹 브라우저로 웹페이지에 접근한다는 것은, 간단히 말해 서버로부터 해당 주소에서 제공하는 HTML 문서를 HTTP 통신으로 전달받는 것을 의미합니다. 전달받은 HTML 문서는 단순 텍스트 형태이기 때문에 프로그램에서 사용하기 좋은 데이터 구조로 표현해야 하는데, 이 구조를 DOM이라고 부릅니다. DOM<sup>Document Object Model</sup>은 최상위 노드<sup>node</sup>와 여러 단계의 자식 노드들로 구성된 트리<sup>tree</sup> 구조입니다. 따라서 원하는 노드를 쉽게 찾아서 수정/삭제하거나 원하는 위치에 새로운 노드를 추가할 수 있습니다.
 
-<img loading="lazy" width="632" height="702" src="https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-11_dom.png" alt="[그림 4-11] DOM 트리와 요소" class="wp-image-989" srcset="https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-11_dom.png 632w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-11_dom-270x300.png 270w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-11_dom-150x167.png 150w" sizes="(max-width: 632px) 100vw, 632px" /> 
+<img loading="lazy" width="632" height="702" src="/uploads/2022/05/4-11_dom.png" alt="[그림 4-11] DOM 트리와 요소" class="wp-image-989" srcset="/uploads/2022/05/4-11_dom.png 632w, /uploads/2022/05/4-11_dom-270x300.png 270w, /uploads/2022/05/4-11_dom-150x167.png 150w" sizes="(max-width: 632px) 100vw, 632px" /> 
 
 요소<sup>element</sup>는 DOM 트리 구조안에 존재하는 다양한 노드 중 element라는 타입의 노드를 의미합니다. [그림 4-11]에서<sup id="fnref1"><a href="#fn1" rel="footnote">1</a></sup> 볼 수 있듯이 보통 하나의 HTML 태그가 하나의 요소로 표현됩니다. 반면 태그 사이의 텍스트 값은 text 타입의 노드이며, href 태그에 지정된 속성<sup>attribute</sup>은 attribute 타입의 노드입니다.
 
@@ -33,7 +33,7 @@ categories:
 
 위 웹페이지가 로드된 상태로 크롬 [개발자 도구]의 [Element] 탭을 살펴보면 현재 페이지를 구성하는 HTML이 나타납니다. HTML은 결국 텍스트 편집기로도 쉽게 편집하는 다음과 같이 구조화된 텍스트 문서임을 알 수 있습니다.
 
-<img loading="lazy" width="1012" height="616" src="https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4_dom_example.png" alt="" class="wp-image-990" srcset="https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4_dom_example.png 1012w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4_dom_example-300x183.png 300w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4_dom_example-768x467.png 768w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4_dom_example-150x91.png 150w" sizes="(max-width: 1012px) 100vw, 1012px" /> 
+<img loading="lazy" width="1012" height="616" src="/uploads/2022/05/4_dom_example.png" alt="" class="wp-image-990" srcset="/uploads/2022/05/4_dom_example.png 1012w, /uploads/2022/05/4_dom_example-300x183.png 300w, /uploads/2022/05/4_dom_example-768x467.png 768w, /uploads/2022/05/4_dom_example-150x91.png 150w" sizes="(max-width: 1012px) 100vw, 1012px" /> 
 
 프로그래밍 관점에서 구조가 없는 문서에서 특정 위치에 접근해 내용만 추출하거나, 삭제하는 일은 쉽지 않습니다. 하지만 구조화된 텍스트 문서에서는 매우 쉽게 할 수 있습니다. 예를 들어 제목을 추출하는 방법을 생각해봅시다. 먼저 `html` 태그를 찾고 ➝ `html` 태그 안에 존재하는 `body` 태그를 찾고 ➝ `body` 태그 안에 존재하는 `h1` 태그를 찾으면 됩니다.
 
@@ -48,7 +48,7 @@ console.log(elements[0].textContent); // 코로나보드
 
 크롬 ❶ [개발자 도구]의 콘솔창에서 ❷ 코드를 실행하면 ❸ ‘코로나보드’가 출력됩니다.
 
-<img loading="lazy" width="892" height="278" src="https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4_dom_console_run.png" alt="" class="wp-image-991" srcset="https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4_dom_console_run.png 892w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4_dom_console_run-300x93.png 300w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4_dom_console_run-768x239.png 768w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4_dom_console_run-150x47.png 150w" sizes="(max-width: 892px) 100vw, 892px" /> 
+<img loading="lazy" width="892" height="278" src="/uploads/2022/05/4_dom_console_run.png" alt="" class="wp-image-991" srcset="/uploads/2022/05/4_dom_console_run.png 892w, /uploads/2022/05/4_dom_console_run-300x93.png 300w, /uploads/2022/05/4_dom_console_run-768x239.png 768w, /uploads/2022/05/4_dom_console_run-150x47.png 150w" sizes="(max-width: 892px) 100vw, 892px" /> 
 
 HTML 태그들은 DOM 트리 안에서 요소<sup>element</sup>로 표현되어 모두 부모<sup>parent</sup>/자식<sup>child</sup> 관계로 연결됩니다. 이러한 구조화된 트리 데이터 구조가 있기 때문에 트리의 최상위 객체를 기준으로 원하는 요소를 찾을 수 있습니다. 웹 브라우저에서 `document` 객체는 현재 로드된 웹페이지를 나타내고, 현재 보고 있는 웹페이지의 DOM 트리<sup>tree</sup>의 최상위 요소입니다.
 

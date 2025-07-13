@@ -34,7 +34,7 @@ tags:
 
 터미널에서 curl로 HTTP 요청을 마구 날리면 옆자리 앉은 동료가 보기에 간지나고 좋긴한데 그래도 역시 눈으로 보면서 하면 더 편한 부분이 있지 않을까? 라는 생각이 들 때가 있다. 그렇다면 당신은 GUI HTTP Client인 Postman이 필요한 사람!
 
-<img loading="lazy" class="aligncenter size-large wp-image-844" src="/uploads/2019/02/postman_mac_app-1024x820.png" alt="" width="625" height="500" srcset="https://www.letmecompile.com/wp/wp-content/uploads/2019/02/postman_mac_app-1024x820.png 1024w, https://www.letmecompile.com/wp/wp-content/uploads/2019/02/postman_mac_app-300x240.png 300w, https://www.letmecompile.com/wp/wp-content/uploads/2019/02/postman_mac_app-768x615.png 768w, https://www.letmecompile.com/wp/wp-content/uploads/2019/02/postman_mac_app-150x120.png 150w" sizes="(max-width: 625px) 100vw, 625px" /> 
+<img loading="lazy" class="aligncenter size-large wp-image-844" src="/uploads/2019/02/postman_mac_app-1024x820.png" alt="" width="625" height="500" srcset="/uploads/2019/02/postman_mac_app-1024x820.png 1024w, /uploads/2019/02/postman_mac_app-300x240.png 300w, /uploads/2019/02/postman_mac_app-768x615.png 768w, /uploads/2019/02/postman_mac_app-150x120.png 150w" sizes="(max-width: 625px) 100vw, 625px" /> 
 
   * <https://www.getpostman.com/>
   * 기본적인 기능들은 무료이고 workspace 공유 기능이 필요한 경우 유료이다.
@@ -53,7 +53,7 @@ tags:
 
 ### Proxyman
 
-[<img loading="lazy" class="aligncenter size-large wp-image-970" src="/uploads/2019/02/proxyman-1024x635.png" alt="" width="625" height="388" srcset="https://www.letmecompile.com/wp/wp-content/uploads/2019/02/proxyman-1024x635.png 1024w, https://www.letmecompile.com/wp/wp-content/uploads/2019/02/proxyman-300x186.png 300w, https://www.letmecompile.com/wp/wp-content/uploads/2019/02/proxyman-768x477.png 768w, https://www.letmecompile.com/wp/wp-content/uploads/2019/02/proxyman-1536x953.png 1536w, https://www.letmecompile.com/wp/wp-content/uploads/2019/02/proxyman-2048x1271.png 2048w, https://www.letmecompile.com/wp/wp-content/uploads/2019/02/proxyman-150x93.png 150w" sizes="(max-width: 625px) 100vw, 625px" />][1]
+[<img loading="lazy" class="aligncenter size-large wp-image-970" src="/uploads/2019/02/proxyman-1024x635.png" alt="" width="625" height="388" srcset="/uploads/2019/02/proxyman-1024x635.png 1024w, /uploads/2019/02/proxyman-300x186.png 300w, /uploads/2019/02/proxyman-768x477.png 768w, /uploads/2019/02/proxyman-1536x953.png 1536w, /uploads/2019/02/proxyman-2048x1271.png 2048w, /uploads/2019/02/proxyman-150x93.png 150w" sizes="(max-width: 625px) 100vw, 625px" />][1]
 
   * [https://proxyman.io/][2]
   * 유료 앱이고 비싸지만 값어치를 한다!
@@ -63,7 +63,7 @@ tags:
 
 ### Charles HTTP proxy
 
-<img loading="lazy" class="aligncenter size-large wp-image-842" src="/uploads/2019/02/charles_http_proxy-1024x820.png" alt="" width="625" height="500" srcset="https://www.letmecompile.com/wp/wp-content/uploads/2019/02/charles_http_proxy-1024x820.png 1024w, https://www.letmecompile.com/wp/wp-content/uploads/2019/02/charles_http_proxy-300x240.png 300w, https://www.letmecompile.com/wp/wp-content/uploads/2019/02/charles_http_proxy-768x615.png 768w, https://www.letmecompile.com/wp/wp-content/uploads/2019/02/charles_http_proxy-150x120.png 150w" sizes="(max-width: 625px) 100vw, 625px" /> 
+<img loading="lazy" class="aligncenter size-large wp-image-842" src="/uploads/2019/02/charles_http_proxy-1024x820.png" alt="" width="625" height="500" srcset="/uploads/2019/02/charles_http_proxy-1024x820.png 1024w, /uploads/2019/02/charles_http_proxy-300x240.png 300w, /uploads/2019/02/charles_http_proxy-768x615.png 768w, /uploads/2019/02/charles_http_proxy-150x120.png 150w" sizes="(max-width: 625px) 100vw, 625px" /> 
 
   * <https://www.charlesproxy.com/>
 
@@ -75,7 +75,7 @@ tags:
 
 개발 도구의 명가 Atlasian에서 만든 앱으로 초보자가 보기에 가장 쉽고 편리한 UI를 제공한다. git을 쓴지 얼마 안된 입문자라면 SourceTree를 추천한다.
 
-<img loading="lazy" class="aligncenter size-large wp-image-841" src="/uploads/2019/02/SourceTree_mac_app-1024x770.png" alt="" width="625" height="470" srcset="https://www.letmecompile.com/wp/wp-content/uploads/2019/02/SourceTree_mac_app-1024x770.png 1024w, https://www.letmecompile.com/wp/wp-content/uploads/2019/02/SourceTree_mac_app-300x226.png 300w, https://www.letmecompile.com/wp/wp-content/uploads/2019/02/SourceTree_mac_app-768x578.png 768w, https://www.letmecompile.com/wp/wp-content/uploads/2019/02/SourceTree_mac_app-150x113.png 150w" sizes="(max-width: 625px) 100vw, 625px" /> 
+<img loading="lazy" class="aligncenter size-large wp-image-841" src="/uploads/2019/02/SourceTree_mac_app-1024x770.png" alt="" width="625" height="470" srcset="/uploads/2019/02/SourceTree_mac_app-1024x770.png 1024w, /uploads/2019/02/SourceTree_mac_app-300x226.png 300w, /uploads/2019/02/SourceTree_mac_app-768x578.png 768w, /uploads/2019/02/SourceTree_mac_app-150x113.png 150w" sizes="(max-width: 625px) 100vw, 625px" /> 
 
   * <https://www.sourcetreeapp.com/>
   * 무료앱이다!
@@ -89,7 +89,7 @@ tags:
 
 코드 에디터로 유명한 Sublime Text를 만든 곳에서 출시한 앱으로 나온지 채 1년이 되지 않았지만 매우 강력하고 빠른 속도를 자랑한다. 적응하는데 시간이 좀 걸리지만 개인적으로는 적응하고 나니 오히려 SourceTree 보다 월등히 빠른 속도 때문에 훨씬 자주 사용중이다. git 하드코어 유저라면 이쪽을 좀 더 추천한다.
 
-<img loading="lazy" class="aligncenter size-large wp-image-840" src="/uploads/2019/02/sublime_merge_mac_app-1024x710.png" alt="" width="625" height="433" srcset="https://www.letmecompile.com/wp/wp-content/uploads/2019/02/sublime_merge_mac_app-1024x710.png 1024w, https://www.letmecompile.com/wp/wp-content/uploads/2019/02/sublime_merge_mac_app-300x208.png 300w, https://www.letmecompile.com/wp/wp-content/uploads/2019/02/sublime_merge_mac_app-768x533.png 768w, https://www.letmecompile.com/wp/wp-content/uploads/2019/02/sublime_merge_mac_app-150x104.png 150w" sizes="(max-width: 625px) 100vw, 625px" /> 
+<img loading="lazy" class="aligncenter size-large wp-image-840" src="/uploads/2019/02/sublime_merge_mac_app-1024x710.png" alt="" width="625" height="433" srcset="/uploads/2019/02/sublime_merge_mac_app-1024x710.png 1024w, /uploads/2019/02/sublime_merge_mac_app-300x208.png 300w, /uploads/2019/02/sublime_merge_mac_app-768x533.png 768w, /uploads/2019/02/sublime_merge_mac_app-150x104.png 150w" sizes="(max-width: 625px) 100vw, 625px" /> 
 
   * <https://www.sublimemerge.com/>
   * 무료 버전에 기능제약은 없지만 가끔 &#8220;구매하실래요?&#8221; 팝업이 뜬다. 추가로 Dark theme을 사용하고싶다면 구매해야한다.
@@ -118,7 +118,7 @@ tags:
 
 Mac에서 마크다운 문서를 작성할 일이 있다면 이 앱이 가장 무난하다. 이 글도 현재 MacDown을 이용해서 작성중이다. (이것이 바로 Bootstrapping!)
 
-<img loading="lazy" class="aligncenter size-large wp-image-843" src="/uploads/2019/02/MacDown_mac_app-1024x624.png" alt="" width="625" height="381" srcset="https://www.letmecompile.com/wp/wp-content/uploads/2019/02/MacDown_mac_app-1024x624.png 1024w, https://www.letmecompile.com/wp/wp-content/uploads/2019/02/MacDown_mac_app-300x183.png 300w, https://www.letmecompile.com/wp/wp-content/uploads/2019/02/MacDown_mac_app-768x468.png 768w, https://www.letmecompile.com/wp/wp-content/uploads/2019/02/MacDown_mac_app-150x91.png 150w" sizes="(max-width: 625px) 100vw, 625px" /> 
+<img loading="lazy" class="aligncenter size-large wp-image-843" src="/uploads/2019/02/MacDown_mac_app-1024x624.png" alt="" width="625" height="381" srcset="/uploads/2019/02/MacDown_mac_app-1024x624.png 1024w, /uploads/2019/02/MacDown_mac_app-300x183.png 300w, /uploads/2019/02/MacDown_mac_app-768x468.png 768w, /uploads/2019/02/MacDown_mac_app-150x91.png 150w" sizes="(max-width: 625px) 100vw, 625px" /> 
 
   * 무료 앱이다!
   * Live 미리보기 지원
@@ -131,7 +131,7 @@ Mac에서 마크다운 문서를 작성할 일이 있다면 이 앱이 가장 �
 
 Mac OS에 기본 설치된 terminal도 기본기능은 쓸만하지만 조금 더 하드코어하게 쓰려고 하면 부족한 점이 많이 존재한다. 이때 iTerms2를 사용하면 터미널 생활이 즐거워진다.
 
-<img loading="lazy" class="aligncenter size-large wp-image-845" src="/uploads/2019/02/iTerms2_mac_app-1024x592.png" alt="" width="625" height="361" srcset="https://www.letmecompile.com/wp/wp-content/uploads/2019/02/iTerms2_mac_app-1024x592.png 1024w, https://www.letmecompile.com/wp/wp-content/uploads/2019/02/iTerms2_mac_app-300x173.png 300w, https://www.letmecompile.com/wp/wp-content/uploads/2019/02/iTerms2_mac_app-768x444.png 768w, https://www.letmecompile.com/wp/wp-content/uploads/2019/02/iTerms2_mac_app-150x87.png 150w" sizes="(max-width: 625px) 100vw, 625px" /> 
+<img loading="lazy" class="aligncenter size-large wp-image-845" src="/uploads/2019/02/iTerms2_mac_app-1024x592.png" alt="" width="625" height="361" srcset="/uploads/2019/02/iTerms2_mac_app-1024x592.png 1024w, /uploads/2019/02/iTerms2_mac_app-300x173.png 300w, /uploads/2019/02/iTerms2_mac_app-768x444.png 768w, /uploads/2019/02/iTerms2_mac_app-150x87.png 150w" sizes="(max-width: 625px) 100vw, 625px" /> 
 
   * <https://www.iterm2.com/>
   * 무료 앱이다!
@@ -145,7 +145,7 @@ Mac OS에 기본 설치된 terminal도 기본기능은 쓸만하지만 조금 �
 
 출시된지 몇 년 안된 신생 터미널 앱이지만 위에 소개한 iTerms2 과 거의 동일한 수준의 기본기능을 제공하고, 앱 내에서 제공하는 AI 기능의 편리함을 가진 터미널 앱. 게다가 Rust기반으로 작성되어 엄청나게 빠른 속도를 자랑하기 때문에 강력 추천!
 
-[<img loading="lazy" class="aligncenter size-large wp-image-1103" src="/uploads/2019/02/warp-terminal-1024x698.png" alt="war" width="625" height="426" srcset="https://www.letmecompile.com/wp/wp-content/uploads/2019/02/warp-terminal-1024x698.png 1024w, https://www.letmecompile.com/wp/wp-content/uploads/2019/02/warp-terminal-300x204.png 300w, https://www.letmecompile.com/wp/wp-content/uploads/2019/02/warp-terminal-768x523.png 768w, https://www.letmecompile.com/wp/wp-content/uploads/2019/02/warp-terminal-1536x1047.png 1536w, https://www.letmecompile.com/wp/wp-content/uploads/2019/02/warp-terminal-2048x1395.png 2048w, https://www.letmecompile.com/wp/wp-content/uploads/2019/02/warp-terminal-150x102.png 150w" sizes="(max-width: 625px) 100vw, 625px" />][3]
+[<img loading="lazy" class="aligncenter size-large wp-image-1103" src="/uploads/2019/02/warp-terminal-1024x698.png" alt="war" width="625" height="426" srcset="/uploads/2019/02/warp-terminal-1024x698.png 1024w, /uploads/2019/02/warp-terminal-300x204.png 300w, /uploads/2019/02/warp-terminal-768x523.png 768w, /uploads/2019/02/warp-terminal-1536x1047.png 1536w, /uploads/2019/02/warp-terminal-2048x1395.png 2048w, /uploads/2019/02/warp-terminal-150x102.png 150w" sizes="(max-width: 625px) 100vw, 625px" />][3]
 
   * <https://app.warp.dev/referral/X98J3>
   * 개인 사용은 무료로 가능
@@ -163,7 +163,7 @@ Mac OS에 기본 설치된 terminal도 기본기능은 쓸만하지만 조금 �
 
 DB로 MySQL을 사용한다면 무료 GUI MySQL client로는 Sequel Pro를 사용해볼만하다. [MySQL Workbench][4]가 기능이 훨씬 많지만 Mac 스럽지 않은 UI와 무거운 느낌때문에 비추천. 유료버전도 괜찮다면 아래 TablePlus를 더 적극 추천함!
 
-<img loading="lazy" class="aligncenter size-large wp-image-847" src="/uploads/2019/02/sequel_pro_mac_app-1024x788.png" alt="" width="625" height="481" srcset="https://www.letmecompile.com/wp/wp-content/uploads/2019/02/sequel_pro_mac_app-1024x788.png 1024w, https://www.letmecompile.com/wp/wp-content/uploads/2019/02/sequel_pro_mac_app-300x231.png 300w, https://www.letmecompile.com/wp/wp-content/uploads/2019/02/sequel_pro_mac_app-768x591.png 768w, https://www.letmecompile.com/wp/wp-content/uploads/2019/02/sequel_pro_mac_app-150x115.png 150w, https://www.letmecompile.com/wp/wp-content/uploads/2019/02/sequel_pro_mac_app.png 1902w" sizes="(max-width: 625px) 100vw, 625px" /> 
+<img loading="lazy" class="aligncenter size-large wp-image-847" src="/uploads/2019/02/sequel_pro_mac_app-1024x788.png" alt="" width="625" height="481" srcset="/uploads/2019/02/sequel_pro_mac_app-1024x788.png 1024w, /uploads/2019/02/sequel_pro_mac_app-300x231.png 300w, /uploads/2019/02/sequel_pro_mac_app-768x591.png 768w, /uploads/2019/02/sequel_pro_mac_app-150x115.png 150w, /uploads/2019/02/sequel_pro_mac_app.png 1902w" sizes="(max-width: 625px) 100vw, 625px" /> 
 
   * <https://www.sequelpro.com/>
   * MySQL에서 꼭 필요한 기능만 모아놓아서 적응하기 쉽고 UI가 심플하고 이쁘다.
@@ -175,7 +175,7 @@ DB로 MySQL을 사용한다면 무료 GUI MySQL client로는 Sequel Pro를 사�
 
 이것도 또다른 GUI Database Client인데 필자는 지난 몇년간 더이상 업데이트가 이뤄지지 않는 Sequel Pro대신 TablePlus로 갈아탔다. (MySQL은 당연히 지원되고 그외에 지원되는 데이터베이스들도 엄청 많음)
 
-[<img loading="lazy" class="aligncenter size-large wp-image-972" src="/uploads/2019/02/tableplus-1024x697.png" alt="" width="625" height="425" srcset="https://www.letmecompile.com/wp/wp-content/uploads/2019/02/tableplus-1024x697.png 1024w, https://www.letmecompile.com/wp/wp-content/uploads/2019/02/tableplus-300x204.png 300w, https://www.letmecompile.com/wp/wp-content/uploads/2019/02/tableplus-768x522.png 768w, https://www.letmecompile.com/wp/wp-content/uploads/2019/02/tableplus-1536x1045.png 1536w, https://www.letmecompile.com/wp/wp-content/uploads/2019/02/tableplus-2048x1393.png 2048w, https://www.letmecompile.com/wp/wp-content/uploads/2019/02/tableplus-150x102.png 150w" sizes="(max-width: 625px) 100vw, 625px" />][5]
+[<img loading="lazy" class="aligncenter size-large wp-image-972" src="/uploads/2019/02/tableplus-1024x697.png" alt="" width="625" height="425" srcset="/uploads/2019/02/tableplus-1024x697.png 1024w, /uploads/2019/02/tableplus-300x204.png 300w, /uploads/2019/02/tableplus-768x522.png 768w, /uploads/2019/02/tableplus-1536x1045.png 1536w, /uploads/2019/02/tableplus-2048x1393.png 2048w, /uploads/2019/02/tableplus-150x102.png 150w" sizes="(max-width: 625px) 100vw, 625px" />][5]
 
   * <https://tableplus.com/>
   * 무료로 사용가능하나 탭을 2개까지밖에 열지 못해서 불편함
@@ -199,7 +199,7 @@ DB로 MySQL을 사용한다면 무료 GUI MySQL client로는 Sequel Pro를 사�
 
 Redis를 사용한다면 가끔 직접 Redis 서버에 접속해서 이것 저것 커맨드를 날리거나 내용을 읽고/수정할 일들이 많이 생긴다. 이때 GUI Redis client인 Medis를 사용해 보자.
 
-<img loading="lazy" class="aligncenter size-large wp-image-846" src="/uploads/2019/02/medis_mac_app-1024x772.png" alt="" width="625" height="471" srcset="https://www.letmecompile.com/wp/wp-content/uploads/2019/02/medis_mac_app-1024x772.png 1024w, https://www.letmecompile.com/wp/wp-content/uploads/2019/02/medis_mac_app-300x226.png 300w, https://www.letmecompile.com/wp/wp-content/uploads/2019/02/medis_mac_app-768x579.png 768w, https://www.letmecompile.com/wp/wp-content/uploads/2019/02/medis_mac_app-150x113.png 150w, https://www.letmecompile.com/wp/wp-content/uploads/2019/02/medis_mac_app.png 1904w" sizes="(max-width: 625px) 100vw, 625px" /> 
+<img loading="lazy" class="aligncenter size-large wp-image-846" src="/uploads/2019/02/medis_mac_app-1024x772.png" alt="" width="625" height="471" srcset="/uploads/2019/02/medis_mac_app-1024x772.png 1024w, /uploads/2019/02/medis_mac_app-300x226.png 300w, /uploads/2019/02/medis_mac_app-768x579.png 768w, /uploads/2019/02/medis_mac_app-150x113.png 150w, /uploads/2019/02/medis_mac_app.png 1904w" sizes="(max-width: 625px) 100vw, 625px" /> 
 
   * <http://getmedis.com/>
   * 무료 앱이다!
@@ -210,7 +210,7 @@ Redis를 사용한다면 가끔 직접 Redis 서버에 접속해서 이것 저�
 
 빠르고 가벼운 맥용 이미지 뷰어를 찾는다면 Xee3를 추천한다. 안타깝게도 유료이지만 그렇게 비싼편도 아니고 subscription도 아니다. 개발자가 마음바뀌기 전에 어서 질러두자.
 
-<img loading="lazy" class="aligncenter size-large wp-image-839" src="/uploads/2019/02/xee3_mac_app-1024x781.png" alt="" width="625" height="477" srcset="https://www.letmecompile.com/wp/wp-content/uploads/2019/02/xee3_mac_app-1024x781.png 1024w, https://www.letmecompile.com/wp/wp-content/uploads/2019/02/xee3_mac_app-300x229.png 300w, https://www.letmecompile.com/wp/wp-content/uploads/2019/02/xee3_mac_app-768x586.png 768w, https://www.letmecompile.com/wp/wp-content/uploads/2019/02/xee3_mac_app-150x114.png 150w, https://www.letmecompile.com/wp/wp-content/uploads/2019/02/xee3_mac_app.png 1616w" sizes="(max-width: 625px) 100vw, 625px" /> 
+<img loading="lazy" class="aligncenter size-large wp-image-839" src="/uploads/2019/02/xee3_mac_app-1024x781.png" alt="" width="625" height="477" srcset="/uploads/2019/02/xee3_mac_app-1024x781.png 1024w, /uploads/2019/02/xee3_mac_app-300x229.png 300w, /uploads/2019/02/xee3_mac_app-768x586.png 768w, /uploads/2019/02/xee3_mac_app-150x114.png 150w, /uploads/2019/02/xee3_mac_app.png 1616w" sizes="(max-width: 625px) 100vw, 625px" /> 
 
   * <https://theunarchiver.com/xee>
   * 유료 앱이다. $3.99
@@ -221,7 +221,7 @@ Redis를 사용한다면 가끔 직접 Redis 서버에 접속해서 이것 저�
 
 여러 파일들의 이름을 규칙에 맞게 일괄 변경을 하고 싶다면 이 앱을 강력 추천한다. 개발자라면 물론 터미널에서 모든걸 할 수 있지만 가끔은 GUI로 보면서 직관적으로 작업하고 싶을때가 있으니 부끄러워 하지 말자.
 
-<img loading="lazy" class="aligncenter size-large wp-image-838" src="/uploads/2019/02/nameChanger_mac_app-1024x707.png" alt="" width="625" height="432" srcset="https://www.letmecompile.com/wp/wp-content/uploads/2019/02/nameChanger_mac_app-1024x707.png 1024w, https://www.letmecompile.com/wp/wp-content/uploads/2019/02/nameChanger_mac_app-300x207.png 300w, https://www.letmecompile.com/wp/wp-content/uploads/2019/02/nameChanger_mac_app-768x530.png 768w, https://www.letmecompile.com/wp/wp-content/uploads/2019/02/nameChanger_mac_app-150x104.png 150w, https://www.letmecompile.com/wp/wp-content/uploads/2019/02/nameChanger_mac_app.png 1484w" sizes="(max-width: 625px) 100vw, 625px" /> 
+<img loading="lazy" class="aligncenter size-large wp-image-838" src="/uploads/2019/02/nameChanger_mac_app-1024x707.png" alt="" width="625" height="432" srcset="/uploads/2019/02/nameChanger_mac_app-1024x707.png 1024w, /uploads/2019/02/nameChanger_mac_app-300x207.png 300w, /uploads/2019/02/nameChanger_mac_app-768x530.png 768w, /uploads/2019/02/nameChanger_mac_app-150x104.png 150w, /uploads/2019/02/nameChanger_mac_app.png 1484w" sizes="(max-width: 625px) 100vw, 625px" /> 
 
   * <https://www.mrrsoftware.com/namechanger/>
   * 무료 앱이다!
@@ -235,13 +235,13 @@ Redis를 사용한다면 가끔 직접 Redis 서버에 접속해서 이것 저�
   * <https://github.com/sveinbjornt/Sloth>
   * 무료 앱이다!
 
-[<img loading="lazy" class="aligncenter size-large wp-image-1045" src="/uploads/2019/02/sloth_find_port_and_kill-1024x768.png" alt="" width="625" height="469" srcset="https://www.letmecompile.com/wp/wp-content/uploads/2019/02/sloth_find_port_and_kill-1024x768.png 1024w, https://www.letmecompile.com/wp/wp-content/uploads/2019/02/sloth_find_port_and_kill-300x225.png 300w, https://www.letmecompile.com/wp/wp-content/uploads/2019/02/sloth_find_port_and_kill-768x576.png 768w, https://www.letmecompile.com/wp/wp-content/uploads/2019/02/sloth_find_port_and_kill-1536x1151.png 1536w, https://www.letmecompile.com/wp/wp-content/uploads/2019/02/sloth_find_port_and_kill-2048x1535.png 2048w, https://www.letmecompile.com/wp/wp-content/uploads/2019/02/sloth_find_port_and_kill-150x112.png 150w" sizes="(max-width: 625px) 100vw, 625px" />][6]
+[<img loading="lazy" class="aligncenter size-large wp-image-1045" src="/uploads/2019/02/sloth_find_port_and_kill-1024x768.png" alt="" width="625" height="469" srcset="/uploads/2019/02/sloth_find_port_and_kill-1024x768.png 1024w, /uploads/2019/02/sloth_find_port_and_kill-300x225.png 300w, /uploads/2019/02/sloth_find_port_and_kill-768x576.png 768w, /uploads/2019/02/sloth_find_port_and_kill-1536x1151.png 1536w, /uploads/2019/02/sloth_find_port_and_kill-2048x1535.png 2048w, /uploads/2019/02/sloth_find_port_and_kill-150x112.png 150w" sizes="(max-width: 625px) 100vw, 625px" />][6]
 
 ### Hex Fiend
 
 맥용 헥스 에디터(Hex Editor)를 찾고있다면 이녀석이 정답이다.
 
-<img loading="lazy" class="aligncenter size-large wp-image-837" src="/uploads/2019/02/hexfiend-1024x874.png" alt="" width="625" height="533" srcset="https://www.letmecompile.com/wp/wp-content/uploads/2019/02/hexfiend-1024x874.png 1024w, https://www.letmecompile.com/wp/wp-content/uploads/2019/02/hexfiend-300x256.png 300w, https://www.letmecompile.com/wp/wp-content/uploads/2019/02/hexfiend-768x656.png 768w, https://www.letmecompile.com/wp/wp-content/uploads/2019/02/hexfiend-150x128.png 150w, https://www.letmecompile.com/wp/wp-content/uploads/2019/02/hexfiend.png 1354w" sizes="(max-width: 625px) 100vw, 625px" /> 
+<img loading="lazy" class="aligncenter size-large wp-image-837" src="/uploads/2019/02/hexfiend-1024x874.png" alt="" width="625" height="533" srcset="/uploads/2019/02/hexfiend-1024x874.png 1024w, /uploads/2019/02/hexfiend-300x256.png 300w, /uploads/2019/02/hexfiend-768x656.png 768w, /uploads/2019/02/hexfiend-150x128.png 150w, /uploads/2019/02/hexfiend.png 1354w" sizes="(max-width: 625px) 100vw, 625px" /> 
 
   * <https://ridiculousfish.com/hexfiend/>
   * 무료 앱이다!

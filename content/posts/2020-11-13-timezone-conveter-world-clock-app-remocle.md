@@ -46,17 +46,17 @@ categories:
 
 인간의 뇌는 항상 단순 숫자만 보면 느낌이 딱 하고 오지 않는다. 그래서 항상 차트나 그래프로 시각화를 했을때 보이지 않던 규칙이 보이고 더 많은 정보를 파악할 수 있게 된다. 그래서 리모클에서는 여러 타임존들을 각각의 막대 그래프로 표시하고 막대 위에 해당 타임존의 시간을 표기했다. 이 막대 위에서 사용자가 타임 커서를 원하는 대로 움직이면 현재 시간 뿐만 아니라 과거/미래 시간까지 볼 수 있게 된다.<figure class="wp-block-image size-large">
 
-<img loading="lazy" width="576" height="1024" class="wp-image-893" src="https://www.letmecompile.com/wp/wp-content/uploads/2020/11/screenshot1-576x1024.png" alt="" srcset="https://www.letmecompile.com/wp/wp-content/uploads/2020/11/screenshot1-576x1024.png 576w, https://www.letmecompile.com/wp/wp-content/uploads/2020/11/screenshot1-169x300.png 169w, https://www.letmecompile.com/wp/wp-content/uploads/2020/11/screenshot1-150x267.png 150w, https://www.letmecompile.com/wp/wp-content/uploads/2020/11/screenshot1.png 696w" sizes="(max-width: 576px) 100vw, 576px" /> </figure> 
+<img loading="lazy" width="576" height="1024" class="wp-image-893" src="/uploads/2020/11/screenshot1-576x1024.png" alt="" srcset="/uploads/2020/11/screenshot1-576x1024.png 576w, /uploads/2020/11/screenshot1-169x300.png 169w, /uploads/2020/11/screenshot1-150x267.png 150w, /uploads/2020/11/screenshot1.png 696w" sizes="(max-width: 576px) 100vw, 576px" /> </figure> 
 
 단순히 커서를 움직에서 시간을 보는것 외에도, 막대 위에 파란색으로 지정된 것처럼 사용자가 해당 타임존에 특정 시간대를 표기해 둘 수 있다. 이 기능을 이용하면 세계 각지에서 일하는 사람들과 회의를 해야할 때,겹치는 업무시간을 한눈에 보고 찾을 수 있다. 해외 주식 투자에 관심이 많으신 분들이라면 세계 주요 증시가 언제 개장하고 폐장하는지도 한눈에 알 수 있다. 표시된 영역에 원하는 이모지를 넣어서 꾸밀 수 있는 기능은 덤!<figure class="wp-block-image size-large">
 
-<img class="wp-image-893" src="https://www.letmecompile.com/wp/wp-content/uploads/2020/11/screenshot4-576x1024.png" alt="" /> </figure> 
+<img class="wp-image-893" src="/uploads/2020/11/screenshot4-576x1024.png" alt="" /> </figure> 
 
 ### 잘 모르는 도시의 타임존도 알 수 있을까?
 
 <https://geonames.org> 에서 제공하는 데이터베이스를 기반으로 7000개의 주요 도시 와 해당 도시의 타임존을 제공한다. 미국처럼 땅덩어리가 큰 나라들은 같은 국가에서도 타임존을 다르게 사용하기 때문에 타임존이 헷갈리는 경우가 많은데, 리모클에서 타임존을 알고싶은 도시 이름을 검색해서 추가하면 손쉽게 해당 도시가 사용하는 타임존을 알아낼 수 있다.<figure class="wp-block-image size-large">
 
-<img loading="lazy" width="576" height="1024" class="wp-image-894" src="/uploads/2020/11/screenshot2-576x1024.png" alt="" srcset="https://www.letmecompile.com/wp/wp-content/uploads/2020/11/screenshot2-576x1024.png 576w, https://www.letmecompile.com/wp/wp-content/uploads/2020/11/screenshot2-169x300.png 169w, https://www.letmecompile.com/wp/wp-content/uploads/2020/11/screenshot2-150x267.png 150w, https://www.letmecompile.com/wp/wp-content/uploads/2020/11/screenshot2.png 696w" sizes="(max-width: 576px) 100vw, 576px" /> </figure> 
+<img loading="lazy" width="576" height="1024" class="wp-image-894" src="/uploads/2020/11/screenshot2-576x1024.png" alt="" srcset="/uploads/2020/11/screenshot2-576x1024.png 576w, /uploads/2020/11/screenshot2-169x300.png 169w, /uploads/2020/11/screenshot2-150x267.png 150w, /uploads/2020/11/screenshot2.png 696w" sizes="(max-width: 576px) 100vw, 576px" /> </figure> 
 
 리모클에 대해 더 궁금하면 [리모클 Remocle][2] 웹사이트를 통해서 더 자세히 알아보고 다운로드 하는 것이 가능하다.
 

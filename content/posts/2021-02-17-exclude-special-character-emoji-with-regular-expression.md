@@ -26,7 +26,7 @@ categories:
 
 <pre class="EnlighterJSRAW" data-enlighter-language="generic" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">[\p{L} ]+</pre><figure class="wp-block-image size-large">
 
-<img loading="lazy" width="944" height="644" src="https://www.letmecompile.com/wp/wp-content/uploads/2021/02/image.png" alt="" class="wp-image-910" srcset="https://www.letmecompile.com/wp/wp-content/uploads/2021/02/image.png 944w, https://www.letmecompile.com/wp/wp-content/uploads/2021/02/image-300x205.png 300w, https://www.letmecompile.com/wp/wp-content/uploads/2021/02/image-768x524.png 768w, https://www.letmecompile.com/wp/wp-content/uploads/2021/02/image-150x102.png 150w" sizes="(max-width: 944px) 100vw, 944px" /> </figure> 
+<img loading="lazy" width="944" height="644" src="/uploads/2021/02/image.png" alt="" class="wp-image-910" srcset="/uploads/2021/02/image.png 944w, /uploads/2021/02/image-300x205.png 300w, /uploads/2021/02/image-768x524.png 768w, /uploads/2021/02/image-150x102.png 150w" sizes="(max-width: 944px) 100vw, 944px" /> </figure> 
 
 위 스크린샷은 <https://regex101.com/> 사이트에서 직접 정규식을 테스트 해본 화면이다. 이 사이트에서는 매칭할 텍스트를 입력해두고 정규식을 바로바로 작성하면서 라이브로 매칭이 잘 되는지 테스트 해볼 수 있기 때문에 매우 유용하니 실무에 사용하면 편리하다.
 

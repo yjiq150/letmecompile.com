@@ -94,7 +94,7 @@ main();
 
 때문에 단순히 `Node` 객체만 가지고는 해당 `Node`와 자식 `Node`가 가진 텍스트 내용만 손쉽게 추출할 방법이 없습니다. 하지만 이 Node 객체를 `cheerio` 객체<sup id="fnref4"><a href="#fn4" rel="footnote">4</a></sup>로 한 번 감싸주면 `cheerio`에서 제공하는 추가 기능을 사용할 수 있게 됩니다. 위 예시에서 `Node`와 그 자식 `Node`가 가진 텍스트 내용만 추출하는 데 사용한 `text()` 함수가 바로 `cheerio`에서 제공되는 기능입니다(이러한 패턴 또한 앞서 언급한 jQuery에서 사용하던 코드 관습을 그대로 옮겨온 겁니다).
 
-<img loading="lazy" width="1024" height="773" src="https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-12_cheerio_wrapper-1024x773.png" alt="[그림 4-12] cheerio 객체를 만들어서 사용하는 방법" class="wp-image-992" srcset="https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-12_cheerio_wrapper-1024x773.png 1024w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-12_cheerio_wrapper-300x227.png 300w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-12_cheerio_wrapper-768x580.png 768w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-12_cheerio_wrapper-150x113.png 150w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-12_cheerio_wrapper.png 1316w" sizes="(max-width: 1024px) 100vw, 1024px" /> 
+<img loading="lazy" width="1024" height="773" src="/uploads/2022/05/4-12_cheerio_wrapper-1024x773.png" alt="[그림 4-12] cheerio 객체를 만들어서 사용하는 방법" class="wp-image-992" srcset="/uploads/2022/05/4-12_cheerio_wrapper-1024x773.png 1024w, /uploads/2022/05/4-12_cheerio_wrapper-300x227.png 300w, /uploads/2022/05/4-12_cheerio_wrapper-768x580.png 768w, /uploads/2022/05/4-12_cheerio_wrapper-150x113.png 150w, /uploads/2022/05/4-12_cheerio_wrapper.png 1316w" sizes="(max-width: 1024px) 100vw, 1024px" /> 
 
 ### cheerio 기본 사용법 {#toc_3}
 
@@ -154,7 +154,7 @@ $('.slide p').last().text(); // 대한민국 내용
 
 [그림 4-13]는 데이터 위치에 따른 크롤링 방법을 결정하는 순서를 그림으로 보여줍니다. 전체적인 흐름을 먼저 이 그림에서 살펴본 후 각 단계의 조건을 자세히 설명하겠습니다.
 
-<img loading="lazy" width="1024" height="797" src="https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-13_crawling_method_decision_tree-1024x797.png" alt="[그림 4-13] 크롤링 방식 의사 결정 트리" class="wp-image-993" srcset="https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-13_crawling_method_decision_tree-1024x797.png 1024w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-13_crawling_method_decision_tree-300x234.png 300w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-13_crawling_method_decision_tree-768x598.png 768w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-13_crawling_method_decision_tree-150x117.png 150w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-13_crawling_method_decision_tree.png 1310w" sizes="(max-width: 1024px) 100vw, 1024px" /> 
+<img loading="lazy" width="1024" height="797" src="/uploads/2022/05/4-13_crawling_method_decision_tree-1024x797.png" alt="[그림 4-13] 크롤링 방식 의사 결정 트리" class="wp-image-993" srcset="/uploads/2022/05/4-13_crawling_method_decision_tree-1024x797.png 1024w, /uploads/2022/05/4-13_crawling_method_decision_tree-300x234.png 300w, /uploads/2022/05/4-13_crawling_method_decision_tree-768x598.png 768w, /uploads/2022/05/4-13_crawling_method_decision_tree-150x117.png 150w, /uploads/2022/05/4-13_crawling_method_decision_tree.png 1310w" sizes="(max-width: 1024px) 100vw, 1024px" /> 
 
 ### 메인 HTML 소스에 찾는 데이터가 존재하는 경우(1, 2번) {#toc_5}
 
@@ -241,15 +241,15 @@ main();
 
 이 페이지를 웹 브라우저에서 열면 웹 브라우저 화면에 다음과 같이 페이지가 렌더링됩니다. 이 중 ‘API 호출로 받아온 내용입니다’라는 부분을 크롤러를 만들어서 추출하고 싶다고 가정해봅시다.
 
-<img loading="lazy" width="618" height="222" src="https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4_http-api-sample.png" alt="" class="wp-image-994" srcset="https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4_http-api-sample.png 618w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4_http-api-sample-300x108.png 300w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4_http-api-sample-150x54.png 150w" sizes="(max-width: 618px) 100vw, 618px" /> 
+<img loading="lazy" width="618" height="222" src="/uploads/2022/05/4_http-api-sample.png" alt="" class="wp-image-994" srcset="/uploads/2022/05/4_http-api-sample.png 618w, /uploads/2022/05/4_http-api-sample-300x108.png 300w, /uploads/2022/05/4_http-api-sample-150x54.png 150w" sizes="(max-width: 618px) 100vw, 618px" /> 
 
 이제 [개발자 도구]를 열고 ➝ [Network] 탭에서 ➝ 레코딩이 활성화된 상태로 ➝ 페이지를 새로고침하고 ➝ ❶ All을 선택하면 ➝ 해당 페이지에서 주고받은 모든 통신 내용이 기록됩니다. 예제 웹페이지에서는 다음과 같이 ❷ 요청이 2번 발생했음을 확인할 수 있습니다.
 
-<img loading="lazy" width="1024" height="243" src="https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-request-sample1-1-1024x243.png" alt="" class="wp-image-999" srcset="https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-request-sample1-1-1024x243.png 1024w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-request-sample1-1-300x71.png 300w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-request-sample1-1-768x182.png 768w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-request-sample1-1-150x36.png 150w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-request-sample1-1.png 1298w" sizes="(max-width: 1024px) 100vw, 1024px" /> 
+<img loading="lazy" width="1024" height="243" src="/uploads/2022/05/4-request-sample1-1-1024x243.png" alt="" class="wp-image-999" srcset="/uploads/2022/05/4-request-sample1-1-1024x243.png 1024w, /uploads/2022/05/4-request-sample1-1-300x71.png 300w, /uploads/2022/05/4-request-sample1-1-768x182.png 768w, /uploads/2022/05/4-request-sample1-1-150x36.png 150w, /uploads/2022/05/4-request-sample1-1.png 1298w" sizes="(max-width: 1024px) 100vw, 1024px" /> 
 
 http-api는 예제 웹페이지의 HTML을 불러오는 요청입니다. [Protocol]<sup id="fnref6"><a href="#fn6" rel="footnote">6</a></sup> 값이 `h2`인데, HTTP/2 프로토콜을 사용해서 통신을 진행했다는 말입니다. [Type]은 document입니다. HTML과 같은 웹페이지 불러왔다는 의미입니다. ❶ [Name]에서 http-api를 클릭하면 ➝ ❷ 오른쪽에 나오는 패널이 나타나면서 ➝ ❸ [Response] 탭에 HTML 내용을 보여줍니다([페이지 소스 보기] 기능을 사용했을 때 나타나는 내용과 동일합니다).
 
-<img loading="lazy" width="1024" height="474" src="https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-request-sample2-1-1024x474.png" alt="" class="wp-image-1000" srcset="https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-request-sample2-1-1024x474.png 1024w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-request-sample2-1-300x139.png 300w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-request-sample2-1-768x356.png 768w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-request-sample2-1-150x69.png 150w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-request-sample2-1.png 1304w" sizes="(max-width: 1024px) 100vw, 1024px" /> 
+<img loading="lazy" width="1024" height="474" src="/uploads/2022/05/4-request-sample2-1-1024x474.png" alt="" class="wp-image-1000" srcset="/uploads/2022/05/4-request-sample2-1-1024x474.png 1024w, /uploads/2022/05/4-request-sample2-1-300x139.png 300w, /uploads/2022/05/4-request-sample2-1-768x356.png 768w, /uploads/2022/05/4-request-sample2-1-150x69.png 150w, /uploads/2022/05/4-request-sample2-1.png 1304w" sizes="(max-width: 1024px) 100vw, 1024px" /> 
 
 웹 브라우저에서 접속했을 때 분명히 ‘API 호출로 받아온 내용입니다’라는 글자를 확인할 수 있죠. 그런데 코드를 보면 `h1`, `p` 태그의 내용이 모두 비어 있고 해당 문구가 안 보이네요. 그렇다면 해당 문구는 도대체 어디서 나타난 걸까요? 다음 코드를 살펴보겠습니다.
 
@@ -280,11 +280,11 @@ http-api는 예제 웹페이지의 HTML을 불러오는 요청입니다. [Protoc
 
 데이터를 받아오는지 알아내는 다른 방법으로는 [Network] 탭에 기록된 요청을 살펴보는 방법이 있습니다. [Network] 탭에 기록된 ❶ example-data.json을 클릭하여 응답 내용을 확인하면 ❷ 웹 브라우저 표시된 문구들을 확인할 수 있습니다.
 
-<img loading="lazy" width="1024" height="314" src="https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-request-sample3-1-1024x314.png" alt="" class="wp-image-1001" srcset="https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-request-sample3-1-1024x314.png 1024w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-request-sample3-1-300x92.png 300w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-request-sample3-1-768x235.png 768w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-request-sample3-1-150x46.png 150w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-request-sample3-1.png 1318w" sizes="(max-width: 1024px) 100vw, 1024px" /> 
+<img loading="lazy" width="1024" height="314" src="/uploads/2022/05/4-request-sample3-1-1024x314.png" alt="" class="wp-image-1001" srcset="/uploads/2022/05/4-request-sample3-1-1024x314.png 1024w, /uploads/2022/05/4-request-sample3-1-300x92.png 300w, /uploads/2022/05/4-request-sample3-1-768x235.png 768w, /uploads/2022/05/4-request-sample3-1-150x46.png 150w, /uploads/2022/05/4-request-sample3-1.png 1318w" sizes="(max-width: 1024px) 100vw, 1024px" /> 
 
 네트워크 요청이 적으면 손쉽게 찾을 수 있지만 페이지가 복잡하여 수십 개 요청이 수행되거나 응답 데이터양이 너무 많은 경우 눈으로 훑어보기가 어렵습니다. 이때는 [Network] 탭 설명을 하던 도중 언급한 ‘응답 본문 검색’ 기능을 사용하면 됩니다. 다음처럼 ❶ 돋보기 아이콘을 눌러서 좌측 검색 패널을 활성화한 후 ➝ ❷ 검색 키워드(예를 들어 ‘API 호출로 받아온 내용입니다’)를 검색 ➝ ❸ 검색된 내용을 클릭하면 ➝ ➍ 해당 응답이 열리면서 해당 위치를 하이라이트까지 해줍니다.
 
-<img loading="lazy" width="1024" height="289" src="https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-request-sample4-1024x289.png" alt="" class="wp-image-995" srcset="https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-request-sample4-1024x289.png 1024w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-request-sample4-300x85.png 300w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-request-sample4-768x217.png 768w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-request-sample4-150x42.png 150w, https://www.letmecompile.com/wp/wp-content/uploads/2022/05/4-request-sample4.png 1318w" sizes="(max-width: 1024px) 100vw, 1024px" /> 
+<img loading="lazy" width="1024" height="289" src="/uploads/2022/05/4-request-sample4-1024x289.png" alt="" class="wp-image-995" srcset="/uploads/2022/05/4-request-sample4-1024x289.png 1024w, /uploads/2022/05/4-request-sample4-300x85.png 300w, /uploads/2022/05/4-request-sample4-768x217.png 768w, /uploads/2022/05/4-request-sample4-150x42.png 150w, /uploads/2022/05/4-request-sample4.png 1318w" sizes="(max-width: 1024px) 100vw, 1024px" /> 
 
 데이터가 있는 API 경로를 찾아냈으니 크롤링 코드를 작성해봅시다.
 
