@@ -3,6 +3,7 @@ languageCode = 'ko-kr'
 defaultContentLanguage = 'ko-kr'
 title = 'Knowledge Logger'
 theme = 'PaperMod'
+enableRobotsTXT = true
 
 # Korean language configuration
 [languages]
@@ -47,6 +48,7 @@ theme = 'PaperMod'
   category = "categories"
 
 [params]
+  # Enable only for testing locally
   # env = "production"
   ShowReadingTime = true
   ShowShareButtons = false
@@ -60,7 +62,7 @@ theme = 'PaperMod'
   assets.disableHLJS = false
   disableSpecial1stPost = false
   disableScrollToTop = false
-  comments = false
+  comments = true
   hidemeta = false
   hideSummary = false
   showtoc = false
@@ -147,3 +149,7 @@ theme = 'PaperMod'
     name = "Search"
     url = "/search/"
     weight = 50
+
+[services]
+  [services.disqus]
+    shortname = 'yjiq150'
