@@ -42,6 +42,11 @@ outputs:
 params:
   # Enable production mode for OpenGraph tags
   # env: "production"
+
+  # Logo configuration
+  label:
+    icon: "images/profile_bg_white.png"
+    iconHeight: 30
   ShowReadingTime: true
   ShowShareButtons: false
   ShowPostNavLinks: true
@@ -95,7 +100,7 @@ params:
   profileMode:
     enabled: true
     title: "Knowledge Logger"
-    subtitle: "A blog about programming, development, and technology"
+    subtitle: "A blog about programming, development, and technology."
     imageUrl: "images/profile_bg_white.png"
     imageWidth: 150
     imageHeight: 150

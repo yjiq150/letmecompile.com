@@ -148,3 +148,18 @@
         border-bottom-color: var(--border, #4a5568);
     }
 }
+
+/* Circular profile image in header */
+.logo img[aria-label="logo"] {
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Adjust logo text alignment */
+.logo a {
+    align-items: center;
+    text-decoration: none;
+    img {
+        margin-top: 3px;
+    }
+}
