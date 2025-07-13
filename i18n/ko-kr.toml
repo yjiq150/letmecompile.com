@@ -1,0 +1,76 @@
+# Korean localization
+
+[january]
+other = "1월"
+
+[february]
+other = "2월"
+
+[march]
+other = "3월"
+
+[april]
+other = "4월"
+
+[may]
+other = "5월"
+
+[june]
+other = "6월"
+
+[july]
+other = "7월"
+
+[august]
+other = "8월"
+
+[september]
+other = "9월"
+
+[october]
+other = "10월"
+
+[november]
+other = "11월"
+
+[december]
+other = "12월"
+
+[posts]
+other = "Posts"
+
+[page_not_found]
+other = "페이지를 찾을 수 없습니다"
+
+[go_to_homepage]
+other = "홈페이지로 이동"
+
+[read_time]
+other = "{{ .Count }}분"
+
+[words]
+other = "{{ .Count }}단어"
+
+[author]
+other = "작성자"
+
+[share_on]
+other = "공유하기"
+
+[edit_post]
+other = "포스트 편집"
+
+[search]
+other = "검색"
+
+[no_results_found]
+other = "검색 결과가 없습니다"
+
+[archives]
+other = "글 목록"
+
+[categories]
+other = "카테고리"
+
+[tags]
+other = "태그"

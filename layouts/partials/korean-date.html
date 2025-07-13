@@ -1,0 +1,5 @@
+{{- $date := . -}}
+{{- $year := $date.Year -}}
+{{- $month := $date.Month -}}
+{{- $day := $date.Day -}}
+{{- printf "%d년 %d월 %d일" $year $month $day -}}

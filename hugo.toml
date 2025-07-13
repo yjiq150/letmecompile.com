@@ -1,7 +1,15 @@
 baseURL = 'https://www.letmecompile.com/'
 languageCode = 'ko-kr'
+defaultContentLanguage = 'ko-kr'
 title = 'Knowledge Logger'
 theme = 'PaperMod'
+
+# Korean language configuration
+[languages]
+  [languages.ko-kr]
+    languageName = "한국어"
+    weight = 1
+    title = "Knowledge Logger"
 
 # URL structure to match WordPress permalinks
 [permalinks]
@@ -39,6 +47,7 @@ theme = 'PaperMod'
   category = "categories"
 
 [params]
+  # env = "production"
   ShowReadingTime = true
   ShowShareButtons = false
   ShowPostNavLinks = true

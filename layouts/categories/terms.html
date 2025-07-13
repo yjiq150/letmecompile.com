@@ -1,0 +1,65 @@
+{{- define "main" }}
+
+{{- if .Title }}
+<header class="page-header">
+  <h1>{{ .Title }}</h1>
+  {{- if .Description }}
+  <div class="post-description">
+    {{ .Description }}
+  </div>
+  {{- end }}
+</header>
+{{- end }}
+
+<div class="categories-list">
+  {{- $data := .Data }}
+  {{- range $data.Terms.Alphabetical }}
+  <div class="category-item">
+    <a href="{{ .Page.Permalink }}" class="category-link">
+      {{ .Page.Title }} ({{ .Count }})
+    </a>
+  </div>
+  {{- end }}
+</div>
+
+<style>
+.categories-list {
+  margin-top: 2rem;
+}
+
+.category-item {
+  margin-bottom: 0.75rem;
+}
+
+.category-link {
+  color: var(--primary, #1e40af);
+  text-decoration: none;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  display: block;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--border, #e5e7eb);
+  transition: color 0.2s ease;
+}
+
+.category-link:hover {
+  color: var(--secondary, #3b82f6);
+  text-decoration: none;
+}
+
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .category-link {
+    color: var(--primary, #60a5fa);
+    border-bottom-color: var(--border, #4a5568);
+  }
+
+  .category-link:hover {
+    color: var(--secondary, #93c5fd);
+  }
+
+}
+</style>
+
+{{- end }}
