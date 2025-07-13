@@ -91,6 +91,14 @@
     transition: background-color 0.2s ease;
 }
 
+/* H2 heading with full-width underline */
+.post-content h2,
+.entry-content h2 {
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid var(--border, #e5e7eb);
+}
+
 /* Dark mode support */
 @media (prefers-color-scheme: dark) {
     .post-content table tr:nth-child(even),
@@ -112,5 +120,11 @@
     .entry-content table td {
         border-bottom-color: var(--border, #4a5568);
         color: var(--content, #e2e8f0);
+    }
+
+    /* H2 heading with full-width underline */
+    .post-content h2,
+    .entry-content h2 {
+        border-bottom-color: var(--border, #4a5568);
     }
 }
