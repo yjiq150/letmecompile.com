@@ -43,6 +43,9 @@ params:
   # Enable production mode for OpenGraph tags
 #  env: "production"
 
+  # default og:image when not specified
+  images:
+    - https://www.letmecompile.com/images/profile_bg_white.png
   # Logo configuration
   label:
     icon: "images/profile_bg_white.png"
