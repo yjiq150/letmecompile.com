@@ -1,7 +1,7 @@
 baseURL: https://www.letmecompile.com/
 languageCode: ko-kr
 defaultContentLanguage: ko-kr
-title: Knowledge Logger
+title: letmecompile
 theme: PaperMod
 enableRobotsTXT: true
 
@@ -10,7 +10,7 @@ languages:
   ko-kr:
     languageName: "한국어"
     weight: 1
-    title: "Knowledge Logger"
+    title: "letmecompile"
     params:
       taxonomies:
         # Language-specific taxonomy configuration for templates
@@ -45,7 +45,7 @@ params:
 
   # default og:image when not specified
   images:
-    - https://www.letmecompile.com/images/profile_bg_white.png
+    - https://www.letmecompile.com/images/default-og-image.png
   # Logo configuration
   label:
     icon: "images/profile_bg_white.png"
@@ -104,16 +104,16 @@ params:
 
   profileMode:
     enabled: true
-    title: "Knowledge Logger"
-    subtitle: "A blog about programming, development, and technology."
+    title: "letmecompile"
+    subtitle: "Thoughts on code, software development, and the future of technology."
     imageUrl: "images/profile_bg_white.png"
     imageWidth: 150
     imageHeight: 150
 
   # Commented out homeInfoParams as it conflicts with profileMode
   # homeInfoParams:
-  #   Title: "Welcome to Knowledge Logger"
-  #   Content: "A blog about programming, development, and technology"
+  #   Title: "letmecompile"
+  #   Content: "Thoughts on code, software development, and the future of technology."
 
   # SEO Settings similar to All In One SEO Pack
   seo:
@@ -124,7 +124,7 @@ params:
     # Enable JSON-LD structured data
     enableJSONLD: true
     # Default meta description for pages without one
-    defaultDescription: "Programming insights, development experiences, and technical knowledge from Knowledge Logger"
+    defaultDescription: "Thoughts on code, software development, and the future of technology."
     # Site verification codes (add when available)
     googleSiteVerification: ""
     bingSiteVerification: ""
