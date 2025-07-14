@@ -197,8 +197,4 @@ $ helm uninstall -n ingress-nginx-old ingress-nginx
 
   * 참고자료: <https://github.com/kubernetes/ingress-nginx/blob/main/charts/ingress-nginx/README.md#upgrading-with-zero-downtime-in-production>
 
-&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8211;
-
-**[스퀘어랩은 언제나 채용중입니다][1]. 스퀘어랩에 조인해서 여행 기술의 혁신을 함께 해나가실 분을 찾습니다!**
-
  [1]: https://squarelabrecruit.notion.site/squarelabrecruit/e8a18d1db1424fbe8a27144af8e48315

@@ -1,0 +1,27 @@
+{{ $src := .Get "src" }}
+{{ $alt := .Get "alt" }}
+{{ $showCaption := .Get "show-caption" }}
+{{ $img := .Page.Resources.GetMatch $src }}
+{{ with $img }}
+    {{ $small := .Resize "800x" }}     <!-- for 400px display @2x -->
+    {{ $medium := .Resize "1600x" }}   <!-- for 800px display @2x -->
+    {{ $large := .Resize "2400x" }}    <!-- for 1200px display @2x -->
+    <figure style="margin: 1em 0; text-align: center;">
+        <img
+            src="{{ $medium.RelPermalink }}"
+            srcset="
+               {{ $small.RelPermalink }} 800w,
+               {{ $medium.RelPermalink }} 1600w,
+               {{ $large.RelPermalink }} 2400w"
+            sizes="
+               (max-width: 600px) 400px,
+               (max-width: 1024px) 800px,
+               1200px"
+            alt="{{ $alt }}"
+            loading="lazy"
+            style="width: 100%; height: auto;">
+        {{ if eq $showCaption "true" }}
+        <figcaption style="font-size: 0.9em; color: #666; margin-top: 0.5em;">{{ $alt }}</figcaption>
+        {{ end }}
+    </figure>
+{{ end }}

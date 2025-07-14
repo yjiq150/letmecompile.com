@@ -74,5 +74,5 @@ tags:
 
 모두들 잘 준비하셔서 무사 졸업하시길 빕니다!
 
- [1]: http://www.letmecompile.com/downloads/dissertation_tex_template.zip "연세대 졸업논문 텍스 템플릿"
+ [1]: dissertation_tex_template.zip "연세대 졸업논문 텍스 템플릿"
  [2]: http://www.essayreview.co.kr "영문 논문 교정 전문"
