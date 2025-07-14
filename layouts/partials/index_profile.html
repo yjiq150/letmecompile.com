@@ -57,6 +57,8 @@
     {{- end}}
 </div>
 
+<div class="profile-divider"></div>
+
 {{- /* Recent Posts Section */ -}}
 {{- $pages := where site.RegularPages "Type" "posts" }}
 {{- $pages = where $pages "Params.hiddenInHomeList" "!=" "true" }}

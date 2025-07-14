@@ -1,5 +1,9 @@
+body {
+    font-size: 16px;
+}
+
 .post-title {
-    font-size: 38px;
+    font-size: 32px;
 }
 
 .post-content h2 {
@@ -152,6 +156,11 @@
     .post-single .post-content img {
         border-color: #4a5568;
     }
+
+    /* Dark mode profile divider */
+    .profile-divider {
+        background-color: var(--tertiary);
+    }
 }
 
 /* Circular profile image in header */
@@ -176,6 +185,15 @@
     display: flex;
     justify-content: center;
     text-align: center;
+}
+
+/* Profile divider between social icons and recent posts */
+.profile-divider {
+    height: 1px;
+    max-width: 140px;
+    width: 100%;
+    background-color: var(--tertiary, #e5e7eb);
+    margin: 2rem auto;
 }
 
 /* Recent Posts Section - Positioned after profile */
