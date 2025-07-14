@@ -1,7 +1,6 @@
 baseURL: https://www.letmecompile.com/
 languageCode: ko-kr
 defaultContentLanguage: ko-kr
-title: letmecompile
 theme: PaperMod
 enableRobotsTXT: true
 
@@ -10,7 +9,7 @@ languages:
   ko-kr:
     languageName: "한국어"
     weight: 1
-    title: "letmecompile"
+    title: letmecompile
     params:
       taxonomies:
         # Language-specific taxonomy configuration for templates
@@ -46,6 +45,7 @@ params:
   # default og:image when not specified
   images:
     - https://www.letmecompile.com/images/default-og-image.png
+  description: Thoughts on code, software development, and the future of technology.
   # Logo configuration
   label:
     icon: "images/profile_bg_white.png"
