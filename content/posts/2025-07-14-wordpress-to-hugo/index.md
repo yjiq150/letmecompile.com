@@ -197,7 +197,7 @@ jobs:
 GitHub Actions를 통한 자동 배포 설정도 Claude Code가 알아서 처리해줘서 정말 편했다. 이제 로컬에서 새 글을 쓰고 `git push`만 하면 자동으로 빌드되고 배포된다. 
 글이 140개에 이미지가 꽤 많아서 아티팩트 용량이 100MB 정도 되는데도 push 직후 배포까지 30초 정도 소요된다.
 
-{{< responsive-img src="renewal-letmecompile-com.png" alt="GitHub Actions 자동 배포 워크플로우" show-caption="true" >}}
+{{< responsive-img src="github-actions-hugo-deploy.png" alt="GitHub Actions 자동 배포 워크플로우" show-caption="true" >}}
 
 ## 24시간 만에 완성된 마이그레이션의 의미
 
