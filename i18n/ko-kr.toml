@@ -74,3 +74,9 @@ other = "카테고리"
 
 [tags]
 other = "태그"
+
+[prev_page]
+other = "이전"
+
+[next_page]
+other = "다음"
