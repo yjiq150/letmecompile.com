@@ -1,9 +1,9 @@
 ---
 title: "모바일 기기를 그래픽 타블렛으로 바꿔주는 VirtualTablet: Bluetooth 앱 개발기 (Feat. 클로드코드)"
-slug: "클로드코드와-함께하는-virtualtablet-bluetooth-개발기"
+slug: virtualtablet-bluetooth-devlog-with-claude-code
 date: 2025-11-23T00:00:00+09:00
 cover:
-  image: "/클로드코드와-함께하는-virtualtablet-bluetooth-개발기/virtualtablet-bluetooth-feature.png"
+  image: "/virtualtablet-bluetooth-devlog-with-claude-code/virtualtablet-bluetooth-feature.png"
 categories:
   - 앱 개발
 tags:
