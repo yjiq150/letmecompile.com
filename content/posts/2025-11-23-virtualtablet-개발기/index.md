@@ -238,7 +238,7 @@ Best Practice를 약 300라인 정도로 구체적으로 정리해 두었다.
 
 ![구독 매출](revenue_subscription.png)
 
-### DAU 추이
+### MAU 추이
 
 - 기존에 운영중인 오리지널 VirtualTablet 앱 내에서 VirtualTablet: Bluetooth로 이동할 수 있는 프로모션 팝업을 띄워서 그런지 선형적으로 꾸준히
   사용자가 증가하는 중이다. 이런저런 커뮤니트들에 홍보를 좀 더 해서 exponential 그래프를 만들 수 있도록 노력해 볼 예정.
