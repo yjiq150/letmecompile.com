@@ -54,11 +54,11 @@ Code를 믿고 개발을 시작했다.
 ### 1) 요구사항 구체화
 
 * 만들고자 하는 앱의 대략적인 요구사항을 마크다운 문서로 작성한다.
-    - [hand-written-requirements.md](hand-written-requirements.md)
+    - [hand-written-requirements.md](hand-written-requirements.txt)
 * 클로드 코드에게 해당 문서를 전달하며 **더 구체적인 요구사항으로 보완하여 정리**하도록 지시한다.
-    - [hand-written-requirements](requirements.md)
+    - [requirements.md](requirements.txt)
 * 보완된 문서를 검토 및 수정한 후, 이를 바탕으로 **개발 계획을 단계별 작업 목록(Task List)으로 작성**하게 한다.
-    - [tasks.md](tasks.md)
+    - [tasks.md](tasks.txt)
 
 ### 2) 단계별 개발 진행
 
@@ -81,8 +81,8 @@ Best Practice를 약 300라인 정도로 구체적으로 정리해 두었다.
 실제 규칙을 어떤 식으로 작성했는지 궁금해하실 분들을 위해 해당 파일들을 아래 링크에서 확인 할 수 있게 해 두었다.
 꼭 어떤 형식이어야 할 필요는 없고, 결국 LLM이 잘 알아들을 수 있는 구조이기만 하면 된다.
 
-- [CLAUDE.md](CLAUDE.md)
-- [riverpod_rules.md](riverpod_rules.md)
+- [CLAUDE.md](CLAUDE.txt)
+- [riverpod_rules.md](riverpod_rules.txt)
 
 이렇게 설정이 된 이후에야 비로소 `riverpod` 기반으로 안정적인 상태 관리가 가능해졌고, 상태 관리가 명확해지자 신규 기능 개발 시 버그가 줄어들면서 개발에 속도가 붙었다.
 일관성 있는 코드베이스가 구축되니, 클로드 코드 역시 기존 코드를 참고하여 더 정확한 결과물을 내놓게 된 것이다.
@@ -143,7 +143,7 @@ Best Practice를 약 300라인 정도로 구체적으로 정리해 두었다.
 3. **문맥 기반 번역**: 확정된 맵핑 파일을 기반으로 직역이 아닌 '자연스러운' 번역을 수행하도록 지시한다.
 4. **최종 검수**: Opus 4.1 등 고성능 모델을 통해 최종 결과물을 리뷰하여 품질을 확보할 수 있었다.
 
-- 참고: 실제 사용한 프롬프트 [translation_prompt.md](translation_prompt.md)
+- 참고: 실제 사용한 프롬프트 [translation_prompt.md](translation_prompt.txt)
 
 ## 7. Claude Code 사용 팁
 
